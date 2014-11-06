@@ -49,7 +49,7 @@
         </div>
         <div class="text-center">
             <p>OR</p>
-            <button id="createPos" class="button button--muted mar--sm--bm">Create Position</button>
+            <button id="toggleMethod" class="button button--muted mar--sm--bm"><span id="createText">Create</span><span id="selectText" class="hide">Select</span> Position</button>
         </div>
     </div>
     <div id="div2" class="hide">
@@ -106,7 +106,7 @@
         </div>
         <div class="text-center">
             <p>No results</p>
-            <button id="createPos--alt" class="button button--muted mar--sm--bm">Create Position</button>
+            <button id="createPos" class="button button--muted mar--sm--bm">Create Position</button>
         </div>
     </div>
 
@@ -119,16 +119,12 @@
     $(document).ready(function () {
 
 // hiding & showing content
-        $("#selectPos, #backToKey, #createPos--alt").click(function(){
+        $("#selectPos, #backToKey, #createPos").click(function(){
             $('#div1, #div2').toggleClass("hide");
         });
-        $("#createPos").click(function(){
-            $('#selectPos__container, #createPos__container').toggleClass("hide");
+        $("#toggleMethod, #createPos").click(function(){
+            $('#selectPos__container, #createPos__container, #selectText, #createText').toggleClass("hide");
         });
-        $("#createPos--alt").click(function(){
-            $('#selectPos__container, #createPos__container').toggleClass("hide");
-        });
-
     });
 </script>
 
