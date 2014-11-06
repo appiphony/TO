@@ -6,21 +6,49 @@
     <link rel="stylesheet" href="../css/email.css">
 </head>
 <body>
-<table border="1" cellpadding="0" cellspacing="0" width="100%">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
         <td>
-            <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
+            <table width="75%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
                 <tr>
                     <td>
-                        <table align="center" border="1" cellpadding="0" cellspacing="0" width="600" style="font-family: Arial, sans-serif;">
+                        <table align="center" border="0" cellpadding="0" cellspacing="0"  style="font-family: Arial, sans-serif;color:#686c70;line-height:1.5">
                             <tr>
-                                <td align="center" style="padding: 40px 0 30px 0;">
-                                    <img src="../css/img/prototype__offer-letter__logo--mp.png" alt="Creating Email Magic" width="240" height="48" style="display: block;" />
-                                    <h3>Offer Letter</h3>
+                                <td align="left" style="padding: 24px 0 24px 0;">
+                                    <img src="../css/img/prototype__offer-letter__logo--mp.png" alt="MarvelPoint" width="240" height="48" style="display: block;" />
                                 </td>
                             </tr>
                             <tr>
-                                Congratulations, Jimmy Boy. We've created an offer letter for you.
+                                <td>
+                                    Hi, {first name}.
+                                    <br/><br/>
+                                    You've received a job offer to be a {Job title} at {Company name}. Please take a look at the offer and respond by {Date}.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="160" style="font-family: Arial, sans-serif;padding: 24px 0px 24px 0px">
+                                        <tr>
+                                            <td align="center" bgcolor="#cf5c60" style="padding:11px 0 11px 0;-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;">
+                                                <a href="prototype__offer-letter--v2.html" style="color:#ffffff;text-decoration: none">
+                                                    View Offer
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Best Regards,
+                                    <br/><br/>
+                                    {Recruiter name}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:75%; color: #8d9aa5;">
+                                    {company address in small gray text}
+                                </td>
                             </tr>
                         </table>
                     </td>
