@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype | Requisition Create -- Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body class="bg-2">
+<div class="scope-container sf1-scope">
+    <nav class="nav-bar--sf1 text-center mar--sm--bn">
+        <button class="float--left button button--muted button--small mar--sm--ts">Cancel</button>
+        <button class="float--right button button--muted button--small mar--sm--ts">Submit</button>
+        <span class="nav-bar--sf1__title"></span>
+    </nav>
+    <div class="section__title">
+        Key Information
+    </div>
+    <div class="content__section">
+        <div class="form__group mar--sm--bn">
+            <label for="selectPos" class="sr-only">Select Position</label>
+            <button id="selectPos" class="button button--secondary width--full text-left" data-toggle="modal" data-target="#posModal"><span class="float--right juicon juicon-search"></span><span class="pad--sm--rxl block dots">Select Position</span></button>
+            <small class="input-error-content">Don't try and give me a fake.</small>
+        </div>
+        <!-- Position Modal -->
+        <div class="modal fade max-modal" id="posModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal__shell">
+                <div class="modal__content bg-2">
+                    <nav class="nav-bar--sf1 text-center mar--sm--bn">
+                        <button class="float--left button button--muted button--small mar--sm--ts" data-dismiss="modal">Cancel</button>
+                        <span class="nav-bar--sf1__title">Position</span>
+                    </nav>
+                    <div class="content__section">
+                        <div class="form__group mar--sm--n">
+                            <label for="searchPos" class="sr-only">Search Position</label>
+                            <div class="input__wrap has-icon--right">
+                                <div class="input__icon juicon juicon-search"></div>
+                                <input type="text" class="bg-1" id="searchPos" placeholder="Search Position"/>
+                            </div>
+                            <small class="input-error-content">Error.</small>
+                        </div>
+                    </div>
+                    <div class="content__section">
+                        <div class="img-container--lg float--left" style="background-color:#50ceb9">
+                            <img src="http://staging-sfdc-styleguide.herokuapp.com/assets/icons/custom/custom8.svg" alt=""/>
+                        </div>
+                        <div class="has-img-container--lg">Position</div>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="content__section">
+                        <b class="block">Sales Representative - Midwest</b>
+                        <small class="text-muted block">Reports to Sales Manager - Midwest</small>
+                    </div>
+                    <div class="text-center">
+                        <p>No results</p>
+                        <button class="button button--primary mar--sm--bm">Create Position</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="content__section text-center">
+        OR
+    </div>
+    <div class="content--full">
+        <div class="form__group mar--sm--ts mar--sm--bn">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" class="bg-1" id="jobTitle" placeholder="Enter a Job Title"/>
+            <small class="input-error-content">Error.</small>
+            <small class="text-faded"><span class="juicon juicon-info-circle"></span> If this is a new position</small>
+        </div>
+        <div class="form__group mar--sm--ts mar--sm--bn">
+            <label for="headCount">Head Count</label>
+            <input type="tel" class="bg-1" id="headCount" placeholder="0"/>
+            <small class="input-error-content">Error.</small>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+<script src="../lib/sf1/js/sf1.js"></script>
+
+</body>
+</html>

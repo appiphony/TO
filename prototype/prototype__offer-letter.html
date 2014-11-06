@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype | Offer Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body class="bg-2">
+<div class="scope-container">
+<div class="content pad--sm--only--n offer-letter">
+    <div class="panel mar--md--tm mar--md--bl brand__border-accent--top" style="border-top-color: #cf5c60">
+        <div class="pad--sm--only--m pad--md--xxl">
+            <p class="offer-letter__img-container">
+                <img src="../css/img/prototype__offer-letter__logo--mp.png" alt="MarvelPoint"/>
+            </p>
+            <h1 class="page__heading text-center mar--sm--only--bxl">Offer Letter</h1>
+            <p>
+                Nov 2, 2014
+                <br/>
+                George Kenessey
+                <br/>
+                1811 W North Ave, Suite 402
+                <br/>
+                Chicago, IL 60622
+            </p>
+            <p>
+                Dear Jimmy Boy,
+                <br/>
+                It is my pleasure to extend the following offer of employment to you on behalf of MarvelPoint.
+            </p>
+            <h3 class="mar--sm--bn">Requirements</h3>
+            <p>
+                If you accept our offer as a Junior Software Engineer, you will develop applications as part of our team for clients using Java, Javascript, Ember. You will also be learning new languages along the way while honing your skills as a communicator and team leader.
+            </p>
+            <h3 class="mar--sm--bn">Base Salary</h3>
+            <p>
+                You will be paid in bi-weekly installments of $2,500, which is equivalent to $65,000 on an annual basis, and subject to deductions for taxes and other withholdings as required by law or the policies of the company.
+            </p>
+            <h3 class="mar--sm--bn">Start Date:</h3>
+            <p>
+                November 13, 2014
+            </p>
+            <h3 class="mar--sm--bn">Offer Terms</h3>
+            <ul>
+                <li>$5,000 starting bonus</li>
+                <li>10% commission</li>
+                <li>Your employment with MarvelPoint is at-will and either party can terminate the relationship at any time with or without cause and with or without notice.</li>
+            </ul>
+            <h3 class="mar--sm--bn">Signatures:</h3>
+            <div class="row">
+                <div class="column--md--6">
+                    <br/>
+                    <hr/>
+                    MarvelPoint
+                </div>
+
+                <div class="column--md--6">
+                    <br/>
+                    <hr/>
+                    Date
+                </div>
+                <div class="column--md--6">
+                    <br/>
+                    <hr/>
+                    Jimmy Boy
+                </div>
+                <div class="column--md--6">
+                    <br/>
+                    <hr/>
+                    Date
+                </div>
+            </div>
+        </div>
+        <div class="panel__bottom">
+            <button class="left button button--error button--ghost">Reject offer <span class="juicon juicon-x"></span></button>
+            <button class="right button button--success">Accept offer <span class="juicon juicon-check"></span></button>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jui.js"></script>
+
+<script type="text/javascript" src="../lib/smooth-sig/js/numeric-1.2.6.min.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/bezier.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/jquery.signaturepad-mod.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/json2.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var sig1 = $('#sig').signaturePad({
+
+            drawOnly:true,
+
+            drawBezierCurves:true,
+
+            lineTop:118,
+
+            bgColour: 'transparent',
+
+            penColour: '#384047',
+
+            drawBezierCurves: true
+
+
+
+
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

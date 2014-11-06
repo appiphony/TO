@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype | Offer Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body class="bg-2">
+<div class="scope-container">
+<div class="content pad--md--tm pad--md--bl pad--sm--only--n offer-letter">
+    <div class="panel brand__border-accent--top" style="border-top-color: #cf5c60">
+        <div class="pad--sm--only--m pad--md--xxl">
+            <p class="offer-letter__img-container">
+                <img src="../css/img/prototype__offer-letter__logo--mp.png" alt="MarvelPoint"/>
+            </p>
+            <h1 class="page__heading text-center mar--sm--only--bxl">Offer Letter</h1>
+            <p>
+                Nov 2, 2014
+                <br/>
+                George Kenessey
+                <br/>
+                1811 W North Ave, Suite 402
+                <br/>
+                Chicago, IL 60622
+            </p>
+            <p>
+                Dear Jimmy Boy,
+                <br/>
+                It is my pleasure to extend the following offer of employment to you on behalf of MarvelPoint.
+            </p>
+            <h3 class="mar--sm--bn">Requirements</h3>
+            <p>
+                If you accept our offer as a Junior Software Engineer, you will develop applications as part of our team for clients using Java, Javascript, Ember. You will also be learning new languages along the way while honing your skills as a communicator and team leader.
+            </p>
+            <h3 class="mar--sm--bn">Base Salary</h3>
+            <p>
+                You will be paid in bi-weekly installments of $2,500, which is equivalent to $65,000 on an annual basis, and subject to deductions for taxes and other withholdings as required by law or the policies of the company.
+            </p>
+            <h3 class="mar--sm--bn">Start Date:</h3>
+            <p>
+                November 13, 2014
+            </p>
+            <h3 class="mar--sm--bn">Offer Terms</h3>
+            <ul>
+                <li>$5,000 starting bonus</li>
+                <li>10% commission</li>
+                <li>Your employment with MarvelPoint is at-will and either party can terminate the relationship at any time with or without cause and with or without notice.</li>
+            </ul>
+        </div>
+        <div class="panel__bottom">
+            <button class="float--left button button--error button--ghost">Reject <span class="juicon juicon-x"></span></button>
+            <button class="float--right button button--success" data-toggle="modal" data-target="#signModal">Sign & Accept <span class="juicon juicon-check"></span></button>
+            <!-- Sign Modal -->
+            <div class="modal fade max-modal" id="signModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal__shell">
+                    <div class="modal__content">
+                        <div class="modal__body text-center pad--sm--txl">
+                            <h2 class="mar--sm--n">Sign & accept offer</h2>
+                            <p class="mar--sm--tn">
+                                <small>Use your <span class="show-brkpoint--md">cursor</span><span class="show-brkpoint--sm--only">finger</span> to sign below.</small>
+                            </p>
+                        </div>
+                        <div class="content">
+                            <div id="sig" class="sig__container text-center">
+                                <ul class="sigNav">
+                                    <li class="clearButton"><a href="#clear"><span class="juicon juicon-x"></span></a></li>
+                                </ul>
+                                <canvas width="256" height="120"></canvas>
+                            </div>
+                        </div>
+                        <div class="modal__body text-center">
+                            <p class="text-faded">
+                                Jimmy Boy
+                                <br/>
+                                <small>Nov 4, 2014</small>
+                            </p>
+                        </div>
+                        <div class="modal__footer pad--sm--tn">
+                            <button type="button" class="button button--error button--ghost float--left" data-dismiss="modal">Cancel <span class="juicon juicon-x"></span></button>
+                            <button type="button" class="button button--success float--right">Accept <span class="juicon juicon-check"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+
+<script type="text/javascript" src="../lib/smooth-sig/js/numeric-1.2.6.min.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/bezier.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/jquery.signaturepad-mod.js"></script>
+<script type="text/javascript" src="../lib/smooth-sig/js/json2.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        var sig1 = $('#sig').signaturePad({
+
+            drawOnly:true,
+
+            drawBezierCurves:true,
+
+            lineTop:96,
+
+            bgColour: 'transparent',
+
+            penColour: '#384047',
+
+            drawBezierCurves: true,
+
+            lineWidth : 3,
+
+            lineMargin : 16,
+
+            lineColour : '#dadee2'
+
+
+
+
+
+        });
+
+    });
+</script>
+
+</body>
+</html>

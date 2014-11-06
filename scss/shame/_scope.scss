@@ -1,0 +1,20 @@
+// fix for bodyDiv having space around it in SF
+
+.bodyDiv {
+  .scope-container {
+    @extend .bg-2;
+  }
+  .noSidebarCell {
+    .scope-container {
+      @include radius-bottom();
+      margin: -10px;
+    }
+  }
+  .outerNoSidebar {
+    padding-bottom: 0;
+  }
+}
+
+#AppBodyHeader .phHeader {
+  margin-bottom: 0;
+}

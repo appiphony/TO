@@ -1,0 +1,27 @@
+// Surgical
+
+.mar {
+  @include add-surgical-space(margin, $imp:!important);
+}
+
+.pad {
+  @include add-surgical-space(padding, $imp:!important);
+}
+
+// show/hide elements
+
+span {
+  @include show-brkpoints(inline-block);
+}
+
+td {
+  font-family: $font-family-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %line-height;
+  @extend .block;
+  font-family: $font-family-primary;
+  color: $black;
+  font-weight: $font-weight-light;
+}

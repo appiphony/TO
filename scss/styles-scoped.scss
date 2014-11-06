@@ -1,0 +1,107 @@
+// ==========================================================================
+// Utilities
+// ==========================================================================
+
+@import "utilities/index";
+
+// ==========================================================================
+// Base
+// ==========================================================================
+
+body .scope-container { // scoping
+
+  @import "base/base";
+  @import "base/normalize";
+
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @extend %no-outline;
+}
+
+body .scope-container {
+  @extend %line-height;
+  color: $body-font-color;
+  font-size: $base-font-size+px;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-light;
+}
+
+html {
+  font-family: sans-serif; // 1
+  -ms-text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+}
+
+// Remove default margin.
+
+body {
+  margin: 0;
+}
+
+// ==========================================================================
+// Shame
+// ==========================================================================
+
+body .scope-container {// scoping
+  @import "shame/shame";
+}
+@import "shame/scope";
+
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+body .scope-container {// scoping
+  @import "layout/index";
+}
+
+// ==========================================================================
+// Modules
+// ==========================================================================
+
+@import "modules/extends";
+body .scope-container {// scoping
+  @import
+  "modules/alerts",
+  "modules/button-dropdowns",
+  "modules/button-groups",
+  "modules/button-split",
+  "modules/buttons",
+  "modules/button-action",
+  "modules/cards",
+  "modules/date-picker",
+  "modules/daterangepicker",
+  "modules/errors",
+  "modules/forms",
+  "modules/icons",
+  "modules/img",
+  "modules/labels",
+  "modules/lists",
+  "modules/nav-bar",
+  "modules/page",
+  "modules/pagination",
+  "modules/panels",
+  "modules/progress-bars",
+  "modules/selects",
+  "modules/sliders",
+  "modules/special-close",
+  "modules/tables",
+  "modules/tooltips",
+  "sf1/sf1";
+  // sf1 scope
+  &.sf1-scope {
+    .content, .content--full {
+      padding: 0 $sf1-base-h+px;
+    }
+  }
+}
+@import "modules/select2";
+
+@import "to/to"; //Talent Objects
+
+@import "modules/modals";
+

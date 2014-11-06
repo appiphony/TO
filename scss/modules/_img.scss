@@ -1,0 +1,43 @@
+@mixin img-container($unit:$key-number) {
+  &--lg {
+    @include square();
+    @include radius();
+    img {
+      @include square();
+      @include radius();
+    }
+  }
+  &--md {
+    @include square($unit*2);
+    @include radius();
+    img {
+      @include square($unit*2);
+      @include radius();
+    }
+  }
+  &--sm {
+    @include square($unit*1.5);
+    @include radius();
+    img {
+      @include square($unit*1.5);
+      @include radius();
+    }
+  }
+}
+
+.avatar-container {
+  @include img-container();
+}
+
+.img-container {
+  @include img-container();
+}
+
+.has-img-container--lg {
+  @extend .dots;
+  margin-left: 48px;
+  margin-top: 7.5px;
+  margin-bottom: 7.5px;
+  font-size: 125%;
+  line-height: 1.25;
+}

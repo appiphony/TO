@@ -1,0 +1,92 @@
+// content stuff
+body .scope-container {
+  .pad--sm--only--n {
+    > .panel {
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        @include erase-radius;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
+
+// brand stuff
+
+body .scope-container {
+  .brand__border-accent {
+    &--top {
+      border-top-width: 5px;
+    }
+  }
+}
+
+// offer-letter
+
+.offer-letter {
+  max-width: 8.5in!important;
+  &__img-container {
+    @extend %center-align;
+    margin: 0;
+    img {
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        max-width: 240px;
+        margin-top: 32px;
+      }
+      @media (min-width: $brkpoint-md){
+        max-width: 320px;
+      }
+    }
+  }
+  h3 + p, h3 + ul {
+    margin-top: 0;
+  }
+  @media print {
+    $new-base-fs: 12px;
+    p {
+      font-size: $new-base-fs;
+    }
+    h1 {
+      font-size: $new-base-fs*2;
+    }
+    h2 {
+      font-size: $new-base-fs*1.75;
+    }
+    h3 {
+      font-size: $new-base-fs*1.25;
+    }
+    > .panel {
+      border: 0!important;
+      .panel__bottom {
+        display: none;
+      }
+    }
+  }
+}
+
+.sig__container {
+  @include radius;
+  background-color: $component-border-color-light;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  .sigNav {
+    @extend .list-style-type-none;
+    text-align: right;
+    margin: 0;
+    .clearButton {
+      @extend .inline-block;
+      padding: $base-h-padding+px;
+      a {
+        color: $component-icon-color;
+      }
+    }
+  }
+}
+
+@page {
+  margin-top: .5in;
+  margin-left: 1in;
+  margin-bottom: 1in;
+  margin-right: 1in;
+}

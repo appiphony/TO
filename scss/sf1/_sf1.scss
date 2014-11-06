@@ -1,0 +1,205 @@
+// Variables
+
+$nav-bar--sf1-height: 48px;
+$sf1-base-h: 12;
+$sf1-base-v: 4;
+
+// Nav-bar
+
+.nav-bar--sf1 {
+  @extend %clearfix;
+  background: $white;
+  padding: 0 $sf1-base-h+px;
+  margin-bottom: $sf1-base-h+px;
+  min-height: $nav-bar--sf1-height;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: $component-border-color-alt;
+  &.menu--open {
+    @include radius-bottom();
+  }
+  .dropdown-menu {
+    @include erase-radius-top();
+    margin: 0;
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      width: 100%;
+      position: relative;
+      border-left: 0;
+      border-right: 0;
+      @include erase-radius();
+    }
+  }
+  // The part that never hides
+  &__top {
+    @extend %clearfix;
+    padding: $sf1-base-h+px 0;
+    height: $nav-bar--sf1-height;
+    @media (min-width: $brkpoint-md+1) {
+      float: left;
+    }
+  }
+  // Title
+  &__title {
+    @extend .inline-block;
+    line-height: $nav-bar--sf1-height;
+    font-size: $h3-font-size;
+    vertical-align: middle;
+  }
+  // A list of items
+  &__list {
+    @extend .list-style-type-none;
+    margin: 0;
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      display: none;
+      margin-left: -($sf1-base-h+px);
+      margin-right: -($sf1-base-h+px);
+      .menu--open & {
+        display: block;
+      }
+    }
+    &--right {
+      @extend .nav-bar--sf1__list;
+      @media (min-width: $brkpoint-md+1) {
+        float: right;
+      }
+    }
+    &--left {
+      @extend .nav-bar--sf1__list;
+      @media (min-width: $brkpoint-md+1) {
+        float: left;
+      }
+    }
+    &--item {
+      margin: 0;
+      @extend .relative;
+      @media (min-width: $brkpoint-md+1) {
+        float: left;
+      }
+      a {
+        @extend .block;
+        @extend .pointer;
+        color: $black;
+        padding: $sf1-base-h+px;
+        > .juicon {
+          @extend %icon-before-fix;
+        }
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+          background-color: $grey-xx-light;
+        }
+        &.button {
+          @include erase-radius();
+          background: transparent;
+          border: 0;
+          color: inherit;
+        }
+      }
+      &:hover {
+        a {
+          @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+            background-color: $grey-xx-light;
+            color: $grey;
+          }
+        }
+      }
+      &.active, &:hover.active {
+        a {
+          background-color: $component-border-color-alt;
+          color: $black;
+        }
+      }
+      &:last-child {
+        a {
+          @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+            @include radius-bottom();
+          }
+        }
+      }
+    }
+  }
+  &__appendage {
+    @extend %clearfix;
+    clear: both;
+    display: none;
+    &--inner {
+      @include radius-bottom();
+      padding-top: $sf1-base-h+px;
+      background-color: $component-border-color-light;
+    }
+    .appendage--open & {
+      @extend .block;
+    }
+  }
+  // Meant for use other than (stuck to) the top of the page
+  &__menu-toggle {
+    @extend .pointer;
+    @extend .float--right;
+    @include radius-right();
+    display: none;
+    font-size: $key-number*2+px;
+    height: $sf1-base-h*3.5+px;
+    margin-right: -($sf1-base-h+px);
+    padding: $sf1-base-v+px $sf1-base-h+px;
+    .menu--open & {
+      @include erase-radius-bottom();
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        @include erase-radius();
+      }
+    }
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      display: block;
+    }
+  }
+  .content {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      padding: 0;
+    }
+  }
+}
+
+.appendage--open {
+  .nav-bar--sf1__appendage {
+    @extend .block;
+  }
+}
+
+.menu--open {
+  .nav-bar--sf1__menu-toggle {
+    @include erase-radius-bottom();
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @include erase-radius();
+    }
+  }
+}
+
+.menu--open {
+  .nav-bar--sf1__list {
+    display: block;
+  }
+}
+
+// sections
+
+.section__title {
+  background-color: $white;
+  border-width: 1px 0 1px 0;
+  border-style:  solid;
+  border-color: $component-border-color-alt;
+  font-size: 75%;
+  text-transform: uppercase;
+  padding: $sf1-base-h/2+px $sf1-base-h+px;
+  margin-top: -1px;
+}
+
+.content__section {
+  @extend %clearfix;
+  padding: $sf1-base-h+px;
+  border-bottom: 1px solid $component-border-color;
+}
+
+// sf1 scope
+
+.sf1-scope {
+  .content, .content--full {
+    padding: 0 $sf1-base-h+px;
+  }
+}

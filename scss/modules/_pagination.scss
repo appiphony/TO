@@ -1,0 +1,83 @@
+.pagination {
+  @extend .inline;
+  @extend .list-style-type-none;
+  @extend %clearfix;
+  margin: 0;
+  &__item {
+    @extend .inline;
+    a {
+      @extend .float--left;
+      @extend .relative;
+      @extend %center-align;
+      @include spacing(padding, ($base-v-padding - 1));
+      @include border;
+      @include single-transition(background-color);
+      margin-left: -1px;
+      background-color: #fff;
+      min-width: 3rem;
+      &:hover {
+        background-color: $component-bg-color-active;
+      }
+      > .juicon {
+        @extend %icon-before-fix;
+      }
+    }
+    &:first-child {
+      a {
+        @include radius-left;
+      }
+    }
+    &:last-child {
+      a {
+        @include radius-right;
+      }
+    }
+    &.active {
+      a {
+        background-color: $color-primary;
+        border-top-color: $color-primary;
+        border-bottom-color: $color-primary;
+        color: #fff;
+      }
+    }
+    &.disabled {
+      a, a:hover, a:focus {
+        opacity: .4;
+        background-color: $white;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.pagination--alt {
+  @extend .pagination;
+  display: inline-block;
+  .pagination__item {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: -($base-v-padding/4+px);
+    ~ .pagination__item {
+      margin-left: -($base-v-padding/4+px);
+    }
+  }
+  .select-wrap {
+    @include erase-radius();
+    @extend .inline-block;
+    min-width: 40px;
+    margin-left: -1px;
+    border-right: 0;
+  }
+  > span {
+    @include show-brkpoints(inline-block);
+    margin-left: -($base-v-padding/4+px);
+    .pagination__item {
+      a {
+        @include erase-radius();
+      }
+    }
+  }
+  .pagination__select {
+    @include show-brkpoints(inline-block);
+  }
+}

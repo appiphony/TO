@@ -1,0 +1,319 @@
+// ==========================================================================
+// Helpers (Utilities)
+// ==========================================================================
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
+// Screen reader text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Alignment
+
+%center-align {
+  text-align: center;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+// For pseudo-elements
+
+%pseudos {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+// Center elements
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Float elements
+
+.float--left {
+  float: left;
+}
+
+.float--right {
+  float: right;
+}
+
+.float--right-left {
+  @media (min-width: $brkpoint-md+1) {
+    float: right;
+  }
+}
+
+// Cursors
+
+.pointer {
+  cursor: pointer;
+}
+
+// Positioning
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: absolute;
+}
+
+// Text
+
+%underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  @extend %center-align;
+}
+
+.text-underline {
+  @extend %underline;
+}
+
+.text-left {
+  text-align: left
+}
+
+.text-right-left {
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    text-align: left;
+  }
+  @media (min-width: $brkpoint-md+1) {
+    text-align: right;
+  }
+}
+
+.text-center-left {
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    text-align: left;
+  }
+  @media (min-width: $brkpoint-md+1) {
+    text-align: center;
+  }
+}
+
+%line-height {
+  line-height: ($base-line/$base-font-size);
+}
+
+.text-faded {
+  color: $grey;
+}
+
+.fsl {
+  font-size: $base-font-size * 2 +px;
+}
+
+// Outline
+
+%no-outline {
+  outline: none;
+}
+
+// overflow/wrapping
+
+.dots {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%overflow-scroll-mobile {
+  overflow:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+%overflow-hidden {
+  overflow: hidden;
+}
+
+// lists
+
+.list-style-type-none {
+  list-style-type: none;
+  padding: 0;
+}
+
+// Display
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  &-focusable {
+    &:active, &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+    }
+  }
+}
+
+.show-brkpoint--sm {
+  @media (min-width: $brkpoint-sm) {
+    display: block;
+  }
+  &--only {
+    display: none;
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      display: block;
+    }
+  }
+}
+.show-brkpoint--md {
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    display: none;
+  }
+  @media (min-width: $brkpoint-md) {
+    display: block;
+  }
+  &--only {
+    display: none;
+    @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg) {
+      display: block;
+    }
+  }
+}
+
+
+.show-brkpoint--lg {
+  @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg) {
+    display: none;
+  }
+  @media (min-width: $brkpoint-lg) {
+    display: block;
+  }
+  &--only {
+    display: none;
+    @media (min-width: $brkpoint-lg) {
+      display: block;
+    }
+  }
+}
+
+.hide {
+  display: none;
+  &-brkpoint {
+    &--sm {
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        display: none;
+      }
+    }
+    &--md {
+      @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg) {
+        display: none;
+      }
+    }
+    &--lg {
+      @media (min-width: $brkpoint-lg) {
+        display: none;
+      }
+    }
+  }
+}
+
+.width--full {
+  width: 100%;
+}
+
+// bg
+
+.bg-1 {
+  background-color: $white!important;
+}
+
+.bg-2 {
+  background-color: $bg-2!important;
+}
+
+// text color
+
+.text-primary {
+  color: $color-primary;
+}
+
+.fill-primary {
+  fill: $color-primary;
+}
+
+//rotate
+
+@-webkit-keyframes spin-it {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.spin-it {
+  -webkit-animation: spin-it 1s linear infinite;
+}
+
+
+
+

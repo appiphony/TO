@@ -1,0 +1,158 @@
+.panel {
+  @extend %clearfix;
+  @include radius();
+  background: $white;
+  border: 1px solid $component-border-color;
+  &__top, &__bottom, &__component, &__body {
+    @extend %clearfix;
+    padding: ($base-h-padding + px);
+  }
+  &__section {
+    padding: ($base-v-padding+px) ($base-h-padding + px);
+    border-bottom: 1px solid $component-border-color-alt;
+  }
+  &__top {
+    border-bottom: 1px solid $component-border-color-alt;
+    .button {
+      &--small {
+        margin-top: $base-v-padding/2+px;
+      }
+    }
+    .form__group {
+      margin-bottom: 0;
+    }
+    @media (min-width: $brkpoint-md+1) {
+      height: ($key-number*4.5+1)+px;
+    }
+  }
+  &__bottom {
+    @extend %clearfix;
+    @extend .float--left;
+    @extend .width--full;
+    border-top: 1px solid $component-border-color-alt;
+  }
+  &__heading {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    @include spacing(margin, $base-v-padding, 0);
+    &.has-subheading {
+      margin: 0;
+    }
+    @media (min-width: $brkpoint-md+1) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__subheading {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
+    color: $grey;
+    @extend .dots;
+  }
+  &__component {
+    @extend %clearfix;
+    @extend .float--left;
+    @extend .width--full;
+    @include border($w-bottom: 0, $w-left: 0, $w-right: 0);
+    @extend .relative;
+    &--removable {
+      padding-right: 4rem;
+    }
+    &:first-child, &:first-of-type, &:nth-of-type(1) {
+      border-top: 0;
+    }
+    .form__group {
+      margin-bottom: 0;
+      @media (min-width: 1px) and (max-width: $brkpoint-md) {
+        margin-bottom: $base-h-padding+px;
+      }
+    }
+    > .close {
+      @extend .absolute;
+      top: 1.5rem;
+      right: 1rem;
+      .component-remove-x {
+        @extend .juicon;
+        @extend .juicon-x;
+        @include single-transition(color);
+        color: $component-icon-color;
+        padding: $base-v-padding+px;
+
+      }
+      &:hover {
+        .component-remove-x {
+          color: $color-error;
+        }
+      }
+    }
+  }
+  // Stuff created for sidebar purposes
+  $sidebar-width: 300px;
+  &__box {
+    @extend %clearfix;
+    @extend .relative;
+    @extend %overflow-hidden;
+    background-color: lighten($grey-xx-light, 2%);
+
+    @include radius-bottom();
+  }
+
+  &__sidebar {
+    @extend .relative;
+    @extend %overflow-scroll-mobile;
+    width: $sidebar-width;
+    height: 100%;
+    border-bottom: 1px solid $component-border-color-alt;
+    &__list-group {
+      @extend .list-group;
+      .list-group__item {
+        @include erase-radius();
+      }
+    }
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      width: 100%;
+      padding: 0;
+    }
+    @media (min-width: $brkpoint-md+1) {
+      float: left;
+      border-right: 1px solid $component-border-color-alt;
+      min-height: 1px;
+      padding: 0;
+      margin-bottom: -1px;
+    }
+  }
+  &.has-sidebar {
+    .panel__section, .panel__content {
+      @media (min-width: $brkpoint-md+1) {
+        margin-left: $sidebar-width - 1;
+      }
+    }
+  }
+  &__content {
+    @extend %clearfix;
+    background: $white;
+    > table {
+      tr:last-of-type {
+        td:first-child {
+          @include vendor-prefix(border-bottom-left-radius, $br-default);
+        }
+        td:last-child {
+          @include vendor-prefix(border-bottom-right-radius, $br-default);
+        }
+      }
+    }
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @include radius-bottom;
+    }
+    @media (min-width: $brkpoint-md+1) {
+      @include vendor-prefix(border-bottom-right-radius, $br-default);
+      border-left: 1px solid $component-border-color-alt;
+      min-height: $key-number*20+px;
+    }
+
+  }
+}
+
+

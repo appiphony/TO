@@ -1,0 +1,13 @@
+.button, button {
+  &.button--action {
+    @extend .fixed;
+    @include square($key-number*4);
+    font-size: 150%;
+    bottom: $base-h-padding+px;
+    padding: $base-h-padding+px;
+    right: $base-h-padding+px;
+    .juicon {
+      display: inline-block;
+    }
+  }
+}
