@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e459a301-6e5a-4bec-a955-a211592eddf0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/216515fa292a2dab19c7de1a43d9247f4f42e10b/_base.scssc" afterPath="$PROJECT_DIR$/.sass-cache/216515fa292a2dab19c7de1a43d9247f4f42e10b/_base.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_button-dropdowns.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_button-dropdowns.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/214149a9580444a18948bf05a191141ca771dfef/_helpers.scssc" afterPath="$PROJECT_DIR$/.sass-cache/214149a9580444a18948bf05a191141ca771dfef/_helpers.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/214149a9580444a18948bf05a191141ca771dfef/_mixins.scssc" afterPath="$PROJECT_DIR$/.sass-cache/214149a9580444a18948bf05a191141ca771dfef/_mixins.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_panels.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_panels.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_select2.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_select2.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/1183b19dc76e3bc26659d609698b9b50246c8421/_to.scssc" afterPath="$PROJECT_DIR$/.sass-cache/1183b19dc76e3bc26659d609698b9b50246c8421/_to.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/base/_base.scss" afterPath="$PROJECT_DIR$/scss/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_button-dropdowns.scss" afterPath="$PROJECT_DIR$/scss/modules/_button-dropdowns.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/utilities/_helpers.scss" afterPath="$PROJECT_DIR$/scss/utilities/_helpers.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/utilities/_mixins.scss" afterPath="$PROJECT_DIR$/scss/utilities/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_panels.scss" afterPath="$PROJECT_DIR$/scss/modules/_panels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_select2.scss" afterPath="$PROJECT_DIR$/scss/modules/_select2.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/to/_to.scss" afterPath="$PROJECT_DIR$/scss/to/_to.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/docs.css.map" afterPath="$PROJECT_DIR$/css/docs.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/docs.css" afterPath="$PROJECT_DIR$/css/docs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html" afterPath="$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-scoped.css.map" afterPath="$PROJECT_DIR$/css/styles-scoped.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-scoped.css" afterPath="$PROJECT_DIR$/css/styles-scoped.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css.map" afterPath="$PROJECT_DIR$/css/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="_TO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +33,8 @@
           <file leaf-file-name="prototype__job-post--monster.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.38" vertical-offset="5501" max-vertical-offset="8265">
-                  <caret line="378" column="22" selection-start-line="378" selection-start-column="22" selection-end-line="378" selection-end-column="22" />
+                <state vertical-scroll-proportion="-9.08" vertical-offset="7676" max-vertical-offset="8295">
+                  <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -64,11 +42,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="prototype__job-post--monster--RO.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="prototype__job-post--monster--RO.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="7725">
-                  <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+                <state vertical-scroll-proportion="0.53311795" vertical-offset="0" max-vertical-offset="7755">
+                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -84,11 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_to.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_to.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scss/to/_to.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.093023255" vertical-offset="1230" max-vertical-offset="2085">
-                  <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="132" selection-end-column="1" />
+                <state vertical-scroll-proportion="-5.625" vertical-offset="1230" max-vertical-offset="2085">
+                  <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -97,8 +75,8 @@
           <file leaf-file-name="prototype__offer-letter--v2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="3150">
-                  <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+                <state vertical-scroll-proportion="-20.0" vertical-offset="2505" max-vertical-offset="3150">
+                  <caret line="199" column="9" selection-start-line="161" selection-start-column="0" selection-end-line="199" selection-end-column="9" />
                   <folding>
                     <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -149,7 +127,7 @@
           <file leaf-file-name="prototype__requisition-create--mobile--v2.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-20.625" vertical-offset="1335" max-vertical-offset="1980">
+                <state vertical-scroll-proportion="-76.25" vertical-offset="0" max-vertical-offset="1980">
                   <caret line="122" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="122" selection-end-column="7" />
                   <folding />
                 </state>
@@ -203,8 +181,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58045113" vertical-offset="7354" max-vertical-offset="16080">
-                  <caret line="516" column="20" selection-start-line="516" selection-start-column="20" selection-end-line="516" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.35488722" vertical-offset="7354" max-vertical-offset="16080">
+                  <caret line="506" column="43" selection-start-line="506" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -264,10 +242,10 @@
         <option value="$PROJECT_DIR$/scss/utilities/_mixins.scss" />
         <option value="$PROJECT_DIR$/scss/modules/_select2.scss" />
         <option value="$PROJECT_DIR$/scss/base/_base.scss" />
-        <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
         <option value="$PROJECT_DIR$/scss/modules/_button-dropdowns.scss" />
         <option value="$PROJECT_DIR$/scss/to/_to.scss" />
         <option value="$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html" />
+        <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
         <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" />
       </list>
     </option>
@@ -610,16 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.38" vertical-offset="5501" max-vertical-offset="8265">
-          <caret line="378" column="22" selection-start-line="378" selection-start-column="22" selection-end-line="378" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/modules/_button-dropdowns.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.1410257" vertical-offset="211" max-vertical-offset="1080">
@@ -636,44 +604,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/to/_to.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625" vertical-offset="1230" max-vertical-offset="2085">
+          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.625" vertical-offset="1335" max-vertical-offset="1980">
+        <state vertical-scroll-proportion="-76.25" vertical-offset="0" max-vertical-offset="1980">
           <caret line="122" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="122" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35488722" vertical-offset="7354" max-vertical-offset="16080">
+          <caret line="506" column="43" selection-start-line="506" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.25" vertical-offset="0" max-vertical-offset="3150">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state vertical-scroll-proportion="-20.0" vertical-offset="2505" max-vertical-offset="3150">
+          <caret line="199" column="9" selection-start-line="161" selection-start-column="0" selection-end-line="199" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58045113" vertical-offset="7354" max-vertical-offset="16080">
-          <caret line="516" column="20" selection-start-line="516" selection-start-column="20" selection-end-line="516" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="-9.08" vertical-offset="7676" max-vertical-offset="8295">
+          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="7725">
-          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/to/_to.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.093023255" vertical-offset="1230" max-vertical-offset="2085">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="132" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.53311795" vertical-offset="0" max-vertical-offset="7755">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>

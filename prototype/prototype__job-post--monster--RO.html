@@ -8,13 +8,18 @@
 <body class="">
 <div class="scope-container">
     <div class="content pad--md--tm pad--md--bl">
+        <div id="posted" class="alert alert--success mar--sm--bm hide dont-print">
+            <button type="button" class="close" data-dismiss="alert"><span class="alert-close-x"></span><span class="sr-only">Close</span></button>
+            <strong>You posted this job to Monster.</strong>
+
+        </div>
         <div class="row">
             <div class="column--md--6">
                 <h1 class="page__heading">New Job Posting</h1>
             </div>
             <div class="column--md--6 text-right-left dont-print">
                 <button type="button" class="button button--secondary"><span class="juicon juicon-pencil"></span> Edit</button>
-                <button type="button" class="button button--secondary"><span class="juicon juicon-share"></span> Post</button>
+                <button id="post-this" type="button" class="button button--secondary"><span class="juicon juicon-share"></span> Post</button>
             </div>
         </div>
         <hr/>
@@ -497,11 +502,8 @@
 
     $(document).ready(function() {
 
-        $("#occupation").select2({
-            placeholder: "Select occupations"
-        });
-        $("#industry").select2({
-            placeholder: "Select industries"
+        $("#post-this").click(function(){
+            $('#posted').removeClass("hide");
         });
     });
 </script>
