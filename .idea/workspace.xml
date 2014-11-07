@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e459a301-6e5a-4bec-a955-a211592eddf0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sf1/js/sf1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/smooth-sig/js/bezier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/smooth-sig/js/flashcanvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/smooth-sig/js/jquery.signaturepad-mod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/smooth-sig/js/json2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/smooth-sig/js/numeric-1.2.6.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_errors.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_errors.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_extends.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_extends.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_forms.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_forms.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_pagination.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_pagination.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_select2.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_select2.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_selects.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f471a0ff40b43b4688f16abf3602a8a55b7a1468/_selects.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_errors.scss" afterPath="$PROJECT_DIR$/scss/modules/_errors.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_extends.scss" afterPath="$PROJECT_DIR$/scss/modules/_extends.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_forms.scss" afterPath="$PROJECT_DIR$/scss/modules/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_pagination.scss" afterPath="$PROJECT_DIR$/scss/modules/_pagination.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_select2.scss" afterPath="$PROJECT_DIR$/scss/modules/_select2.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_selects.scss" afterPath="$PROJECT_DIR$/scss/modules/_selects.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/docs.css.map" afterPath="$PROJECT_DIR$/css/docs.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/docs.css" afterPath="$PROJECT_DIR$/css/docs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__offer-letter-email.html" afterPath="$PROJECT_DIR$/prototype/prototype__offer-letter-email.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-scoped.css.map" afterPath="$PROJECT_DIR$/css/styles-scoped.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles-scoped.css" afterPath="$PROJECT_DIR$/css/styles-scoped.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css.map" afterPath="$PROJECT_DIR$/css/styles.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template__add-conditions.html" afterPath="$PROJECT_DIR$/template__add-conditions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template__panel-table.html" afterPath="$PROJECT_DIR$/template__panel-table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template__sidebar.html" afterPath="$PROJECT_DIR$/template__sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="_TO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +33,8 @@
           <file leaf-file-name="prototype__job-post--monster.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.32330826" vertical-offset="970" max-vertical-offset="2895">
-                  <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+                <state vertical-scroll-proportion="0.7409733" vertical-offset="2288" max-vertical-offset="3000">
+                  <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -135,12 +106,36 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.28721803" vertical-offset="7819" max-vertical-offset="16080">
-                  <caret line="534" column="14" selection-start-line="534" selection-start-column="14" selection-end-line="534" selection-end-column="14" />
+                <state vertical-scroll-proportion="-8.32" vertical-offset="7819" max-vertical-offset="16080">
+                  <caret line="549" column="23" selection-start-line="549" selection-start-column="23" selection-end-line="549" selection-end-column="23" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="prototype__offer-letter-email.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter-email.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.7163531" vertical-offset="60" max-vertical-offset="1200">
+                  <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+                  <folding>
+                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#1;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -163,7 +158,6 @@
         <option value="$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html" />
         <option value="$PROJECT_DIR$/scss/sf1/_sf1.scss" />
         <option value="$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v3.html" />
-        <option value="$PROJECT_DIR$/prototype/prototype__offer-letter-email.html" />
         <option value="$PROJECT_DIR$/scss/modules/_extends.scss" />
         <option value="$PROJECT_DIR$/scss/modules/_forms.scss" />
         <option value="$PROJECT_DIR$/scss/modules/_selects.scss" />
@@ -172,6 +166,7 @@
         <option value="$PROJECT_DIR$/scss/modules/_select2.scss" />
         <option value="$PROJECT_DIR$/js/jui.js" />
         <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
+        <option value="$PROJECT_DIR$/prototype/prototype__offer-letter-email.html" />
       </list>
     </option>
   </component>
@@ -416,29 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter-email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#5;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/modules/_forms.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.041667" vertical-offset="2429" max-vertical-offset="3135">
@@ -482,14 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28721803" vertical-offset="7819" max-vertical-offset="16080">
-          <caret line="534" column="14" selection-start-line="534" selection-start-column="14" selection-end-line="534" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.807693" vertical-offset="21731" max-vertical-offset="22710">
@@ -508,10 +472,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32330826" vertical-offset="970" max-vertical-offset="2895">
-          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.7409733" vertical-offset="2288" max-vertical-offset="3000">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.32" vertical-offset="7819" max-vertical-offset="16080">
+          <caret line="549" column="23" selection-start-line="549" selection-start-column="23" selection-end-line="549" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter-email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7163531" vertical-offset="60" max-vertical-offset="1200">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#4;n#table#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#td#0;n#tr#0;n#table#1;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
