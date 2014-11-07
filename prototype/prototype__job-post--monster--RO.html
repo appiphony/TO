@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prototype | Job Post -- Monster</title>
+    <title>Prototype | Job Post -- Monster -- Read Only</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="../css/styles-scoped.css">
 </head>
@@ -12,9 +12,9 @@
             <div class="column--md--6">
                 <h1 class="page__heading">New Job Posting</h1>
             </div>
-            <div class="column--md--6 text-right-left">
-                <button type="button" class="button button--secondary">Cancel</button>
-                <button type="button" class="button button--primary">Save</button>
+            <div class="column--md--6 text-right-left dont-print">
+                <button type="button" class="button button--secondary"><span class="juicon juicon-pencil"></span> Edit</button>
+                <button type="button" class="button button--secondary"><span class="juicon juicon-share"></span> Post</button>
             </div>
         </div>
         <hr/>
@@ -30,13 +30,8 @@
             <div class="column--md--6">
                 <div class="form__group">
                     <label for="type">Type</label>
-                    <div class="select__wrap">
-                        <div class="input__icon juicon juicon-down"></div>
-                        <select name="type" id="type">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                        </select>
+                    <div name="type" id="type" class="input-size">
+                        Job Board
                     </div>
                 </div>
             </div>
@@ -51,13 +46,8 @@
             <div class="column--md--6">
                 <div class="form__group">
                     <label for="channel">Channel</label>
-                    <div class="select__wrap">
-                        <div class="input__icon juicon juicon-down"></div>
-                        <select name="channel" id="channel">
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Option 3</option>
-                        </select>
+                    <div name="channel" id="channel" class="input-size">
+                        Monster
                     </div>
                 </div>
             </div>
@@ -69,109 +59,95 @@
             <div class="panel__body">
                 <div class="form__group">
                     <label for="jobTitleInput">Job Title</label>
-                    <input type="text" name="jobTitleInput" id="jobTitleInput" placeholder="Enter a job title" value="Sales Representative"/>
-                    <small class="input-error-content">Error Content</small>
+                    <div name="jobTitleInput" id="jobTitleInput" class="input-size">
+                        Sales Representative
+                    </div>
                 </div>
                 <div class="form__group">
                     <label for="jobBody">Job Body</label>
-                    <textarea name="jobBody" placeholder="Enter a job body" id="jobBody"></textarea>
-                    <small class="input-error-content">Error Content</small>
+                    <div name="jobBody" id="jobBody" class="input-size">
+                        <p class="mar--sm--tn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum, ante eget commodo pharetra, ligula neque dictum tellus, at mollis ante nisl ut odio.</p>
+                        <ul>
+                            <li>Vestibulum vitae nunc eget turpis lobortis pretium pharetra et tortor.</li>
+                            <li>Maecenas consectetur velit at justo pellentesque, id mollis dolor consequat.</li>
+                            <li>Sed lobortis nisi at vestibulum commodo.</li>
+                            <li>Aliquam quis ante sit amet orci imperdiet sagittis.</li>
+                            <li>Aenean id quam maximus, dapibus justo accumsan, suscipit mi.</li>
+                        </ul>
+                        <p>
+                            Mauris tellus justo, cursus malesuada nisl sit amet, rutrum porttitor lorem. Sed volutpat, risus sit amet molestie convallis, ipsum enim consequat lacus, quis fermentum nibh est nec lectus. Praesent metus sapien, blandit a luctus a, blandit vulputate lectus.
+                        </p>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="jobType">Type</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="jobType" id="jobType">
-                                    <option>Employee</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="jobType" id="jobType" class="input-size">
+                                Employee
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="time">Full/Part Time</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="time" id="time">
-                                    <option>Full Time</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="time" id="time" class="input-size">
+                                Full Time
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="level">Level</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="level" id="level">
-                                    <option>Experienced</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="level" id="level" class="input-size">
+                                Experienced
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="education">Education Level</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="education" id="education">
-                                    <option>Bachelor's Degree</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="education" id="education" class="input-size">
+                                Bachelor's Degree
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="salMin">Salary Minimum</label>
-                            <input type="text" name="salMin" id="salMin" placeholder="Enter min salary" value="$60,000"/>
+                            <div name="salMin" id="salMin" class="input-size">
+                                $60,000
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="salMax">Salary Maximum</label>
-                            <input type="text" name="salMax" id="salMax" placeholder="Enter max salary" value="$70,000"/>
+                            <div name="salMax" id="salMax" class="input-size">
+                                $70,000
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <form>
                             <div class="form__group mar--sm--bs">
                                 <label for="address">Address</label>
-                                <textarea name="address" placeholder="Street" id="address"></textarea>
-                                <small class="input-error-content">Error Content</small>
-                            </div>
-                            <div class="form__group mar--sm--bs">
-                                <label for="city" class="sr-only">City</label>
-                                <input type="text" name="city" id="city" placeholder="City" value=""/>
-                            </div>
-                            <div class="form__group mar--sm--bs">
-                                <label for="state" class="sr-only">State</label>
-                                <input type="text" name="state" id="state" placeholder="State" value=""/>
-                            </div>
-                            <div class="form__group mar--sm--bs">
-                                <label for="zip" class="sr-only">Zip</label>
-                                <input type="text" name="zip" id="zip" placeholder="Zip" value=""/>
-                            </div>
-                            <div class="form__group mar--sm--bn">
-                                <label for="country" class="sr-only">Country</label>
-                                <input type="text" name="country" id="country" placeholder="Country" value=""/>
+                                <div name="address" id="address" class="input-size">
+                                    1811 W North Ave. Suite 402
+                                    <br/>
+                                    Chicago, IL 60622
+                                    <br/>
+                                    United States
+                                </div>
                             </div>
                         </form>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bn mar--sm--only--ts">
                             <label for="keywords">Additional Search Keywords</label>
-                            <textarea name="keywords" placeholder="Comma separate keywords" id="keywords" style="height:288px"></textarea>
-                            <small class="input-error-content">Error Content</small>
+                            <div name="keywords" id="keywords" class="input-size">
+                                Mauris tellus, justo cursus, malesuada, nisl sit amet
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,15 +162,16 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="duration">Desired Duration</label>
-                            <input type="tel" name="duration" id="duration" placeholder="Number of days" value=""/>
-                            <small class="input-error-content">Error Content</small>
+                            <div name="duration" id="duration" class="input-size">
+                                14 days
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="bold">Bold</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="bold" value="bold" id="bold"/>
+                            <div name="bold" id="bold" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
@@ -205,21 +182,16 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="autoRefresh">Auto Refresh</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="autoRefresh" id="autoRefresh" value="autoRefresh"/>
+                            <div name="autoRefresh" id="autoRefresh" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="refreshDays">Number of Days</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="refreshDays" id="refreshDays">
-                                    <option>14</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="refreshDays" id="refreshDays" class="input-size">
+                                14
                             </div>
                         </div>
                     </div>
@@ -230,21 +202,16 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="careerAdNetwork">Career Ad Network</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="careerAdNetwork" id="careerAdNetwork" value="careerAdNetwork"/>
+                            <div name="careerAdNetwork" id="careerAdNetwork" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="adNetworkDays">Number of Days</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="adNetworkDays" id="adNetworkDays">
-                                    <option>7</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="adNetworkDays" id="adNetworkDays" class="input-size">
+                                7
                             </div>
                         </div>
                     </div>
@@ -255,26 +222,16 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="continent">Continent</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="continent" id="continent">
-                                    <option>North America</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="continent" id="continent" class="input-size">
+                                North America
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="location">Location</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select name="location" id="location">
-                                    <option>Chicago, IL, US</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                            <div name="location" id="location" class="input-size">
+                                Chicago, IL, US
                             </div>
                         </div>
                     </div>
@@ -285,25 +242,17 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="category">Category</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select id="category">
-                                    <option>Sales/Biz Dev</option>
-                                    <option>Marketing</option>
-                                </select>
+                            <div name="category" id="category" class="input-size">
+                                Sales/Biz Dev
                             </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="occupation">Occupation</label>
-                            <select multiple id="occupation">
-                                <option>Field Sales</option>
-                                <option>Something else</option>
-                                <option>Something</option>
-                                <option>Some other thing that's good</option>
-                                <option>Somethin'</option>
-                            </select>
+                            <div name="occupation" id="occupation" class="input-size">
+                                Field Sales, Something else
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -313,12 +262,9 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="industry">Industry</label>
-                            <select multiple id="industry">
-                                <option>Something else</option>
-                                <option>Something</option>
-                                <option>Some other thing that's good</option>
-                                <option>Somethin'</option>
-                            </select>
+                            <div name="industry" id="industry" class="input-size">
+                                Software Development
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -328,12 +274,8 @@
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="board">Board</label>
-                            <div class="select__wrap">
-                                <div class="input__icon juicon juicon-down"></div>
-                                <select id="board">
-                                    <option>Monster</option>
-                                    <option>Marketing</option>
-                                </select>
+                            <div name="board" id="board" class="input-size">
+                                Monster
                             </div>
                         </div>
                     </div>
@@ -349,14 +291,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="contactName">Contact Name</label>
-                            <input type="text" name="contactName" id="contactName" placeholder="Enter name" value=""/>
+                            <div name="contactName" id="contactName" class="input-size">
+                                George Kenessey
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideName">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideName" value="hideName" id="hideName"/>
+                            <div name="hideName" id="hideName" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
@@ -365,15 +309,17 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="companyName">Company Name</label>
-                            <input type="text" name="companyName" id="companyName" placeholder="Enter Company" value=""/>
+                            <div name="companyName" id="companyName" class="input-size">
+                                MarvelPoint
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideCompany">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideCompany" value="hide" id="hideCompany"/>
-                            </div>
+                            <div name="hideCompany" id="hideCompany" class="input-size">
+                            <span class="juicon juicon-x"></span>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -381,14 +327,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="street1">Street Address 1</label>
-                            <input type="text" name="street1" id="street1" placeholder="Enter street address" value=""/>
+                            <div name="street1" id="street1" class="input-size">
+                                1811 W North Ave.
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideStreet1">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideStreet1" value="hide" id="hideStreet1"/>
+                            <div name="hideStreet1" id="hideStreet1" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
@@ -397,14 +345,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="street2">Street Address 2</label>
-                            <input type="text" name="street1" id="street2" placeholder="Enter street address" value=""/>
+                            <div name="street2" id="street2" class="input-size">
+                                Suite 402
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideStreet2">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideStreet2" value="hide" id="hideStreet2"/>
+                            <div name="hideStreet2" id="hideStreet2" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
@@ -413,14 +363,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="city2">City</label>
-                            <input type="text" name="city2" id="city2" placeholder="Enter city" value=""/>
+                            <div name="city2" id="city2" class="input-size">
+                                Chicago
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideCity">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideCity" value="hide" id="hideCity"/>
+                            <div name="hideCity" id="hideCity" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
@@ -429,14 +381,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="state2">State</label>
-                            <input type="text" name="state2" id="state2" placeholder="Enter state" value=""/>
+                            <div name="state2" id="state2" class="input-size">
+                                Illinois
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideState">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideState" value="hide" id="hideState"/>
+                            <div name="hideState" id="hideState" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
@@ -445,14 +399,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="postalCode">Postal Code</label>
-                            <input type="tel" name="postalCode" id="postalCode" placeholder="Enter postal code" value=""/>
+                            <div name="postalCode" id="postalCode" class="input-size">
+                                60622
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hidePostalCode">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hidePostalCode" value="hide" id="hidePostalCode"/>
+                            <div name="hidePostalCode" id="hidePostalCode" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
@@ -461,14 +417,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="country2">Country</label>
-                            <input type="text" name="contactName" id="country2" placeholder="Enter country" value=""/>
+                            <div name="country2" id="country2" class="input-size">
+                                United States
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideCountry">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideCountry" value="hide" id="hideCountry"/>
+                            <div name="hideCountry" id="hideCountry" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
@@ -477,14 +435,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="contactPhone">Contact Phone</label>
-                            <input type="tel" name="contactPhone" id="contactPhone" placeholder="Enter phone" value=""/>
+                            <div name="contactPhone" id="contactPhone" class="input-size">
+                                773-123-4567
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hidePhone">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hidePhone" value="hide" id="hidePhone"/>
+                            <div name="hidePhone" id="hidePhone" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>
@@ -493,14 +453,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="contactFax">Contact Fax</label>
-                            <input type="tel" name="contactName" id="contactFax" placeholder="Enter fax" value=""/>
+                            <div name="contactFax" id="contactFax" class="input-size">
+                                773-123-4568
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideFax">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideFax" value="hide" id="hideFax"/>
+                            <div name="hideFax" id="hideFax" class="input-size">
+                                <span class="juicon juicon-check"></span>
                             </div>
                         </div>
                     </div>
@@ -509,14 +471,16 @@
                     <div class="column--md--6">
                         <div class="form__group mar--sm--bs">
                             <label for="contactEmail">Email</label>
-                            <input type="email" name="contactEmail" id="contactEmail" placeholder="Enter email" value=""/>
+                            <div name="contactEmail" id="contactEmail" class="input-size">
+                                george@marvelpoint.com
+                            </div>
                         </div>
                     </div>
                     <div class="column--md--6">
                         <div class="form__group">
                             <label for="hideEmail">Hide</label>
-                            <div class="input-size">
-                                <input type="checkbox" name="hideEmail" value="hide" id="hideEmail"/>
+                            <div name="hideEmail" id="hideEmail" class="input-size">
+                                <span class="juicon juicon-x"></span>
                             </div>
                         </div>
                     </div>

@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="../css/styles-scoped.css">
 </head>
-<body class="bg-2">
+<body class="">
 <div class="scope-container">
 <div class="content pad--md--tm pad--md--bl pad--sm--only--n offer-letter">
+    <div id="rejected" class="alert alert--warning mar--sm--bm hide dont-print">
+        <strong>You rejected this offer.</strong>
+        <br/>
+        If you didn't mean to reject this offer, contact the sender directly.
+    </div>
+    <div id="accepted" class="alert alert--success mar--sm--bm hide dont-print">
+        <strong>You accepted this offer.</strong>
+        <br/>
+        If you didn't mean to accept this offer, contact the sender directly.
+    </div>
     <div class="panel brand__border-accent--top" style="border-top-color: #cf5c60">
         <div class="pad--sm--only--m pad--md--xxl">
             <p class="offer-letter__img-container">
@@ -46,9 +56,35 @@
                 <li>10% commission</li>
                 <li>Your employment with MarvelPoint is at-will and either party can terminate the relationship at any time with or without cause and with or without notice.</li>
             </ul>
+            <div class="only-print">
+                <h3 class="mar--sm--bn">Signatures:</h3>
+                <div class="row">
+                    <div class="column--md--6">
+                        <br/>
+                        <hr/>
+                        MarvelPoint
+                    </div>
+
+                    <div class="column--md--6">
+                        <br/>
+                        <hr/>
+                        Date
+                    </div>
+                    <div class="column--md--6">
+                        <br/>
+                        <hr/>
+                        Jimmy Boy
+                    </div>
+                    <div class="column--md--6">
+                        <br/>
+                        <hr/>
+                        Date
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="panel__bottom">
-            <button class="float--left button button--error button--ghost">Reject <span class="juicon juicon-x"></span></button>
+        <div class="panel__bottom letter-options">
+            <button class="float--left button button--error button--ghost" data-toggle="modal" data-target="#rejectModal">Reject <span class="juicon juicon-x"></span></button>
             <button class="float--right button button--success" data-toggle="modal" data-target="#signModal">Sign & Accept <span class="juicon juicon-check"></span></button>
             <!-- Sign Modal -->
             <div class="modal fade max-modal" id="signModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -77,7 +113,36 @@
                         </div>
                         <div class="modal__footer pad--sm--tn">
                             <button type="button" class="button button--error button--ghost float--left" data-dismiss="modal">Cancel <span class="juicon juicon-x"></span></button>
-                            <button type="button" class="button button--success float--right">Accept <span class="juicon juicon-check"></span></button>
+                            <button id="acceptThis" type="button" class="button button--success float--right" data-dismiss="modal">Accept <span class="juicon juicon-check"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Reject Modal -->
+            <div class="modal fade max-modal" id="rejectModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal__shell">
+                    <div class="modal__content">
+                        <div class="modal__body text-center pad--sm--txl">
+                            <h2 class="mar--sm--n">Counter offer</h2>
+                            <p class="mar--sm--tn">
+                                <small>You have the option to send a counter offer.</small>
+                            </p>
+                            <div class="form__group mar--sm--bn">
+                                <label for="counterOffer" class="sr-only">Counter Offer</label>
+                                <textarea name="counterOffer" placeholder="Type a counter offer here" id="counterOffer"></textarea>
+                                <small class="input-error-content">Error</small>
+                            </div>
+                        </div>
+                        <div class="modal__body text-center">
+                            <p class="text-faded">
+                                Jimmy Boy
+                                <br/>
+                                <small>Nov 4, 2014</small>
+                            </p>
+                        </div>
+                        <div class="modal__footer pad--sm--tn">
+                            <button type="button" class="button button--error button--ghost float--left" data-dismiss="modal">Cancel <span class="juicon juicon-x"></span></button>
+                            <button type="button" id="rejectThis" class="button button--success float--right" data-dismiss="modal">Send <span class="juicon juicon-envelope"></span></button>
                         </div>
                     </div>
                 </div>
@@ -123,8 +188,18 @@
 
         });
 
+        // hiding & showing content
+        $("#acceptThis").click(function(){
+            $('#accepted, .letter-options').toggleClass("hide");
+        });
+        $("#rejectThis").click(function(){
+            $('#rejected, .letter-options').toggleClass("hide");
+        });
+
     });
 </script>
+
+
 
 </body>
 </html>

@@ -153,6 +153,9 @@
     }
 
   }
+  .panel__top + * {
+    border-top: 0;
+  }
 }
 
 

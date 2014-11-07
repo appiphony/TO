@@ -315,7 +315,7 @@ body .scope-container #docs__grid .column--sm--1:before, body .scope-container #
 .text-underline {
   text-decoration: underline; }
 
-.text-left, body .scope-container .button.text-left, body .scope-container button.button.text-left {
+.text-left, body .scope-container .dropdown-menu, body .scope-container .button.text-left, body .scope-container button.button.text-left {
   text-align: left; }
 
 @media (min-width: 1px) and (max-width: 769px) {
@@ -391,6 +391,9 @@ body .scope-container .panel__box {
     margin: 0;
     overflow: visible;
     clip: auto; }
+
+.sr-invisible {
+  visibility: hidden; }
 
 @media (min-width: 1px) {
   .show-brkpoint--sm {
@@ -537,7 +540,7 @@ body .scope-container hr {
   margin-top: 1em;
   margin-bottom: 1em;
   border: 0;
-  border-top: 1px solid #e8eaeb; }
+  border-top: 1px solid #dadee2; }
 body .scope-container label {
   font-size: 1em;
   color: #8d9aa5; }
@@ -2338,7 +2341,7 @@ body .scope-container {
   body .scope-container .button--muted, body .scope-container button.button--muted {
     background: rgba(0, 0, 0, 0.07);
     color: #686c70; }
-  body .scope-container .button.text-left > .juicon, body .scope-container .panel__component > .close .button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.text-left > b, body .scope-container .button.text-left > .select2-search-choice-close, body .scope-container .button.text-left > .close-modal-x, body .scope-container button.button.text-left > .juicon, body .scope-container .panel__component > .close button.button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.text-left > b, body .scope-container button.button.text-left > .select2-search-choice-close, body .scope-container button.button.text-left > .close-modal-x {
+  body .scope-container .button.dropdown-menu > .juicon, body .scope-container .button.text-left > .juicon, body .scope-container .panel__component > .close .button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close .button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow .button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.text-left > b, body .scope-container .button.dropdown-menu > .select2-search-choice-close, body .scope-container .button.text-left > .select2-search-choice-close, body .scope-container .button.dropdown-menu > .close-modal-x, body .scope-container .button.text-left > .close-modal-x, body .scope-container button.button.dropdown-menu > .juicon, body .scope-container button.button.text-left > .juicon, body .scope-container .panel__component > .close button.button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close button.button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow button.button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.text-left > b, body .scope-container button.button.dropdown-menu > .select2-search-choice-close, body .scope-container button.button.text-left > .select2-search-choice-close, body .scope-container button.button.dropdown-menu > .close-modal-x, body .scope-container button.button.text-left > .close-modal-x {
     padding-top: 2px; }
   body .scope-container .button.button--action, body .scope-container button.button--action {
     width: 64px;
@@ -3145,7 +3148,7 @@ body .scope-container {
     body .scope-container .list-group--bordered {
       border-width: 1px 1px 1px 1px;
       border-style: solid;
-      border-color: #dadee2;
+      border-color: #e8eaeb;
       -webkit-border-radius: 4px ;
       -ms-border-radius: 4px ;
       -moz-border-radius: 4px ;
@@ -3419,7 +3422,7 @@ body .scope-container {
       padding: 7px 16px;
       border-width: 1px 1px 1px 1px;
       border-style: solid;
-      border-color: #dadee2;
+      border-color: #e8eaeb;
       -webkit-transition: background-color 0.2s ease;
       -moz-transition: background-color 0.2s ease;
       -o-transition: background-color 0.2s ease;
@@ -3566,7 +3569,7 @@ body .scope-container {
     body .scope-container .panel__component {
       border-width: 1px 0 0 0;
       border-style: solid;
-      border-color: #dadee2; }
+      border-color: #e8eaeb; }
       body .scope-container .panel__component--removable {
         padding-right: 4rem; }
       body .scope-container .panel__component:first-child, body .scope-container .panel__component:first-of-type, body .scope-container .panel__component:nth-of-type(1) {
@@ -3659,6 +3662,8 @@ body .scope-container {
           border-bottom-right-radius: 4px;
           border-left: 1px solid #e8eaeb;
           min-height: 320px; } }
+    body .scope-container .panel .panel__top + * {
+      border-top: 0; }
 @-webkit-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
@@ -3786,7 +3791,7 @@ body .scope-container {
     body .scope-container .slider__handle {
       border-width: 1px 1px 1px 1px;
       border-style: solid;
-      border-color: #dadee2;
+      border-color: #e8eaeb;
       -webkit-border-radius: 50% ;
       -ms-border-radius: 50% ;
       -moz-border-radius: 50% ;
@@ -4215,6 +4220,9 @@ body .scope-container {
 /*
 Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
 */
+.select2-container {
+  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .select2-container,
 .select2-drop,
 .select2-search,
@@ -4229,7 +4237,8 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   -moz-box-sizing: border-box;
   /* firefox */
   box-sizing: border-box;
-  /* css3 */ }
+  /* css3 */
+  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .select2-container .select2-choice {
   -webkit-appearance: none;
@@ -4328,7 +4337,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   top: 100%;
   background: #fff;
   color: #384047;
-  border: 1px solid #cfd0d2;
+  border: 1px solid #dadee2;
   -webkit-border-radius: 4px ;
   -ms-border-radius: 4px ;
   -moz-border-radius: 4px ;
@@ -4336,9 +4345,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
   border-radius: 4px ; }
 
 .select2-drop.select2-drop-above {
-  margin-top: 4px;
-  border-top: 1px solid #cfd0d2;
-  border-bottom: 0;
+  margin-top: -4px;
   -webkit-border-radius: 4px ;
   -ms-border-radius: 4px ;
   -moz-border-radius: 4px ;
@@ -4442,7 +4449,8 @@ html[dir="rtl"] .select2-results {
 .select2-results li {
   list-style: none;
   display: list-item;
-  background-image: none; }
+  background-image: none;
+  font-weight: 300; }
 
 .select2-results li.select2-result-with-children > .select2-result-label {
   font-weight: bold; }
@@ -4709,8 +4717,21 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 2dppx) {
   .select2-search input {
     background-position: 100% -21px !important; } }
-.select2-container-multi .select2-choices .select2-search-choice:first-child {
-  margin-left: -12px; }
+.select2-container-multi .select2-choices .select2-search-choice {
+  margin-left: -12px;
+  margin-right: 16px; }
+
+.select2-container-multi .select2-choices .select2-search-field input {
+  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0; }
+  .select2-container-multi .select2-choices .select2-search-field input:-moz-placeholder {
+    color: #686c70; }
+  .select2-container-multi .select2-choices .select2-search-field input::-moz-placeholder {
+    color: #686c70; }
+  .select2-container-multi .select2-choices .select2-search-field input:-ms-input-placeholder {
+    color: #686c70; }
+  .select2-container-multi .select2-choices .select2-search-field input::-webkit-input-placeholder {
+    color: #686c70; }
 
 @media (min-width: 1px) and (max-width: 769px) {
   body .scope-container .pad--sm--only--n > .panel {
@@ -4775,6 +4796,40 @@ body .scope-container .brand__border-accent--top {
   margin-left: 1in;
   margin-bottom: 1in;
   margin-right: 1in; }
+.only-print {
+  display: none; }
+  @media print {
+    .only-print {
+      display: block; } }
+
+@media print {
+  .dont-print {
+    display: none; } }
+
+@media print {
+  * {
+    font-size: 12px; }
+
+  small {
+    font-size: .75em; }
+
+  h1 {
+    font-size: 24px; }
+
+  h2 {
+    font-size: 21px; }
+
+  h3 {
+    font-size: 15px; }
+
+  h4 {
+    font-size: 12px; }
+
+  h5 {
+    font-size: 10.5px; }
+
+  h6 {
+    font-size: 9px; } }
 .modal-open {
   overflow: hidden; }
 

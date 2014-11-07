@@ -212,6 +212,10 @@
   }
 }
 
+.sr-invisible {
+  visibility: hidden;
+}
+
 .show-brkpoint--sm {
   @media (min-width: $brkpoint-sm) {
     display: block;

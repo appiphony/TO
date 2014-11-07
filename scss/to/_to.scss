@@ -90,3 +90,44 @@ body .scope-container {
   margin-bottom: 1in;
   margin-right: 1in;
 }
+
+.only-print {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.dont-print {
+  @media print {
+    display: none;
+  }
+}
+
+@media print {
+  $new-base-fs: 12px;
+  * {
+    font-size: $new-base-fs;
+  }
+  small {
+    font-size: .75em;
+  }
+  h1 {
+    font-size: $new-base-fs*2;
+  }
+  h2 {
+    font-size: $new-base-fs*1.75;
+  }
+  h3 {
+    font-size: $new-base-fs*1.25;
+  }
+  h4 {
+    font-size: $new-base-fs;
+  }
+  h5 {
+    font-size: $new-base-fs*.875;
+  }
+  h6 {
+    font-size: $new-base-fs*.75;
+  }
+}

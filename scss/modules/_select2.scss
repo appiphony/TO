@@ -10,6 +10,7 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   //  *display: inline;
   //  vertical-align: middle;
   @extend .select__wrap;
+  font-family: $font-family-primary;
 }
 
 .select2-container,
@@ -24,6 +25,7 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   -webkit-box-sizing: border-box; /* webkit */
   -moz-box-sizing: border-box; /* firefox */
   box-sizing: border-box; /* css3 */
+  font-family: $font-family-primary;
 }
 
 .select2-container .select2-choice {
@@ -174,7 +176,7 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
 
   background: $white;
   color: $black;
-  border: 1px solid $grey-light;
+  border: 1px solid $component-border-color;
   //  border-top: 0;
   @include radius();
 
@@ -183,9 +185,9 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
 }
 
 .select2-drop.select2-drop-above {
-  margin-top: 4px;
-  border-top: 1px solid $grey-light;
-  border-bottom: 0;
+  margin-top: -4px;
+//  border-top: 1px solid $grey-light;
+  //border-bottom: 0;
 
   @include radius();
 
@@ -418,6 +420,7 @@ html[dir="rtl"] .select2-results {
   list-style: none;
   display: list-item;
   background-image: none;
+  font-weight: $font-weight-light;
 }
 
 .select2-results li.select2-result-with-children > .select2-result-label {
@@ -753,7 +756,23 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 
 .select2-container-multi .select2-choices .select2-search-choice {
-  &:first-child {
-    margin-left: -12px;
+  margin-left: -12px;
+  margin-right: 16px;
+}
+
+.select2-container-multi .select2-choices .select2-search-field input {
+  font-family: $font-family-primary;
+  padding: 0;
+  &:-moz-placeholder {
+    color: $input-placeholder-color;
+  }
+  &::-moz-placeholder {
+    color: $input-placeholder-color;
+  }
+  &:-ms-input-placeholder {
+    color: $input-placeholder-color;
+  }
+  &::-webkit-input-placeholder {
+    color: $input-placeholder-color;
   }
 }
