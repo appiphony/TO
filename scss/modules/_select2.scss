@@ -26,7 +26,7 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   -moz-box-sizing: border-box; /* firefox */
   box-sizing: border-box; /* css3 */
   font-family: $font-family-primary;
-  font-size: $base-font-size;
+  font-size: $base-font-size+px;
 }
 
 .select2-container .select2-choice {
