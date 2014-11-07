@@ -4238,7 +4238,8 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   /* firefox */
   box-sizing: border-box;
   /* css3 */
-  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16; }
 
 .select2-container .select2-choice {
   -webkit-appearance: none;
@@ -4450,7 +4451,8 @@ html[dir="rtl"] .select2-results {
   list-style: none;
   display: list-item;
   background-image: none;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0; }
 
 .select2-results li.select2-result-with-children > .select2-result-label {
   font-weight: bold; }

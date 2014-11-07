@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e459a301-6e5a-4bec-a955-a211592eddf0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" afterPath="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/modules/_select2.scss" afterPath="$PROJECT_DIR$/scss/modules/_select2.scss" />
     </list>
     <ignored path="_TO.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +32,8 @@
           <file leaf-file-name="prototype__job-post--monster.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-9.08" vertical-offset="7676" max-vertical-offset="8295">
-                  <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+                <state vertical-scroll-proportion="-5.18" vertical-offset="7676" max-vertical-offset="8295">
+                  <caret line="529" column="36" selection-start-line="529" selection-start-column="36" selection-end-line="529" selection-end-column="36" />
                   <folding>
                     <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -42,11 +41,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="prototype__job-post--monster--RO.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="prototype__job-post--monster--RO.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.53311795" vertical-offset="0" max-vertical-offset="7755">
-                  <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+                <state vertical-scroll-proportion="94.2" vertical-offset="4860" max-vertical-offset="7755">
+                  <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
                   <folding />
                 </state>
               </provider>
@@ -124,11 +123,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="prototype__requisition-create--mobile--v2.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="prototype__requisition-create--mobile--v2.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-76.25" vertical-offset="0" max-vertical-offset="1980">
-                  <caret line="122" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="122" selection-end-column="7" />
+                <state vertical-scroll-proportion="0.36995155" vertical-offset="1361" max-vertical-offset="1980">
+                  <caret line="106" column="111" selection-start-line="106" selection-start-column="105" selection-end-line="106" selection-end-column="111" />
                   <folding />
                 </state>
               </provider>
@@ -158,11 +157,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_select2.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_select2.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scss/modules/_select2.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.02" vertical-offset="2344" max-vertical-offset="11745">
-                  <caret line="183" column="46" selection-start-line="183" selection-start-column="46" selection-end-line="183" selection-end-column="46" />
+                <state vertical-scroll-proportion="0.6315789" vertical-offset="0" max-vertical-offset="11775">
+                  <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
                   <folding />
                 </state>
               </provider>
@@ -178,11 +177,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.35488722" vertical-offset="7354" max-vertical-offset="16080">
-                  <caret line="506" column="43" selection-start-line="506" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
+                <state vertical-scroll-proportion="-6.82" vertical-offset="7354" max-vertical-offset="16080">
+                  <caret line="513" column="44" selection-start-line="513" selection-start-column="44" selection-end-line="513" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -240,13 +239,13 @@
         <option value="$PROJECT_DIR$/scss/utilities/_helpers.scss" />
         <option value="$PROJECT_DIR$/scss/modules/_panels.scss" />
         <option value="$PROJECT_DIR$/scss/utilities/_mixins.scss" />
-        <option value="$PROJECT_DIR$/scss/modules/_select2.scss" />
         <option value="$PROJECT_DIR$/scss/base/_base.scss" />
         <option value="$PROJECT_DIR$/scss/modules/_button-dropdowns.scss" />
         <option value="$PROJECT_DIR$/scss/to/_to.scss" />
         <option value="$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html" />
         <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster.html" />
         <option value="$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html" />
+        <option value="$PROJECT_DIR$/scss/modules/_select2.scss" />
       </list>
     </option>
   </component>
@@ -572,14 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/modules/_select2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.02" vertical-offset="2344" max-vertical-offset="11745">
-          <caret line="183" column="46" selection-start-line="183" selection-start-column="46" selection-end-line="183" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5" vertical-offset="450" max-vertical-offset="1140">
@@ -612,22 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-76.25" vertical-offset="0" max-vertical-offset="1980">
-          <caret line="122" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="122" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35488722" vertical-offset="7354" max-vertical-offset="16080">
-          <caret line="506" column="43" selection-start-line="506" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__offer-letter--v2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.0" vertical-offset="2505" max-vertical-offset="3150">
@@ -638,20 +613,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.82" vertical-offset="7354" max-vertical-offset="16080">
+          <caret line="513" column="44" selection-start-line="513" selection-start-column="44" selection-end-line="513" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="94.2" vertical-offset="4860" max-vertical-offset="7755">
+          <caret line="10" column="68" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.08" vertical-offset="7676" max-vertical-offset="8295">
-          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.18" vertical-offset="7676" max-vertical-offset="8295">
+          <caret line="529" column="36" selection-start-line="529" selection-start-column="36" selection-end-line="529" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/prototype/prototype__job-post--monster--RO.html">
+    <entry file="file://$PROJECT_DIR$/prototype/prototype__requisition-create--mobile--v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53311795" vertical-offset="0" max-vertical-offset="7755">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.36995155" vertical-offset="1361" max-vertical-offset="1980">
+          <caret line="106" column="111" selection-start-line="106" selection-start-column="105" selection-end-line="106" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/modules/_select2.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6315789" vertical-offset="0" max-vertical-offset="11775">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
           <folding />
         </state>
       </provider>
