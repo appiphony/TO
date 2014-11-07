@@ -3406,7 +3406,7 @@ Version: 3.5.2 Timestamp: Sat Nov  1 14:43:36 EDT 2014
   box-sizing: border-box;
   /* css3 */
   font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16; }
+  font-size: 16px; }
 
 .select2-container .select2-choice {
   -webkit-appearance: none;
