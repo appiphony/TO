@@ -61,7 +61,7 @@
       margin-left: -($base-v-padding/4+px);
     }
   }
-  .select-wrap {
+  .select__wrap {
     @include erase-radius();
     @extend .inline-block;
     min-width: 40px;

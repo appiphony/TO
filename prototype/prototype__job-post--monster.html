@@ -5,17 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="../css/styles-scoped.css">
 </head>
-<body class="bg-2">
-<div class="scope-container sf1-scope">
-    <div class="content content pad--md--tm pad--md--bl">
+<body class="">
+<div class="scope-container">
+    <div class="content pad--md--tm pad--md--bl">
         <div class="row">
             <div class="column--md--6">
                 <h1 class="page__heading">New Job Posting</h1>
             </div>
             <div class="column--md--6 text-right-left">
-                <button type="button" class="button button--primary">Save</button>
                 <button type="button" class="button button--secondary">Cancel</button>
+                <button type="button" class="button button--primary">Save</button>
             </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="column--md--6 column--lg--3">
+                <div class="form__group">
+                    <label for="req">Requisition</label>
+                    <div name="req" id="req" class="input-size">
+                        REQ-1012
+                    </div>
+                </div>
+            </div>
+            <div class="column--md--6 column--lg--3">
+                <div class="form__group">
+                    <label for="type">Type</label>
+                    <div class="select__wrap">
+                        <div class="input__icon juicon juicon-down"></div>
+                        <select name="type" id="type">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="column--md--6 column--lg--3">
+                <div class="form__group">
+                    <label for="jobTitle">Job Title</label>
+                    <div name="jobTitle" id="jobTitle" class="input-size">
+                        Sales Representative
+                    </div>
+                </div>
+            </div>
+            <div class="column--md--6 column--lg--3">
+                <div class="form__group">
+                    <label for="channel">Channel</label>
+                    <div class="select__wrap">
+                        <div class="input__icon juicon juicon-down"></div>
+                        <select name="channel" id="channel">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel__top">
+                <h2 class="panel__heading">Job Information</h2>
+            </div>
+            <div class="panel__body">
+                <div class="form__group">
+                    <label for="jobTitleInput">Job Title</label>
+                    <input type="text" name="jobTitleInput" id="jobTitleInput" placeholder="Enter a job title" value="Sales Representative"/>
+                    <small class="input-error-content">Error Content</small>
+                </div>
+                <div class="form__group">
+                    <label for="jobBody">Job Body</label>
+                    <textarea name="jobBody" placeholder="Enter a job body" id="jobBody"></textarea>
+                    <small class="input-error-content">Error Content</small>
+                </div>
+                <div class="row">
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="jobType">Type</label>
+                            <div class="select__wrap">
+                                <div class="input__icon juicon juicon-down"></div>
+                                <select name="jobType" id="jobType">
+                                    <option>Employee</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="time">Full/Part Time</label>
+                            <div class="select__wrap">
+                                <div class="input__icon juicon juicon-down"></div>
+                                <select name="time" id="time">
+                                    <option>Full Time</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="level">Level</label>
+                            <div class="select__wrap">
+                                <div class="input__icon juicon juicon-down"></div>
+                                <select name="level" id="level">
+                                    <option>Experienced</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="education">Education Level</label>
+                            <div class="select__wrap">
+                                <div class="input__icon juicon juicon-down"></div>
+                                <select name="education" id="education">
+                                    <option>Bachelor's Degree</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="salMin">Salary Minimum</label>
+                            <input type="text" name="salMin" id="salMin" placeholder="Enter min salary" value="$60,000"/>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="salMax">Salary Maximum</label>
+                            <input type="text" name="salMax" id="salMax" placeholder="Enter max salary" value="$70,000"/>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <form>
+                            <div class="form__group mar--sm--bs">
+                                <label for="address">Address</label>
+                                <textarea name="address" placeholder="Street" id="address"></textarea>
+                                <small class="input-error-content">Error Content</small>
+                            </div>
+                            <div class="form__group mar--sm--bs">
+                                <label for="city" class="sr-only">City</label>
+                                <input type="text" name="city" id="city" placeholder="City" value=""/>
+                            </div>
+                            <div class="form__group mar--sm--bs">
+                                <label for="state" class="sr-only">State</label>
+                                <input type="text" name="state" id="state" placeholder="State" value=""/>
+                            </div>
+                            <div class="form__group mar--sm--bs">
+                                <label for="zip" class="sr-only">Zip</label>
+                                <input type="text" name="zip" id="zip" placeholder="Zip" value=""/>
+                            </div>
+                            <div class="form__group mar--md--only--bs mar--md--only--bs">
+                                <label for="country" class="sr-only">Country</label>
+                                <input type="text" name="country" id="country" placeholder="Country" value=""/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column--md--6 column--lg--4 equalize-this">
+                        <div class="form__group">
+                            <label for="address">Additional Search Keywords</label>
+                            <textarea name="keywords" placeholder="Comma separate keywords" id="keywords" style="height:100%"></textarea>
+                            <small class="input-error-content">Error Content</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

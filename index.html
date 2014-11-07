@@ -544,7 +544,7 @@
 
         <div class="form__group">
             <label for="selectThing">Select a thing</label>
-            <div class="select-wrap">
+            <div class="select__wrap">
                 <div class="input__icon juicon juicon-down"></div>
                 <select class="test123" id="selectThing">
                     <option>Option 1</option>
@@ -581,8 +581,12 @@
 </section>
 <section id="docs__select2">
     <h2>Select2</h2>
-    <select id="select2">
+    <select id="select2" class="mar--sm--bm">
         <option>1</option>
+    </select>
+    <select multiple id="select2multi">
+        <option>1</option>
+        <option>2</option>
     </select>
 </section>
 <section id="docs__panels">
@@ -848,7 +852,7 @@
                             <li class="pagination__item"><a href="#">5</a></li>
                         </span>
         <li class="pagination__item pagination__select show-brkpoint--sm--only">
-            <div class="select-wrap inline-block">
+            <div class="select__wrap inline-block">
                 <div class="input__icon juicon juicon-down"></div>
                 <select class="inline-block">
                     <option>1</option>
@@ -1056,6 +1060,7 @@
         );
 
         $("#select2").select2();
+        $("#select2multi").select2();
     });
 </script>
 </body>
