@@ -1256,8 +1256,7 @@ label {
     opacity: .4; }
     .alert-close-x:after {
       font-family: 'juicons';
-      vertical-align: middle;
-      line-height: 1; }
+      vertical-align: middle; }
   .alert .close {
     right: 18px;
     top: 0;

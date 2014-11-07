@@ -441,7 +441,7 @@ body .scope-container .panel__box {
 .bg-1 {
   background-color: #fff !important; }
 
-.bg-2, .bodyDiv .scope-container {
+.bg-2 {
   background-color: #f0f1f2 !important; }
 
 .text-primary {
@@ -1932,8 +1932,7 @@ body .scope-container {
       opacity: .4; }
       body .scope-container .alert-close-x:after {
         font-family: 'juicons';
-        vertical-align: middle;
-        line-height: 1; }
+        vertical-align: middle; }
     body .scope-container .alert .close {
       right: 18px;
       top: 0;
