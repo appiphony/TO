@@ -13,32 +13,37 @@
             <button class="float--right button button--muted button--small mar--sm--ts">Save</button>
             <span class="nav-bar--sf1__title">New Requisition</span>
         </nav>
-        <div class="section__title mar--sm--bs ">
+        <div class="section__title mar--sm--bn">
             Key Information
         </div>
-        <div id="selectPos__container">
-            <div class="content--full">
-                <div class="form__group mar--sm--bs">
-                    <label for="selectPos">Select Existing Position</label>
-                    <div class="form__group mar--sm--bn">
-                        <label for="selectPos" class="sr-only">Select Position</label>
-                        <button id="selectPos" class="button button--secondary width--full text-left" data-toggle="modal" data-target="#posModal"><span class="float--right juicon juicon-search"></span><span class="pad--sm--rxl block dots">Select Position</span></button>
-                        <small class="input-error-content">Don't try and give me a fake.</small>
-                    </div>
-                    <small class="input-error-content">Don't try and give me a fake.</small>
-                </div>
-            </div>
-        </div>
-        <div id="createPos__container" class="hide">
-            <div class="content--full">
-                <div class="form__group mar--sm--bs">
-                    <label for="jobTitle">Create New Position</label>
+        <div id="createPos__container" class="">
+            <div class="content__section">
+                <div class="form__group mar--sm--bn">
+                    <label for="jobTitle">Job Title</label>
                     <input type="text" class="bg-1" id="jobTitle" placeholder="Enter a Job Title"/>
                     <small class="input-error-content">Error.</small>
                 </div>
             </div>
         </div>
-        <div id="headCount__container">
+        <div id="searchResults" class="hide">
+            <div class="content__section position">
+                <b class="block"><span class="juicon juicon-plus"></span> Create <span class="positionName createJobTitle">Sales Rep</span></b>
+            </div>
+            <div class="content__section position">
+                <b class="block"><span class="positionName">Sales Representative</span></b>
+            </div>
+            <div class="content__section position">
+                <b class="block"><span class="positionName">Sales Representative</span></b>
+            </div>
+            <div class="content__section position">
+                <b class="block"><span class="positionName">Sales Representative</span></b>
+            </div>
+            <div class="content__section position">
+                <b class="block"><span class="positionName">Sales Representative</span></b>
+            </div>
+        </div>
+
+        <div id="headCount__container" class="mar--sm--ts">
             <div class="content--full">
                 <div class="form__group mar--sm--bs">
                     <label for="headCount">Head Count</label>
@@ -47,69 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center">
-            <p>OR</p>
-            <button id="toggleMethod" class="button button--muted mar--sm--bm"><span id="createText">Create</span><span id="selectText" class="hide">Select</span> Position</button>
-        </div>
     </div>
-    <div id="div2" class="hide">
-        <nav class="nav-bar--sf1 text-center mar--sm--bn">
-            <button id="backToKey" type="button" class="float--left button button--muted button--small mar--sm--ts"><span class="juicon juicon-backward"></span> Back</button>
-        </nav>
-        <div class="content__section">
-            <div class="form__group mar--sm--n">
-                <label for="searchPos" class="sr-only">Search Position</label>
-                <div class="input__wrap has-icon--right">
-                    <div class="input__icon juicon juicon-search"></div>
-                    <input type="text" class="bg-1" id="searchPos" placeholder="Search Position"/>
-                </div>
-                <small class="input-error-content">Error.</small>
-            </div>
-        </div>
-        <div class="content__section">
-            <div class="img-container--lg float--left" style="background-color:#50ceb9">
-                <img src="http://staging-sfdc-styleguide.herokuapp.com/assets/icons/custom/custom8.svg" alt=""/>
-            </div>
-            <div class="has-img-container--lg">Position</div>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="content__section">
-            <b class="block">Sales Representative - Midwest</b>
-            <small class="text-muted block">Reports to Sales Manager - Midwest</small>
-        </div>
-        <div class="text-center">
-            <p>No results</p>
-            <button id="createPos" class="button button--muted mar--sm--bm">Create Position</button>
-        </div>
-    </div>
-
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../js/jui.js"></script>
@@ -125,6 +68,19 @@
         $("#toggleMethod, #createPos").click(function(){
             $('#selectPos__container, #createPos__container, #selectText, #createText').toggleClass("hide");
         });
+
+        $('#jobTitle').on('input', function(){
+            if($(this).val().length >= 3){
+                $('.createJobTitle').text($(this).val());
+                $('#searchResults').removeClass('hide');
+            } else {
+                $('#searchResults').addClass('hide');
+            }
+        })
+        $('.position').on('click', function(){
+            $('#jobTitle').val($(this).find('.positionName').text());
+            $('#searchResults').addClass('hide');
+        })
     });
 </script>
 
