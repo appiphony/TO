@@ -163,7 +163,7 @@
 .juicon-list:before {
   content: "\e629"; }
 
-.juicon-loading:before, body .scope-container .form__group.load-this:before, body .scope-container .load-block:before {
+.juicon-loading:before, body .scope-container .form__group.load-this:before, body .scope-container .select2-container.load-this .select2-choice .select2-arrow b:before, body .scope-container .load-block:before {
   content: "\e62a"; }
 
 .juicon-location:before {
@@ -461,7 +461,7 @@ body .scope-container .panel__box {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(360deg); } }
-.spin-it, body .scope-container .button.load-this:after, body .scope-container .form__group.load-this:before, body .scope-container .load-block {
+.spin-it, body .scope-container .button.load-this:after, body .scope-container .form__group.load-this:before, body .scope-container .select2-container.load-this .select2-choice .select2-arrow b, body .scope-container .load-block {
   -webkit-animation: spin-it 1s linear infinite; }
 
 .top-cap {
@@ -3169,6 +3169,8 @@ body .scope-container {
     color: #9faab5; }
   body .scope-container .form__group.load-this input {
     padding-right: 48px; }
+  body .scope-container .select2-container.load-this .select2-choice .select2-arrow b {
+    right: .5px; }
   body .scope-container .load-block {
     color: #9faab5;
     font-size: 300%;

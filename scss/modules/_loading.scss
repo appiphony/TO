@@ -45,6 +45,16 @@
   }
 }
 
+.select2-container {
+  &.load-this {
+    .select2-choice .select2-arrow b {
+      @extend .juicon-loading;
+      @extend .spin-it;
+      right: .5px;
+    }
+  }
+}
+
 .load-block {
   @extend %center-align;
   @extend .juicon;

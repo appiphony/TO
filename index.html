@@ -52,6 +52,7 @@
     <li><a href="#docs__progress">Progress Bars</a></li>
     <li><a href="#docs__slider">Sliders</a></li>
     <li><a href="#docs__nav-bar">Nav Bars</a></li>
+    <li><a href="#docs__loading">Loading States</a></li>
 
 </ul>
 <section id="docs__type">
@@ -1027,7 +1028,32 @@
             </div>
         </div>
     </nav>
-
+</section>
+<section id="docs__loading">
+    <h2>Loading States</h2>
+    <button type="button" class="button button--primary  load-this">Button</button>
+    <button type="button" class="button button--primary button--ghost load-this">Button</button>
+    <button type="button" class="button button--primary button--chunky load-this">Button</button>
+    <div class="form__group mar--sm--tm load-this">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" id="exampleInputEmail1" placeholder="Enter email"/>
+        <small class="input-error-content">Your password isn't manly enough.</small>
+    </div>
+    <div class="form__group load-this">
+        <label for="selectThing">Select a thing</label>
+        <div class="select__wrap">
+            <div class="input__icon juicon juicon-down"></div>
+            <select class="test123" id="selectThing">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+        </div>
+        <small class="input-error-content">You need stuff in this thing</small>
+    </div>
+    <select id="selectLoading" class="mar--sm--bm load-this">
+        <option>1</option>
+    </select>
 </section>
 </div>
 </div>
@@ -1059,8 +1085,16 @@
                 }
         );
 
-        $("#select2").select2();
-        $("#select2multi").select2();
+        $("#select2").select2({
+            placeholder: "Select 2"
+        });
+        $("#select2multi").select2({
+            placeholder: "Select 2 Multiple"
+        });
+
+        $("#selectLoading").select2({
+            placeholder: "Loading Select 2"
+        });
     });
 </script>
 </body>

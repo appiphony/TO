@@ -163,7 +163,7 @@
 .juicon-list:before {
   content: "\e629"; }
 
-.juicon-loading:before, .form__group.load-this:before, .load-block:before {
+.juicon-loading:before, .form__group.load-this:before, .select2-container.load-this .select2-choice .select2-arrow b:before, .load-block:before {
   content: "\e62a"; }
 
 .juicon-location:before {
@@ -461,7 +461,7 @@ body, h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(0deg); }
   to {
     -webkit-transform: rotate(360deg); } }
-.spin-it, .button.load-this:after, .form__group.load-this:before, .load-block {
+.spin-it, .button.load-this:after, .form__group.load-this:before, .select2-container.load-this .select2-choice .select2-arrow b, .load-block {
   -webkit-animation: spin-it 1s linear infinite; }
 
 .top-cap {
@@ -2555,6 +2555,9 @@ input[type=radio] {
   color: #9faab5; }
 .form__group.load-this input {
   padding-right: 48px; }
+
+.select2-container.load-this .select2-choice .select2-arrow b {
+  right: .5px; }
 
 .load-block {
   color: #9faab5;
