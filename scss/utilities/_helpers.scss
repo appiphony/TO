@@ -303,6 +303,10 @@
   fill: $color-primary;
 }
 
+.text-error {
+  color: $color-error;
+}
+
 //rotate
 
 @-webkit-keyframes spin-it {
