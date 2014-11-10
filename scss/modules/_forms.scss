@@ -202,3 +202,12 @@ input[type=radio] {
   @extend %control-base;
   padding: $base-v-padding + px 0;
 }
+
+.required-field {
+    &:after {
+      @extend .juicon;
+      @extend .text-error;
+      content: " \e601";
+      font-size: 75%;
+    }
+}

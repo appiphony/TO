@@ -24,7 +24,7 @@
   src: url("fonts/juicons.eot?#iefix-m8mnji") format("embedded-opentype"), url("fonts/juicons.woff?-m8mnji") format("woff"), url("fonts/juicons.ttf?-m8mnji") format("truetype"), url("fonts/juicons.svg?-m8mnji#juicons") format("svg");
   font-weight: normal;
   font-style: normal; }
-.juicon, .close-modal-x, .panel__component > .close .component-remove-x, .select2-container .select2-choice .select2-arrow b, .select2-search-choice-close {
+.juicon, .required-field:after, .close-modal-x, .panel__component > .close .component-remove-x, .select2-container .select2-choice .select2-arrow b, .select2-search-choice-close {
   font-family: 'juicons';
   speak: none;
   font-style: normal;
@@ -453,7 +453,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .fill-primary {
   fill: #2a94d6; }
 
-.text-error {
+.text-error, .required-field:after {
   color: #c06057; }
 
 @-webkit-keyframes spin-it {
@@ -1366,7 +1366,7 @@ label {
   font-size: 12.8px;
   line-height: 1.5;
   border-radius: 4px; }
-.button--secondary .juicon, .button--secondary .close-modal-x, .button--secondary .panel__component > .close .component-remove-x, .panel__component > .close .button--secondary .component-remove-x, .button--secondary .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .button--secondary b, .button--secondary .select2-search-choice-close, .button--secondary .caret, button.button--secondary .juicon, button.button--secondary .close-modal-x, button.button--secondary .panel__component > .close .component-remove-x, .panel__component > .close button.button--secondary .component-remove-x, button.button--secondary .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow button.button--secondary b, button.button--secondary .select2-search-choice-close, button.button--secondary .caret {
+.button--secondary .juicon, .button--secondary .required-field:after, .button--secondary .close-modal-x, .button--secondary .panel__component > .close .component-remove-x, .panel__component > .close .button--secondary .component-remove-x, .button--secondary .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .button--secondary b, .button--secondary .select2-search-choice-close, .button--secondary .caret, button.button--secondary .juicon, button.button--secondary .required-field:after, button.button--secondary .close-modal-x, button.button--secondary .panel__component > .close .component-remove-x, .panel__component > .close button.button--secondary .component-remove-x, button.button--secondary .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow button.button--secondary b, button.button--secondary .select2-search-choice-close, button.button--secondary .caret {
   color: #9faab5; }
 .button--primary.button--ghost, button.button--primary.button--ghost {
   color: #2a94d6;
@@ -1512,7 +1512,7 @@ label {
 .button--muted, button.button--muted {
   background: rgba(0, 0, 0, 0.07);
   color: #686c70; }
-.button.text-left > .juicon, .button.dropdown-menu > .juicon, .button.text-left > .close-modal-x, .button.dropdown-menu > .close-modal-x, .panel__component > .close .button.text-left > .component-remove-x, .panel__component > .close .button.dropdown-menu > .component-remove-x, .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow .button.dropdown-menu > b, .button.text-left > .select2-search-choice-close, .button.dropdown-menu > .select2-search-choice-close, button.button.text-left > .juicon, button.button.dropdown-menu > .juicon, button.button.text-left > .close-modal-x, button.button.dropdown-menu > .close-modal-x, .panel__component > .close button.button.text-left > .component-remove-x, .panel__component > .close button.button.dropdown-menu > .component-remove-x, .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow button.button.dropdown-menu > b, button.button.text-left > .select2-search-choice-close, button.button.dropdown-menu > .select2-search-choice-close {
+.button.text-left > .juicon, .button.dropdown-menu > .juicon, .button.text-left > .required-field:after, .button.dropdown-menu > .required-field:after, .button.text-left > .close-modal-x, .button.dropdown-menu > .close-modal-x, .panel__component > .close .button.text-left > .component-remove-x, .panel__component > .close .button.dropdown-menu > .component-remove-x, .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow .button.dropdown-menu > b, .button.text-left > .select2-search-choice-close, .button.dropdown-menu > .select2-search-choice-close, button.button.text-left > .juicon, button.button.dropdown-menu > .juicon, button.button.text-left > .required-field:after, button.button.dropdown-menu > .required-field:after, button.button.text-left > .close-modal-x, button.button.dropdown-menu > .close-modal-x, .panel__component > .close button.button.text-left > .component-remove-x, .panel__component > .close button.button.dropdown-menu > .component-remove-x, .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow button.button.dropdown-menu > b, button.button.text-left > .select2-search-choice-close, button.button.dropdown-menu > .select2-search-choice-close {
   padding-top: 2px; }
 
 .button.button--action, button.button--action {
@@ -1522,7 +1522,7 @@ label {
   bottom: 16px;
   padding: 16px;
   right: 16px; }
-  .button.button--action .juicon, .button.button--action .close-modal-x, .button.button--action .panel__component > .close .component-remove-x, .panel__component > .close .button.button--action .component-remove-x, .button.button--action .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .button.button--action b, .button.button--action .select2-search-choice-close, button.button--action .juicon, button.button--action .close-modal-x, button.button--action .panel__component > .close .component-remove-x, .panel__component > .close button.button--action .component-remove-x, button.button--action .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow button.button--action b, button.button--action .select2-search-choice-close {
+  .button.button--action .juicon, .button.button--action .required-field:after, .button.button--action .close-modal-x, .button.button--action .panel__component > .close .component-remove-x, .panel__component > .close .button.button--action .component-remove-x, .button.button--action .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .button.button--action b, .button.button--action .select2-search-choice-close, button.button--action .juicon, button.button--action .required-field:after, button.button--action .close-modal-x, button.button--action .panel__component > .close .component-remove-x, .panel__component > .close button.button--action .component-remove-x, button.button--action .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow button.button--action b, button.button--action .select2-search-choice-close {
     display: inline-block; }
 
 .button-group .button {
@@ -2264,7 +2264,7 @@ input[type=radio] {
   border-bottom-color: #dca6a1;
   background-color: #c06057;
   color: #fff; }
-  .has-error .input__group > [class^="column--"]:last-child > .button .juicon, .has-error .input__group > [class^="column--"]:last-child > .button .close-modal-x, .has-error .input__group > [class^="column--"]:last-child > .button .panel__component > .close .component-remove-x, .panel__component > .close .has-error .input__group > [class^="column--"]:last-child > .button .component-remove-x, .has-error .input__group > [class^="column--"]:last-child > .button .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .has-error .input__group > [class^="column--"]:last-child > .button b, .has-error .input__group > [class^="column--"]:last-child > .button .select2-search-choice-close {
+  .has-error .input__group > [class^="column--"]:last-child > .button .juicon, .has-error .input__group > [class^="column--"]:last-child > .button .required-field:after, .has-error .input__group > [class^="column--"]:last-child > .button .close-modal-x, .has-error .input__group > [class^="column--"]:last-child > .button .panel__component > .close .component-remove-x, .panel__component > .close .has-error .input__group > [class^="column--"]:last-child > .button .component-remove-x, .has-error .input__group > [class^="column--"]:last-child > .button .select2-container .select2-choice .select2-arrow b, .select2-container .select2-choice .select2-arrow .has-error .input__group > [class^="column--"]:last-child > .button b, .has-error .input__group > [class^="column--"]:last-child > .button .select2-search-choice-close {
     color: #fff; }
   @media (min-width: 770px) {
     .has-error .input__group > [class^="column--"]:last-child > .button {
@@ -2279,6 +2279,10 @@ input[type=radio] {
 
 .input-size {
   padding: 8px 0; }
+
+.required-field:after {
+  content: " \e601";
+  font-size: 75%; }
 
 .tile-container {
   margin-bottom: 4px; }
@@ -2510,12 +2514,12 @@ input[type=radio] {
   line-height: .675;
   padding: .675em; }
 
-.label > .juicon, .label > .close-modal-x, .panel__component > .close .label > .component-remove-x, .select2-container .select2-choice .select2-arrow .label > b, .label > .select2-search-choice-close {
+.label > .juicon, .label > .required-field:after, .label > .close-modal-x, .panel__component > .close .label > .component-remove-x, .select2-container .select2-choice .select2-arrow .label > b, .label > .select2-search-choice-close {
   margin-left: -4px;
   margin-right: -4px; }
-  .label > .juicon + span, .label > .close-modal-x + span, .panel__component > .close .label > .component-remove-x + span, .select2-container .select2-choice .select2-arrow .label > b + span, .label > .select2-search-choice-close + span {
+  .label > .juicon + span, .label > .required-field:after + span, .label > .close-modal-x + span, .panel__component > .close .label > .component-remove-x + span, .select2-container .select2-choice .select2-arrow .label > b + span, .label > .select2-search-choice-close + span {
     margin-left: 8px; }
-.label > span + .juicon, .label > span + .close-modal-x, .panel__component > .close .label > span + .component-remove-x, .select2-container .select2-choice .select2-arrow .label > span + b, .label > span + .select2-search-choice-close {
+.label > span + .juicon, .label > span + .required-field:after, .label > span + .close-modal-x, .panel__component > .close .label > span + .component-remove-x, .select2-container .select2-choice .select2-arrow .label > span + b, .label > span + .select2-search-choice-close {
   margin-left: 8px; }
 
 .list-group__item > .label {
