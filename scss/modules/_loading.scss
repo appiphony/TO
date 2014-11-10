@@ -18,3 +18,39 @@
     }
   }
 }
+
+.form__group {
+  &.load-this {
+    @extend .relative;
+    .input__wrap.has-icon--right, .select__wrap {
+      > .juicon {
+        display: none;
+      }
+    }
+    @extend .juicon-loading;
+    &:before {
+      @extend .juicon;
+      @extend .spin-it;
+      @extend .absolute;
+      right: .5px;
+      bottom: 0;
+      padding: ($base-h-padding * .75 + px ) ($base-h-padding+px);
+      font-size: 1rem;
+      z-index: 1;
+      color: $input-icon-color;
+    }
+    input {
+      padding-right: ($base-h-padding*3+px);
+    }
+  }
+}
+
+.load-block {
+  @extend %center-align;
+  @extend .juicon;
+  @extend .juicon-loading;
+  @extend .spin-it;
+  color: $input-icon-color;
+  font-size: 300%;
+  padding: ($base-h-padding * 3 + px );
+}
