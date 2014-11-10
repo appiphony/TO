@@ -15,7 +15,7 @@
             </div>
             <div class="column--md--6 text-right-left">
                 <button type="button" class="button button--secondary">Cancel</button>
-                <button type="button" class="button button--primary">Save</button>
+                <button id="saveThis" type="button" class="button button--primary">Save</button>
             </div>
         </div>
         <hr/>
@@ -531,7 +531,6 @@
 <script src="../lib/select2/js/select2.js"></script>
 
 <script type="text/javascript">
-
     $(document).ready(function() {
 
 // Select 2 stuff
@@ -549,6 +548,19 @@
         $('#careerAdNetwork').click(function() {
             $("#adNetworkDays__FG").toggleClass('hide');
         });
+
+        // loading stuff
+
+        var loadTimeout;
+
+        $('#saveThis').click(function(e) {
+            $(e.target).addClass('load-this');
+            loadTimeout = setTimeout(function() {
+                $(e.target).removeClass('load-this');
+            }, 1500);
+
+        });
+
 
     });
 </script>

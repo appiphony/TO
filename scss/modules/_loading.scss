@@ -1,0 +1,20 @@
+.button {
+  &.load-this {
+    opacity: .6;
+    > .juicon {
+      display: none;
+    }
+    &:after {
+      @extend .juicon;
+      @extend .spin-it;
+      @extend .relative;
+      left: .5px;
+      margin-left: 4px;
+      top: 1px;
+      content: " \e62a";
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
