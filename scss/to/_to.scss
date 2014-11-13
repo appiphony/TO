@@ -6,6 +6,23 @@ body .scope-container {
         @include erase-radius;
         border-left: 0;
         border-right: 0;
+        + .section__title {
+          margin-top: -1px;
+        }
+      }
+    }
+    > .row, > .row > [class^="column--"] {
+      > .panel, .list-group {
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+          @include erase-radius;
+          border-left: 0;
+          border-right: 0;
+          margin-bottom: -1px;
+        }
+      }
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        padding: 0;
+        margin: 0;
       }
     }
   }

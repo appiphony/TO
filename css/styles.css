@@ -265,7 +265,7 @@
 .juicon-x:before, .alert-close-x:after, .close-modal-x:before, .panel__component > .close .component-remove-x:before, .select2-search-choice-close:before {
   content: "\e64a"; }
 
-.clearfix:after, .content:after, .content--full:after, .content--small:after, .content--readable:after, .row:after, .button-group:after, .button-group--collapse:after, .card:after, .range_inputs:after, .range_inputs_container:after, .range_buttons_container:after, .list-group__item:after, .modal__footer:after, .nav-bar:after, .nav-bar--solo:after, .nav-bar__top:after, .nav-bar__appendage:after, .pagination:after, .pagination--alt:after, .panel:after, .panel__top:after, .panel__bottom:after, .panel__component:after, .panel__body:after, .panel__box:after, .panel__content:after, .nav-bar--sf1:after, .nav-bar--sf1__top:after, .nav-bar--sf1__appendage:after, .content__section:after {
+.clearfix:after, .content:after, .content--full:after, .content--small:after, .content--readable:after, .row:after, .button-group:after, .button-group--collapse:after, .card:after, .range_inputs:after, .range_inputs_container:after, .range_buttons_container:after, .list-group__item:after, .modal__footer:after, .nav-bar:after, .nav-bar--solo:after, .nav-bar__top:after, .nav-bar__appendage:after, .pagination:after, .pagination--alt:after, .panel:after, .panel__top:after, .panel__bottom:after, .panel__component:after, .panel__body:after, .panel__box:after, .panel__content:after, .nav-bar--sf1:after, .nav-bar--sf1__top:after, .content__section:after {
   content: "";
   display: table;
   clear: both; }
@@ -294,17 +294,17 @@
 .float--left, .daterangepicker.opensleft .ranges, .daterangepicker.opensleft .calendar, .daterangepicker .ranges .ranges_inputs > div, .daterangepicker_start_input, .daterangepicker_end_input, .cancelBtn, .pagination__item a, .panel__bottom, .panel__component, .slider--horizontal .slider__selection {
   float: left; }
 
-.float--right, .daterangepicker.opensright .ranges, .daterangepicker.opensright .calendar, .daterangepicker.openscenter .ranges, .daterangepicker.openscenter .calendar, .applyBtn, .label--notification, .nav-bar__menu-toggle, .sort-arrow, .nav-bar--sf1__menu-toggle {
+.float--right, .daterangepicker.opensright .ranges, .daterangepicker.opensright .calendar, .daterangepicker.openscenter .ranges, .daterangepicker.openscenter .calendar, .applyBtn, .label--notification, .nav-bar__menu-toggle, .sort-arrow {
   float: right; }
 
 @media (min-width: 770px) {
   .float--right-left {
     float: right; } }
 
-.pointer, .button, button.button, .alert-close-x, .alert .close-timeout .close-progress, .daterangepicker .ranges li, .component__icon, .component__icon--primary, .list-group__item, .nav-bar__list--item a, .nav-bar__menu-toggle, table tbody tr:hover, .sort-arrow, .select__wrap .input__icon, .select2-container .input__icon, .select__wrap select, .select2-container select, .select2-container .select2-choice, .select2-container .select2-choice .select2-arrow b, .nav-bar--sf1__list--item a, .nav-bar--sf1__menu-toggle, .building-block.is-empty:hover {
+.pointer, .button, button.button, .alert-close-x, .alert .close-timeout .close-progress, .daterangepicker .ranges li, .component__icon, .component__icon--primary, .list-group__item, .nav-bar__list--item a, .nav-bar__menu-toggle, table tbody tr:hover, .sort-arrow, .select__wrap .input__icon, .select2-container .input__icon, .select__wrap select, .select2-container select, .select2-container .select2-choice, .select2-container .select2-choice .select2-arrow b, .building-block.is-empty:hover {
   cursor: pointer; }
 
-.relative, .alert, .button-group, .button-group .button, .button-group--collapse, .button-group--collapse .button, .input__wrap, .input__icon.juicon:before, .input__icon.form__group.load-this:before, .input__icon.load-block:before, .input__icon.close-modal-x:before, .panel__component > .close .input__icon.component-remove-x:before, .select2-container .select2-choice .select2-arrow b.input__icon:before, .input__icon.select2-search-choice-close:before, .button.load-this:after, .form__group.load-this, .list-group__item, .modal__body, .nav-bar__list--item, .pagination__item a, .panel__component, .panel__box, .panel__sidebar, .sort-it, .nav-bar--sf1__list--item {
+.relative, .alert, .button-group, .button-group .button, .button-group--collapse, .button-group--collapse .button, .input__wrap, .input__icon.juicon:before, .input__icon.form__group.load-this:before, .input__icon.load-block:before, .input__icon.close-modal-x:before, .panel__component > .close .input__icon.component-remove-x:before, .select2-container .select2-choice .select2-arrow b.input__icon:before, .input__icon.select2-search-choice-close:before, .button.load-this:after, .form__group.load-this, .list-group__item, .modal__body, .nav-bar__list--item, .pagination__item a, .panel__component, .panel__box, .panel__sidebar, .sort-it {
   position: relative; }
 
 .absolute, .alert .close, .alert .close-timeout .close-progress, .daterangepicker, .daterangepicker.opensleft:before, .daterangepicker.opensleft:after, .daterangepicker.opensright:before, .daterangepicker.opensright:after, .daterangepicker.openscenter:before, .daterangepicker.openscenter:after, .input__icon, .form__group.load-this:before, .modal__top .close, .modal-scrollbar-measure, .panel__component > .close, .sort-arrow, .select2-container .select2-choice .select2-arrow b, .slider__handle, .tooltip, .tooltip-arrow {
@@ -357,11 +357,11 @@ body, h1, h2, h3, h4, h5, h6 {
 .panel__box {
   overflow: hidden; }
 
-.list-style-type-none, .dropdown-menu, .dropdown-menu--top-right, .list-group, .panel__sidebar__list-group, .inline-list, .nav-bar__list, .nav-bar__list--right, .nav-bar__list--left, .pagination, .pagination--alt, .sig__container .sigNav, .nav-bar--sf1__list, .nav-bar--sf1__list--right, .nav-bar--sf1__list--left {
+.list-style-type-none, .dropdown-menu, .dropdown-menu--top-right, .list-group, .panel__sidebar__list-group, .inline-list, .nav-bar__list, .nav-bar__list--right, .nav-bar__list--left, .pagination, .pagination--alt, .sig__container .sigNav {
   list-style-type: none;
   padding: 0; }
 
-.block, h1, h2, h3, h4, h5, h6, .button-group .button, .button-group--collapse .button, .card__heading, .card__subheading, .daterangepicker.show-calendar .calendar, .tile, .list-group__item, .list-group__item a, .nav-bar__list--item a, .appendage--open .nav-bar__appendage, .select2-container .select2-choice, .nav-bar--sf1__list--item a, .appendage--open .nav-bar--sf1__appendage {
+.block, h1, h2, h3, h4, h5, h6, .button-group .button, .button-group--collapse .button, .card__heading, .card__subheading, .daterangepicker.show-calendar .calendar, .tile, .list-group__item, .list-group__item a, .nav-bar__list--item a, .appendage--open .nav-bar__appendage, .select2-container .select2-choice, .appendage--open .nav-bar--sf1__appendage {
   display: block; }
 
 .inline-block, .button-group, .tile-container, .label, .inline-list__item, .pagination--alt .select__wrap, .pagination--alt .select2-container, .sig__container .sigNav .clearButton, .nav-bar--sf1__title {
@@ -1246,7 +1246,7 @@ label {
 .input__wrap.has-icon--left .input__icon, .list-group__item.has-icon--left .input__icon, .list-group__item.has-icon--left--special .input__icon {
   left: 0; }
 
-.button > .juicon:before, .button > .form__group.load-this:before, .button > .load-block:before, .button > .close-modal-x:before, .panel__component > .close .button > .component-remove-x:before, .select2-container .select2-choice .select2-arrow .button > b:before, .button > .select2-search-choice-close:before, button.button > .juicon:before, button.button > .form__group.load-this:before, button.button > .load-block:before, button.button > .close-modal-x:before, .panel__component > .close button.button > .component-remove-x:before, .select2-container .select2-choice .select2-arrow button.button > b:before, button.button > .select2-search-choice-close:before, span.juicon:before, span.form__group.load-this:before, span.load-block:before, span.close-modal-x:before, .panel__component > .close span.component-remove-x:before, span.select2-search-choice-close:before, span > .juicon:before, span > .form__group.load-this:before, span > .load-block:before, span > .close-modal-x:before, .panel__component > .close span > .component-remove-x:before, .select2-container .select2-choice .select2-arrow span > b:before, span > .select2-search-choice-close:before, strong.juicon:before, strong.form__group.load-this:before, strong.load-block:before, strong.close-modal-x:before, .panel__component > .close strong.component-remove-x:before, strong.select2-search-choice-close:before, strong > .juicon:before, strong > .form__group.load-this:before, strong > .load-block:before, strong > .close-modal-x:before, .panel__component > .close strong > .component-remove-x:before, .select2-container .select2-choice .select2-arrow strong > b:before, strong > .select2-search-choice-close:before, b.juicon:before, b.form__group.load-this:before, b.load-block:before, b.close-modal-x:before, .panel__component > .close b.component-remove-x:before, .select2-container .select2-choice .select2-arrow b:before, b.select2-search-choice-close:before, b > .juicon:before, b > .form__group.load-this:before, b > .load-block:before, b > .close-modal-x:before, .panel__component > .close b > .component-remove-x:before, .select2-container .select2-choice .select2-arrow b > b:before, b > .select2-search-choice-close:before, a.juicon:before, a.form__group.load-this:before, a.load-block:before, a.close-modal-x:before, .panel__component > .close a.component-remove-x:before, a.select2-search-choice-close:before, a > .juicon:before, a > .form__group.load-this:before, a > .load-block:before, a > .close-modal-x:before, .panel__component > .close a > .component-remove-x:before, .select2-container .select2-choice .select2-arrow a > b:before, a > .select2-search-choice-close:before, .label > .juicon:before, .label > .form__group.load-this:before, .label > .load-block:before, .label > .close-modal-x:before, .panel__component > .close .label > .component-remove-x:before, .select2-container .select2-choice .select2-arrow .label > b:before, .label > .select2-search-choice-close:before, .inline-list__item a > .juicon:before, .inline-list__item a > .form__group.load-this:before, .inline-list__item a > .load-block:before, .inline-list__item a > .close-modal-x:before, .inline-list__item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .inline-list__item a > .component-remove-x:before, .inline-list__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .inline-list__item a > b:before, .inline-list__item a > .select2-search-choice-close:before, .nav-bar__list--item a > .juicon:before, .nav-bar__list--item a > .form__group.load-this:before, .nav-bar__list--item a > .load-block:before, .nav-bar__list--item a > .close-modal-x:before, .nav-bar__list--item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .nav-bar__list--item a > .component-remove-x:before, .nav-bar__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .nav-bar__list--item a > b:before, .nav-bar__list--item a > .select2-search-choice-close:before, .pagination__item a > .juicon:before, .pagination__item a > .form__group.load-this:before, .pagination__item a > .load-block:before, .pagination__item a > .close-modal-x:before, .pagination__item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .pagination__item a > .component-remove-x:before, .pagination__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .pagination__item a > b:before, .pagination__item a > .select2-search-choice-close:before, .nav-bar--sf1__list--item a > .juicon:before, .nav-bar--sf1__list--item a > .form__group.load-this:before, .nav-bar--sf1__list--item a > .load-block:before, .nav-bar--sf1__list--item a > .close-modal-x:before, .nav-bar--sf1__list--item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .nav-bar--sf1__list--item a > .component-remove-x:before, .nav-bar--sf1__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .nav-bar--sf1__list--item a > b:before, .nav-bar--sf1__list--item a > .select2-search-choice-close:before {
+.button > .juicon:before, .button > .form__group.load-this:before, .button > .load-block:before, .button > .close-modal-x:before, .panel__component > .close .button > .component-remove-x:before, .select2-container .select2-choice .select2-arrow .button > b:before, .button > .select2-search-choice-close:before, button.button > .juicon:before, button.button > .form__group.load-this:before, button.button > .load-block:before, button.button > .close-modal-x:before, .panel__component > .close button.button > .component-remove-x:before, .select2-container .select2-choice .select2-arrow button.button > b:before, button.button > .select2-search-choice-close:before, span.juicon:before, span.form__group.load-this:before, span.load-block:before, span.close-modal-x:before, .panel__component > .close span.component-remove-x:before, span.select2-search-choice-close:before, span > .juicon:before, span > .form__group.load-this:before, span > .load-block:before, span > .close-modal-x:before, .panel__component > .close span > .component-remove-x:before, .select2-container .select2-choice .select2-arrow span > b:before, span > .select2-search-choice-close:before, strong.juicon:before, strong.form__group.load-this:before, strong.load-block:before, strong.close-modal-x:before, .panel__component > .close strong.component-remove-x:before, strong.select2-search-choice-close:before, strong > .juicon:before, strong > .form__group.load-this:before, strong > .load-block:before, strong > .close-modal-x:before, .panel__component > .close strong > .component-remove-x:before, .select2-container .select2-choice .select2-arrow strong > b:before, strong > .select2-search-choice-close:before, b.juicon:before, b.form__group.load-this:before, b.load-block:before, b.close-modal-x:before, .panel__component > .close b.component-remove-x:before, .select2-container .select2-choice .select2-arrow b:before, b.select2-search-choice-close:before, b > .juicon:before, b > .form__group.load-this:before, b > .load-block:before, b > .close-modal-x:before, .panel__component > .close b > .component-remove-x:before, .select2-container .select2-choice .select2-arrow b > b:before, b > .select2-search-choice-close:before, a.juicon:before, a.form__group.load-this:before, a.load-block:before, a.close-modal-x:before, .panel__component > .close a.component-remove-x:before, a.select2-search-choice-close:before, a > .juicon:before, a > .form__group.load-this:before, a > .load-block:before, a > .close-modal-x:before, .panel__component > .close a > .component-remove-x:before, .select2-container .select2-choice .select2-arrow a > b:before, a > .select2-search-choice-close:before, .label > .juicon:before, .label > .form__group.load-this:before, .label > .load-block:before, .label > .close-modal-x:before, .panel__component > .close .label > .component-remove-x:before, .select2-container .select2-choice .select2-arrow .label > b:before, .label > .select2-search-choice-close:before, .inline-list__item a > .juicon:before, .inline-list__item a > .form__group.load-this:before, .inline-list__item a > .load-block:before, .inline-list__item a > .close-modal-x:before, .inline-list__item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .inline-list__item a > .component-remove-x:before, .inline-list__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .inline-list__item a > b:before, .inline-list__item a > .select2-search-choice-close:before, .nav-bar__list--item a > .juicon:before, .nav-bar__list--item a > .form__group.load-this:before, .nav-bar__list--item a > .load-block:before, .nav-bar__list--item a > .close-modal-x:before, .nav-bar__list--item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .nav-bar__list--item a > .component-remove-x:before, .nav-bar__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .nav-bar__list--item a > b:before, .nav-bar__list--item a > .select2-search-choice-close:before, .pagination__item a > .juicon:before, .pagination__item a > .form__group.load-this:before, .pagination__item a > .load-block:before, .pagination__item a > .close-modal-x:before, .pagination__item .panel__component > .close a > .component-remove-x:before, .panel__component > .close .pagination__item a > .component-remove-x:before, .pagination__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow .pagination__item a > b:before, .pagination__item a > .select2-search-choice-close:before {
   position: relative;
   top: 2px; }
 
@@ -2592,7 +2592,7 @@ input[type=radio] {
   .list-group--bordered {
     border-width: 1px 1px 1px 1px;
     border-style: solid;
-    border-color: #e8eaeb;
+    border-color: #dadee2;
     -webkit-border-radius: 4px ;
     -ms-border-radius: 4px ;
     -moz-border-radius: 4px ;
@@ -4136,7 +4136,23 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     -o-border-radius: 0 ;
     border-radius: 0 ;
     border-left: 0;
-    border-right: 0; } }
+    border-right: 0; }
+    body .scope-container .pad--sm--only--n > .panel + .section__title {
+      margin-top: -1px; } }
+@media (min-width: 1px) and (max-width: 769px) {
+  body .scope-container .pad--sm--only--n > .row > .panel, body .scope-container .pad--sm--only--n > .row .list-group, body .scope-container .pad--sm--only--n > .row .panel__sidebar__list-group, body .scope-container .pad--sm--only--n > .row > [class^="column--"] > .panel, body .scope-container .pad--sm--only--n > .row > [class^="column--"] .list-group, body .scope-container .pad--sm--only--n > .row > [class^="column--"] .panel__sidebar__list-group {
+    -webkit-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -o-border-radius: 0 ;
+    border-radius: 0 ;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: -1px; } }
+@media (min-width: 1px) and (max-width: 769px) {
+  body .scope-container .pad--sm--only--n > .row, body .scope-container .pad--sm--only--n > .row > [class^="column--"] {
+    padding: 0;
+    margin: 0; } }
 
 body .scope-container .brand__border-accent--top {
   border-top-width: 5px; }
@@ -4225,116 +4241,15 @@ body .scope-container .brand__border-accent--top {
 
   h6 {
     font-size: 9px; } }
-.nav-bar--sf1 {
-  background: #fff;
-  padding: 0 12px;
-  margin-bottom: 12px;
-  min-height: 48px;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: #e8eaeb; }
-  .nav-bar--sf1.menu--open {
-    -webkit-border-bottom-left-radius: 4px ;
-    -ms-border-bottom-left-radius: 4px ;
-    -moz-border-bottom-left-radius: 4px ;
-    -o-border-bottom-left-radius: 4px ;
-    border-bottom-left-radius: 4px ;
-    -webkit-border-bottom-right-radius: 4px ;
-    -ms-border-bottom-right-radius: 4px ;
-    -moz-border-bottom-right-radius: 4px ;
-    -o-border-bottom-right-radius: 4px ;
-    border-bottom-right-radius: 4px ; }
-  .nav-bar--sf1 .dropdown-menu, .nav-bar--sf1 .dropdown-menu--top-right {
-    -webkit-border-top-left-radius: 0 ;
-    -ms-border-top-left-radius: 0 ;
-    -moz-border-top-left-radius: 0 ;
-    -o-border-top-left-radius: 0 ;
-    border-top-left-radius: 0 ;
-    -webkit-border-top-right-radius: 0 ;
-    -ms-border-top-right-radius: 0 ;
-    -moz-border-top-right-radius: 0 ;
-    -o-border-top-right-radius: 0 ;
-    border-top-right-radius: 0 ;
-    margin: 0; }
-    @media (min-width: 1px) and (max-width: 769px) {
-      .nav-bar--sf1 .dropdown-menu, .nav-bar--sf1 .dropdown-menu--top-right {
-        width: 100%;
-        position: relative;
-        border-left: 0;
-        border-right: 0;
-        -webkit-border-radius: 0 ;
-        -ms-border-radius: 0 ;
-        -moz-border-radius: 0 ;
-        -o-border-radius: 0 ;
-        border-radius: 0 ; } }
-  .nav-bar--sf1__top {
-    padding: 12px 0;
-    height: 48px; }
-    @media (min-width: 770px) {
-      .nav-bar--sf1__top {
-        float: left; } }
-  .nav-bar--sf1__title {
-    line-height: 48px;
-    font-size: 125%;
-    vertical-align: middle; }
-  .nav-bar--sf1__list, .nav-bar--sf1__list--right, .nav-bar--sf1__list--left {
-    margin: 0; }
-    @media (min-width: 1px) and (max-width: 769px) {
-      .nav-bar--sf1__list, .nav-bar--sf1__list--right, .nav-bar--sf1__list--left {
-        display: none;
-        margin-left: -12px;
-        margin-right: -12px; }
-        .menu--open .nav-bar--sf1__list, .menu--open .nav-bar--sf1__list--right, .menu--open .nav-bar--sf1__list--left {
-          display: block; } }
-    @media (min-width: 770px) {
-      .nav-bar--sf1__list--right {
-        float: right; } }
-    @media (min-width: 770px) {
-      .nav-bar--sf1__list--left {
-        float: left; } }
-    .nav-bar--sf1__list--item {
-      margin: 0; }
-      @media (min-width: 770px) {
-        .nav-bar--sf1__list--item {
-          float: left; } }
-      .nav-bar--sf1__list--item a {
-        color: #384047;
-        padding: 12px; }
-        @media (min-width: 1px) and (max-width: 769px) {
-          .nav-bar--sf1__list--item a {
-            background-color: #f5f6f7; } }
-        .nav-bar--sf1__list--item a.button {
-          -webkit-border-radius: 0 ;
-          -ms-border-radius: 0 ;
-          -moz-border-radius: 0 ;
-          -o-border-radius: 0 ;
-          border-radius: 0 ;
-          background: transparent;
-          border: 0;
-          color: inherit; }
-      @media (min-width: 1px) and (max-width: 769px) {
-        .nav-bar--sf1__list--item:hover a {
-          background-color: #f5f6f7;
-          color: #8d9aa5; } }
-      .nav-bar--sf1__list--item.active a, .nav-bar--sf1__list--item:hover.active a {
-        background-color: #e8eaeb;
-        color: #384047; }
-      @media (min-width: 1px) and (max-width: 769px) {
-        .nav-bar--sf1__list--item:last-child a {
-          -webkit-border-bottom-left-radius: 4px ;
-          -ms-border-bottom-left-radius: 4px ;
-          -moz-border-bottom-left-radius: 4px ;
-          -o-border-bottom-left-radius: 4px ;
-          border-bottom-left-radius: 4px ;
-          -webkit-border-bottom-right-radius: 4px ;
-          -ms-border-bottom-right-radius: 4px ;
-          -moz-border-bottom-right-radius: 4px ;
-          -o-border-bottom-right-radius: 4px ;
-          border-bottom-right-radius: 4px ; } }
-  .nav-bar--sf1__appendage {
-    clear: both;
-    display: none; }
-    .nav-bar--sf1__appendage--inner {
+@media (min-width: 1px) and (max-width: 769px) {
+  .nav-bar--sf1 {
+    background: #fff;
+    margin-bottom: 12px;
+    min-height: 48px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #e8eaeb; }
+    .nav-bar--sf1.menu--open {
       -webkit-border-bottom-left-radius: 4px ;
       -ms-border-bottom-left-radius: 4px ;
       -moz-border-bottom-left-radius: 4px ;
@@ -4344,49 +4259,73 @@ body .scope-container .brand__border-accent--top {
       -ms-border-bottom-right-radius: 4px ;
       -moz-border-bottom-right-radius: 4px ;
       -o-border-bottom-right-radius: 4px ;
-      border-bottom-right-radius: 4px ;
-      padding-top: 12px;
-      background-color: #f0f1f2; }
-  .nav-bar--sf1__menu-toggle {
-    -webkit-border-top-right-radius: 4px ;
-    -ms-border-top-right-radius: 4px ;
-    -moz-border-top-right-radius: 4px ;
-    -o-border-top-right-radius: 4px ;
-    border-top-right-radius: 4px ;
-    -webkit-border-bottom-right-radius: 4px ;
-    -ms-border-bottom-right-radius: 4px ;
-    -moz-border-bottom-right-radius: 4px ;
-    -o-border-bottom-right-radius: 4px ;
-    border-bottom-right-radius: 4px ;
-    display: none;
-    font-size: 32px;
-    height: 42px;
-    margin-right: -12px;
-    padding: 4px 12px; }
-    .menu--open .nav-bar--sf1__menu-toggle {
-      -webkit-border-bottom-left-radius: 0 ;
-      -ms-border-bottom-left-radius: 0 ;
-      -moz-border-bottom-left-radius: 0 ;
-      -o-border-bottom-left-radius: 0 ;
-      border-bottom-left-radius: 0 ;
-      -webkit-border-bottom-right-radius: 0 ;
-      -ms-border-bottom-right-radius: 0 ;
-      -moz-border-bottom-right-radius: 0 ;
-      -o-border-bottom-right-radius: 0 ;
-      border-bottom-right-radius: 0 ; }
-      @media (min-width: 1px) and (max-width: 769px) {
-        .menu--open .nav-bar--sf1__menu-toggle {
-          -webkit-border-radius: 0 ;
-          -ms-border-radius: 0 ;
-          -moz-border-radius: 0 ;
-          -o-border-radius: 0 ;
-          border-radius: 0 ; } }
-    @media (min-width: 1px) and (max-width: 769px) {
-      .nav-bar--sf1__menu-toggle {
-        display: block; } }
+      border-bottom-right-radius: 4px ; }
+    .nav-bar--sf1 .button, .nav-bar--sf1 .button:hover, .nav-bar--sf1 .button:active, .nav-bar--sf1 .button:focus {
+      background: rgba(0, 0, 0, 0.07);
+      border: 0;
+      color: #686c70;
+      padding: 6.66667px 16px;
+      font-size: 12.8px;
+      line-height: 1.5;
+      border-radius: 4px;
+      margin-top: 8px;
+      position: relative;
+      z-index: 1; } }
+.nav-bar--sf1 .dropdown-menu, .nav-bar--sf1 .dropdown-menu--top-right {
+  -webkit-border-top-left-radius: 0 ;
+  -ms-border-top-left-radius: 0 ;
+  -moz-border-top-left-radius: 0 ;
+  -o-border-top-left-radius: 0 ;
+  border-top-left-radius: 0 ;
+  -webkit-border-top-right-radius: 0 ;
+  -ms-border-top-right-radius: 0 ;
+  -moz-border-top-right-radius: 0 ;
+  -o-border-top-right-radius: 0 ;
+  border-top-right-radius: 0 ;
+  margin: 0; }
   @media (min-width: 1px) and (max-width: 769px) {
-    .nav-bar--sf1 .content, .nav-bar--sf1 .content--full, .nav-bar--sf1 .content--small, .nav-bar--sf1 .content--readable {
-      padding: 0; } }
+    .nav-bar--sf1 .dropdown-menu, .nav-bar--sf1 .dropdown-menu--top-right {
+      width: 100%;
+      position: relative;
+      border-left: 0;
+      border-right: 0;
+      -webkit-border-radius: 0 ;
+      -ms-border-radius: 0 ;
+      -moz-border-radius: 0 ;
+      -o-border-radius: 0 ;
+      border-radius: 0 ; } }
+.nav-bar--sf1__top {
+  padding: 12px 0;
+  height: 48px; }
+  @media (min-width: 770px) {
+    .nav-bar--sf1__top {
+      float: left; } }
+.nav-bar--sf1__title {
+  vertical-align: middle; }
+  @media (min-width: 1px) and (max-width: 769px) {
+    .nav-bar--sf1__title {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 48px;
+      font-size: 125%; }
+      .nav-bar--sf1__title.has-subtitle {
+        display: block;
+        line-height: 16px;
+        font-size: 100%;
+        padding-top: 8px; } }
+@media (min-width: 1px) and (max-width: 769px) {
+  .nav-bar--sf1__subtitle {
+    text-align: center;
+    display: block;
+    line-height: 16px;
+    padding-bottom: 8px;
+    color: #9faab5;
+    font-size: 87.5%;
+    position: absolute;
+    top: 24px;
+    width: 100%; } }
 
 .menu--open .nav-bar--sf1__menu-toggle {
   -webkit-border-bottom-left-radius: 0 ;
@@ -4407,21 +4346,29 @@ body .scope-container .brand__border-accent--top {
       -o-border-radius: 0 ;
       border-radius: 0 ; } }
 
-.menu--open .nav-bar--sf1__list, .menu--open .nav-bar--sf1__list--right, .menu--open .nav-bar--sf1__list--left {
+.menu--open .nav-bar--sf1__list {
   display: block; }
 
-.section__title {
-  background-color: #fff;
-  border-width: 1px 0 1px 0;
-  border-style: solid;
-  border-color: #e8eaeb;
-  font-size: 75%;
-  padding: 6px 12px;
-  margin-top: -1px; }
+@media (min-width: 1px) and (max-width: 769px) {
+  .section__title {
+    background-color: #fff;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #e8eaeb;
+    font-size: 75%;
+    padding: 6px 12px;
+    margin-top: -1px; } }
 
-.content__section {
-  padding: 12px;
-  border-bottom: 1px solid #dadee2; }
+@media (min-width: 1px) and (max-width: 769px) {
+  .content__section {
+    padding: 12px;
+    border-bottom: 1px solid #dadee2; }
+    .content__section + .list-group, .content__section + .panel__sidebar__list-group {
+      margin-top: -1px; }
+      .content__section + .list-group a, .content__section + .panel__sidebar__list-group a {
+        padding: 12px 12px; }
+    .content__section + .panel {
+      margin-top: -1px; } }
 
 .sf1-scope .content, .sf1-scope .content--full, .sf1-scope .content--small, .sf1-scope .content--readable, .sf1-scope .content--full {
   padding: 0 12px; }

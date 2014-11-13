@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype : Requisition Location</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body>
+<div class="scope-container">
+    <div class="content pad--md--tm pad--md--bl pad--sm--only--n">
+        <nav id="reqLocNav" class="nav-bar--sf1 mar--sm--bn show-brkpoint--sm--only">
+            <button class="float--right button button--primary mar--sm--only--rs mar--md--lxs">Save</button>
+            <button class="float--right-left button button--secondary mar--sm--only--ls">Cancel</button>
+            <h1 class="nav-bar--sf1__title has-subtitle page__heading has-subheading">Locations</h1>
+            <h2 class="nav-bar--sf1__subtitle page__subheading">Call Center Rep</h2>
+        </nav>
+        <hr  class="show-brkpoint--md"/>
+        <div class="row">
+            <!--left column-->
+            <div class="column--md--8">
+                <!--item entry/search-->
+                <div class="content__section">
+                    <div class="form__group mar--sm--bn">
+                        <label for="jobTitle" class="sr-only">Location</label>
+                        <input type="text" class="bg-1" id="jobTitle" placeholder="Add a location"/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                </div>
+                <!--item search results-->
+                <ul id="searchResults" class="list-group list-group--bordered hide">
+                    <li class="list-group__item location">
+                        <a>New York HQ</a>
+                    </li>
+                    <li class="list-group__item location">
+                        <a>New Mexico HQ</a>
+                    </li>
+                    <li class="list-group__item location">
+                        <a>New Jersey HQ</a>
+                    </li>
+                </ul>
+                <!--item container-->
+                <div class="panel mar--md--tm">
+                    <!--item-->
+                    <div class="panel__component panel__component--removable">
+                        <button type="button" class="close"><span class="component-remove-x"></span><span class="sr-only">Close</span></button>
+                        <div class="row">
+                            <div class="column--md--6">
+                                <h3 class="mar--sm--n">Chicago HQ</h3>
+                                1811 W North Ave.
+                                <br/>
+                                Chicago, IL 60134
+                            </div>
+                            <div class="column--md--6">
+                                <div class="form__group mar--sm--ts">
+                                    <input type="checkbox" checked/><label> Primary</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--item-->
+                    <div class="panel__component panel__component--removable">
+                        <button type="button" class="close"><span class="component-remove-x"></span><span class="sr-only">Close</span></button>
+                        <div class="row">
+                            <div class="column--md--6">
+                                <h3 class="mar--sm--n">Philippines HQ</h3>
+                                Rm 107, 1901 Airport Road
+                                <br/>
+                                Tagbilaran City, Bohol
+                                <br/>
+                                Philippines
+                            </div>
+                            <div class="column--md--6">
+                                <div class="form__group mar--sm--ts">
+                                    <input type="checkbox"/><label> Primary</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column--md--4">
+                <h4 class="section__title mar--sm--bn mar--md--ts">
+                    Required Fields
+                </h4>
+                <hr class="show-brkpoint--md mar--md--ts"/>
+                <div class="content__section">
+                    <div class="form__group">
+                        <label class=" required-field">
+                            EEO Job Code
+                            <span data-toggle="tooltip" data-placement="bottom" title="This code is good" class="has-tooltip juicon juicon-info-circle"></span>
+                        </label>
+                        <input type="text" placeholder="Enter job code"/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                    <div class="form__group">
+                        <label class=" required-field">
+                            Rice Allowance
+                        </label>
+                        <input type="text" placeholder="Enter rice allowance"/>
+                        <small class="text-faded">Required by: Philippines</small>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+</body>
+</html>

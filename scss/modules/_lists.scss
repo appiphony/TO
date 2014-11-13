@@ -2,7 +2,7 @@
   @extend .list-style-type-none;
   overflow: hidden;
   &--bordered {
-    @include border();
+    @include border($color: $component-border-color);
     @include radius();
     .list-group__item {
       @include erase-radius();

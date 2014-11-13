@@ -8,15 +8,28 @@ $sf1-base-v: 4;
 
 .nav-bar--sf1 {
   @extend %clearfix;
-  background: $white;
-  padding: 0 $sf1-base-h+px;
-  margin-bottom: $sf1-base-h+px;
-  min-height: $nav-bar--sf1-height;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: $component-border-color-alt;
-  &.menu--open {
-    @include radius-bottom();
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    background: $white;
+    margin-bottom: $sf1-base-h+px;
+    min-height: $nav-bar--sf1-height;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $component-border-color-alt;
+    &.menu--open {
+      @include radius-bottom();
+    }
+    .button, .button:hover, .button:active, .button:focus {
+      background: rgba(0, 0, 0, 0.07);
+      border: 0;
+      color: $grey-dark;
+      padding: 6.66667px 16px;
+      font-size: 12.8px;
+      line-height: 1.5;
+      border-radius: 4px;
+      margin-top: 8px;
+      position: relative;
+      z-index: 1;
+    }
   }
   .dropdown-menu {
     @include erase-radius-top();
@@ -41,117 +54,33 @@ $sf1-base-v: 4;
   // Title
   &__title {
     @extend .inline-block;
-    line-height: $nav-bar--sf1-height;
-    font-size: $h3-font-size;
     vertical-align: middle;
-  }
-  // A list of items
-  &__list {
-    @extend .list-style-type-none;
-    margin: 0;
     @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      display: none;
-      margin-left: -($sf1-base-h+px);
-      margin-right: -($sf1-base-h+px);
-      .menu--open & {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      line-height: $nav-bar--sf1-height;
+      font-size: $h3-font-size;
+      &.has-subtitle {
         display: block;
-      }
-    }
-    &--right {
-      @extend .nav-bar--sf1__list;
-      @media (min-width: $brkpoint-md+1) {
-        float: right;
-      }
-    }
-    &--left {
-      @extend .nav-bar--sf1__list;
-      @media (min-width: $brkpoint-md+1) {
-        float: left;
-      }
-    }
-    &--item {
-      margin: 0;
-      @extend .relative;
-      @media (min-width: $brkpoint-md+1) {
-        float: left;
-      }
-      a {
-        @extend .block;
-        @extend .pointer;
-        color: $black;
-        padding: $sf1-base-h+px;
-        > .juicon {
-          @extend %icon-before-fix;
-        }
-        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-          background-color: $grey-xx-light;
-        }
-        &.button {
-          @include erase-radius();
-          background: transparent;
-          border: 0;
-          color: inherit;
-        }
-      }
-      &:hover {
-        a {
-          @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-            background-color: $grey-xx-light;
-            color: $grey;
-          }
-        }
-      }
-      &.active, &:hover.active {
-        a {
-          background-color: $component-border-color-alt;
-          color: $black;
-        }
-      }
-      &:last-child {
-        a {
-          @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-            @include radius-bottom();
-          }
-        }
+        line-height: 16px;
+        font-size: $h4-font-size;
+        padding-top: 8px;
       }
     }
   }
-  &__appendage {
-    @extend %clearfix;
-    clear: both;
-    display: none;
-    &--inner {
-      @include radius-bottom();
-      padding-top: $sf1-base-h+px;
-      background-color: $component-border-color-light;
-    }
-    .appendage--open & {
-      @extend .block;
-    }
-  }
-  // Meant for use other than (stuck to) the top of the page
-  &__menu-toggle {
-    @extend .pointer;
-    @extend .float--right;
-    @include radius-right();
-    display: none;
-    font-size: $key-number*2+px;
-    height: $sf1-base-h*3.5+px;
-    margin-right: -($sf1-base-h+px);
-    padding: $sf1-base-v+px $sf1-base-h+px;
-    .menu--open & {
-      @include erase-radius-bottom();
-      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-        @include erase-radius();
-      }
-    }
+  &__subtitle {
     @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      text-align: center;
       display: block;
-    }
-  }
-  .content {
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      padding: 0;
+      line-height: 16px;
+      padding-bottom: 8px;
+      color: $input-icon-color;
+      font-size: $h5-font-size;
+      position: absolute;
+      top: 24px;
+      width: 100%;
     }
   }
 }
@@ -180,19 +109,32 @@ $sf1-base-v: 4;
 // sections
 
 .section__title {
-  background-color: $white;
-  border-width: 1px 0 1px 0;
-  border-style:  solid;
-  border-color: $component-border-color-alt;
-  font-size: 75%;
-  padding: $sf1-base-h/2+px $sf1-base-h+px;
-  margin-top: -1px;
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    background-color: $white;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: $component-border-color-alt;
+    font-size: 75%;
+    padding: $sf1-base-h/2+px $sf1-base-h+px;
+    margin-top: -1px;
+  }
 }
 
 .content__section {
   @extend %clearfix;
-  padding: $sf1-base-h+px;
-  border-bottom: 1px solid $component-border-color;
+  @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+    padding: $sf1-base-h+px;
+    border-bottom: 1px solid $component-border-color;
+    + .list-group {
+      margin-top: -1px;
+      a {
+        padding: $sf1-base-h+px $sf1-base-h+px;
+      }
+      + .panel {
+        margin-top: -1px;
+      }
+    }
+  }
 }
 
 // sf1 scope
