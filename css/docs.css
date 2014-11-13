@@ -37,6 +37,9 @@
   -moz-osx-font-smoothing: grayscale;
   vertical-align: text-top; }
 
+.juicon-ban:before {
+  content: "\e64b"; }
+
 .juicon-alert:before {
   content: "\e600"; }
 
@@ -262,7 +265,7 @@
 .juicon-x:before, body .scope-container .alert-close-x:after, body .scope-container .panel__component > .close .component-remove-x:before, .select2-search-choice-close:before, .close-modal-x:before {
   content: "\e64a"; }
 
-.clearfix:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .nav-bar--sf1__appendage:after, body .scope-container .content__section:after, .modal__footer:after {
+.clearfix:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .content--readable:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .nav-bar--sf1__appendage:after, body .scope-container .content__section:after, .modal__footer:after {
   content: "";
   display: table;
   clear: both; }
@@ -288,7 +291,7 @@ body .scope-container #docs__grid .column--sm--1:before, body .scope-container #
   content: '';
   position: absolute; }
 
-.centered, body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small {
+.centered, body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small, body .scope-container .content--readable {
   float: none;
   margin-left: auto;
   margin-right: auto; }
@@ -303,7 +306,7 @@ body .scope-container #docs__grid .column--sm--1:before, body .scope-container #
   .float--right-left {
     float: right; } }
 
-.pointer, body .scope-container .button, body .scope-container button.button, body .scope-container .alert-close-x, body .scope-container .alert .close-timeout .close-progress, body .scope-container .daterangepicker .ranges li, body .scope-container .list-group__item, body .scope-container .nav-bar__list--item a, body .scope-container .nav-bar__menu-toggle, body .scope-container .select__wrap .input__icon, body .scope-container .select2-container .input__icon, body .scope-container .select__wrap select, body .scope-container .select2-container select, body .scope-container table tbody tr:hover, body .scope-container .sort-arrow, body .scope-container .nav-bar--sf1__list--item a, body .scope-container .nav-bar--sf1__menu-toggle, .select2-container .select2-choice, .select2-container .select2-choice .select2-arrow b {
+.pointer, body .scope-container .building-block.is-empty:hover, body .scope-container .button, body .scope-container button.button, body .scope-container .alert-close-x, body .scope-container .alert .close-timeout .close-progress, body .scope-container .daterangepicker .ranges li, body .scope-container .component__icon, body .scope-container .component__icon--primary, body .scope-container .list-group__item, body .scope-container .nav-bar__list--item a, body .scope-container .nav-bar__menu-toggle, body .scope-container .select__wrap .input__icon, body .scope-container .select2-container .input__icon, body .scope-container .select__wrap select, body .scope-container .select2-container select, body .scope-container table tbody tr:hover, body .scope-container .sort-arrow, body .scope-container .nav-bar--sf1__list--item a, body .scope-container .nav-bar--sf1__menu-toggle, .select2-container .select2-choice, .select2-container .select2-choice .select2-arrow b {
   cursor: pointer; }
 
 .relative, body .scope-container .alert, body .scope-container .button-group, body .scope-container .button-group .button, body .scope-container .button-group--collapse, body .scope-container .button-group--collapse .button, body .scope-container .input__wrap, body .scope-container .input__icon.juicon:before, body .scope-container .input__icon.form__group.load-this:before, body .scope-container .input__icon.load-block:before, body .scope-container .panel__component > .close .input__icon.component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow b.input__icon:before, .select2-container .select2-choice .select2-arrow body .scope-container b.input__icon:before, body .scope-container .input__icon.select2-search-choice-close:before, body .scope-container .input__icon.close-modal-x:before, body .scope-container .button.load-this:after, body .scope-container .form__group.load-this, body .scope-container .list-group__item, body .scope-container .nav-bar__list--item, body .scope-container .pagination__item a, body .scope-container .panel__component, body .scope-container .panel__box, body .scope-container .panel__sidebar, body .scope-container .sort-it, body .scope-container .nav-bar--sf1__list--item, .modal__body {
@@ -318,7 +321,7 @@ body .scope-container #docs__grid .column--sm--1:before, body .scope-container #
 .text-underline {
   text-decoration: underline; }
 
-.text-left, body .scope-container .dropdown-menu, body .scope-container .button.text-left, body .scope-container button.button.text-left {
+.text-left, body .scope-container .dropdown-menu, body .scope-container .dropdown-menu--top-right, body .scope-container .button.text-left, body .scope-container button.button.text-left {
   text-align: left; }
 
 @media (min-width: 1px) and (max-width: 769px) {
@@ -359,7 +362,7 @@ body .scope-container .panel__sidebar {
 body .scope-container .panel__box {
   overflow: hidden; }
 
-.list-style-type-none, body .scope-container .dropdown-menu, body .scope-container .list-group, body .scope-container .panel__sidebar__list-group, body .scope-container .inline-list, body .scope-container .nav-bar__list, body .scope-container .nav-bar__list--right, body .scope-container .nav-bar__list--left, body .scope-container .pagination, body .scope-container .pagination--alt, body .scope-container .nav-bar--sf1__list, body .scope-container .nav-bar--sf1__list--right, body .scope-container .nav-bar--sf1__list--left, .sig__container .sigNav, body .scope-container .toc {
+.list-style-type-none, body .scope-container .dropdown-menu, body .scope-container .dropdown-menu--top-right, body .scope-container .list-group, body .scope-container .panel__sidebar__list-group, body .scope-container .inline-list, body .scope-container .nav-bar__list, body .scope-container .nav-bar__list--right, body .scope-container .nav-bar__list--left, body .scope-container .pagination, body .scope-container .pagination--alt, body .scope-container .nav-bar--sf1__list, body .scope-container .nav-bar--sf1__list--right, body .scope-container .nav-bar--sf1__list--left, .sig__container .sigNav, body .scope-container .toc {
   list-style-type: none;
   padding: 0; }
 
@@ -461,6 +464,9 @@ body .scope-container .panel__box {
 .text-error, body .scope-container .required-field:after {
   color: #c06057; }
 
+.text-strike {
+  text-decoration: line-through; }
+
 @-webkit-keyframes spin-it {
   from {
     -webkit-transform: rotate(0deg); }
@@ -468,6 +474,11 @@ body .scope-container .panel__box {
     -webkit-transform: rotate(360deg); } }
 .spin-it, body .scope-container .button.load-this:after, body .scope-container .form__group.load-this:before, body .scope-container .select2-container.load-this .select2-choice .select2-arrow b, body .scope-container .load-block {
   -webkit-animation: spin-it 1s linear infinite; }
+
+.has-hidden-items .hidden-item {
+  display: none; }
+.has-hidden-items:hover .hidden-item {
+  display: block; }
 
 .top-cap {
   -webkit-border-top-left-radius: 4px !important;
@@ -1438,12 +1449,39 @@ body .scope-container span.show-brkpoint--md--only {
   @media (min-width: 769px) and (max-width: 1100px) {
     body .scope-container span.show-brkpoint--md--only {
       display: inline-block; } }
-body .scope-container td {
-  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-body .scope-container h1, body .scope-container h2, body .scope-container h3, body .scope-container h4, body .scope-container h5, body .scope-container h6 {
-  font-family: "ProximaNovaSoft", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #384047;
-  font-weight: 300; }
+body .scope-container .building-block {
+  padding: 16px 0; }
+  body .scope-container .building-block:hover {
+    -webkit-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    border-radius: 4px ;
+    cursor: move;
+    cursor: -webkit-grab;
+    border-color: #2a94d6;
+    border-style: dashed;
+    border-width: 1px;
+    margin: -1px -16px;
+    padding: 16px 15px; }
+  body .scope-container .building-block h1, body .scope-container .building-block h2, body .scope-container .building-block h3, body .scope-container .building-block h4, body .scope-container .building-block h5, body .scope-container .building-block h6, body .scope-container .building-block p {
+    margin: 0; }
+  body .scope-container .building-block p ~ p {
+    margin-top: 16px; }
+  body .scope-container .building-block.is-empty {
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    -webkit-transition: padding 0.2s ease;
+    -moz-transition: padding 0.2s ease;
+    -o-transition: padding 0.2s ease;
+    transition: padding 0.2s ease;
+    color: #fff;
+    padding: 8px 16px; }
+    body .scope-container .building-block.is-empty:hover {
+      padding: 48px;
+      color: #2a94d6; }
 
 .bodyDiv .noSidebarCell .scope-container {
   -webkit-border-bottom-left-radius: 4px ;
@@ -1778,19 +1816,21 @@ body .scope-container .left--12 {
   @media (min-width: 1px) and (max-width: 769px) {
     body .scope-container .left--12 {
       right: auto; } }
-body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small {
+body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small, body .scope-container .content--readable {
   padding: 0 16px; }
   @media (min-width: 1px) and (max-width: 768px) {
-    body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small {
+    body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small, body .scope-container .content--readable {
       max-width: 100%; } }
   @media (min-width: 769px) {
-    body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small {
+    body .scope-container .content, body .scope-container .content--full, body .scope-container .content--small, body .scope-container .content--readable {
       max-width: 1000px;
       min-height: 1px; } }
   body .scope-container .content--full {
     max-width: 100%; }
   body .scope-container .content--small {
     max-width: 324px; }
+  body .scope-container .content--readable {
+    max-width: 640px; }
 body .scope-container .row {
   margin-left: -16px;
   margin-right: -16px; }
@@ -1846,11 +1886,11 @@ body .scope-container .button--secondary, body .scope-container button.button--s
 
 body .scope-container .has-error input[type="text"], body .scope-container .has-error input[type="password"], body .scope-container .has-error input[type="number"], body .scope-container .has-error input[type="email"], body .scope-container input[type="text"], body .scope-container input[type="password"], body .scope-container input[type="number"], body .scope-container input[type="email"], body .scope-container input[type="tel"], body .scope-container textarea, .select2-search input, body .scope-container .input-size {
   display: block;
-  width: 100%;
   font-size: 16px;
   color: #686c70; }
 
 body .scope-container .has-error input[type="text"], body .scope-container .has-error input[type="password"], body .scope-container .has-error input[type="number"], body .scope-container .has-error input[type="email"], body .scope-container input[type="text"], body .scope-container input[type="password"], body .scope-container input[type="number"], body .scope-container input[type="email"], body .scope-container input[type="tel"], body .scope-container textarea, .select2-search input {
+  width: 100%;
   border: 1px solid #dadee2;
   background-color: #e8eaeb;
   background-image: none;
@@ -1896,7 +1936,7 @@ body .scope-container .input__wrap.has-icon--right .input__icon, body .scope-con
 body .scope-container .input__wrap.has-icon--left .input__icon, body .scope-container .list-group__item.has-icon--left .input__icon, body .scope-container .list-group__item.has-icon--left--special .input__icon {
   left: 0; }
 
-body .scope-container .button > .juicon:before, body .scope-container .button > .form__group.load-this:before, body .scope-container .button > .load-block:before, body .scope-container .panel__component > .close .button > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow .button > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .button > b:before, body .scope-container .button > .select2-search-choice-close:before, body .scope-container .button > .close-modal-x:before, body .scope-container .label > .juicon:before, body .scope-container .label > .form__group.load-this:before, body .scope-container .label > .load-block:before, body .scope-container .panel__component > .close .label > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow .label > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .label > b:before, body .scope-container .label > .select2-search-choice-close:before, body .scope-container .label > .close-modal-x:before, body .scope-container .inline-list__item a > .juicon:before, body .scope-container .inline-list__item a > .form__group.load-this:before, body .scope-container .inline-list__item a > .load-block:before, body .scope-container .inline-list__item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .inline-list__item a > .component-remove-x:before, body .scope-container .inline-list__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .inline-list__item a > b:before, body .scope-container .inline-list__item a > .select2-search-choice-close:before, body .scope-container .inline-list__item a > .close-modal-x:before, body .scope-container .nav-bar__list--item a > .juicon:before, body .scope-container .nav-bar__list--item a > .form__group.load-this:before, body .scope-container .nav-bar__list--item a > .load-block:before, body .scope-container .nav-bar__list--item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .nav-bar__list--item a > .component-remove-x:before, body .scope-container .nav-bar__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .nav-bar__list--item a > b:before, body .scope-container .nav-bar__list--item a > .select2-search-choice-close:before, body .scope-container .nav-bar__list--item a > .close-modal-x:before, body .scope-container .pagination__item a > .juicon:before, body .scope-container .pagination__item a > .form__group.load-this:before, body .scope-container .pagination__item a > .load-block:before, body .scope-container .pagination__item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .pagination__item a > .component-remove-x:before, body .scope-container .pagination__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .pagination__item a > b:before, body .scope-container .pagination__item a > .select2-search-choice-close:before, body .scope-container .pagination__item a > .close-modal-x:before, body .scope-container .nav-bar--sf1__list--item a > .juicon:before, body .scope-container .nav-bar--sf1__list--item a > .form__group.load-this:before, body .scope-container .nav-bar--sf1__list--item a > .load-block:before, body .scope-container .nav-bar--sf1__list--item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .nav-bar--sf1__list--item a > .component-remove-x:before, body .scope-container .nav-bar--sf1__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .nav-bar--sf1__list--item a > b:before, body .scope-container .nav-bar--sf1__list--item a > .select2-search-choice-close:before, body .scope-container .nav-bar--sf1__list--item a > .close-modal-x:before {
+body .scope-container .button > .juicon:before, body .scope-container .button > .form__group.load-this:before, body .scope-container .button > .load-block:before, body .scope-container .panel__component > .close .button > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow .button > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .button > b:before, body .scope-container .button > .select2-search-choice-close:before, body .scope-container .button > .close-modal-x:before, body .scope-container button.button > .juicon:before, body .scope-container button.button > .form__group.load-this:before, body .scope-container button.button > .load-block:before, body .scope-container .panel__component > .close button.button > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow button.button > b:before, .select2-container .select2-choice .select2-arrow body .scope-container button.button > b:before, body .scope-container button.button > .select2-search-choice-close:before, body .scope-container button.button > .close-modal-x:before, body .scope-container span.juicon:before, body .scope-container span.form__group.load-this:before, body .scope-container span.load-block:before, body .scope-container .panel__component > .close span.component-remove-x:before, body .scope-container span.select2-search-choice-close:before, body .scope-container span.close-modal-x:before, body .scope-container span > .juicon:before, body .scope-container span > .form__group.load-this:before, body .scope-container span > .load-block:before, body .scope-container .panel__component > .close span > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow span > b:before, .select2-container .select2-choice .select2-arrow body .scope-container span > b:before, body .scope-container span > .select2-search-choice-close:before, body .scope-container span > .close-modal-x:before, body .scope-container strong.juicon:before, body .scope-container strong.form__group.load-this:before, body .scope-container strong.load-block:before, body .scope-container .panel__component > .close strong.component-remove-x:before, body .scope-container strong.select2-search-choice-close:before, body .scope-container strong.close-modal-x:before, body .scope-container strong > .juicon:before, body .scope-container strong > .form__group.load-this:before, body .scope-container strong > .load-block:before, body .scope-container .panel__component > .close strong > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow strong > b:before, .select2-container .select2-choice .select2-arrow body .scope-container strong > b:before, body .scope-container strong > .select2-search-choice-close:before, body .scope-container strong > .close-modal-x:before, body .scope-container b.juicon:before, body .scope-container b.form__group.load-this:before, body .scope-container b.load-block:before, body .scope-container .panel__component > .close b.component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow b:before, .select2-container .select2-choice .select2-arrow body .scope-container b:before, body .scope-container b.select2-search-choice-close:before, body .scope-container b.close-modal-x:before, body .scope-container b > .juicon:before, body .scope-container b > .form__group.load-this:before, body .scope-container b > .load-block:before, body .scope-container .panel__component > .close b > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow b > b:before, .select2-container .select2-choice .select2-arrow body .scope-container b > b:before, body .scope-container b > .select2-search-choice-close:before, body .scope-container b > .close-modal-x:before, body .scope-container a.juicon:before, body .scope-container a.form__group.load-this:before, body .scope-container a.load-block:before, body .scope-container .panel__component > .close a.component-remove-x:before, body .scope-container a.select2-search-choice-close:before, body .scope-container a.close-modal-x:before, body .scope-container a > .juicon:before, body .scope-container a > .form__group.load-this:before, body .scope-container a > .load-block:before, body .scope-container .panel__component > .close a > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container a > b:before, body .scope-container a > .select2-search-choice-close:before, body .scope-container a > .close-modal-x:before, body .scope-container .label > .juicon:before, body .scope-container .label > .form__group.load-this:before, body .scope-container .label > .load-block:before, body .scope-container .panel__component > .close .label > .component-remove-x:before, body .scope-container .select2-container .select2-choice .select2-arrow .label > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .label > b:before, body .scope-container .label > .select2-search-choice-close:before, body .scope-container .label > .close-modal-x:before, body .scope-container .inline-list__item a > .juicon:before, body .scope-container .inline-list__item a > .form__group.load-this:before, body .scope-container .inline-list__item a > .load-block:before, body .scope-container .inline-list__item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .inline-list__item a > .component-remove-x:before, body .scope-container .inline-list__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .inline-list__item a > b:before, body .scope-container .inline-list__item a > .select2-search-choice-close:before, body .scope-container .inline-list__item a > .close-modal-x:before, body .scope-container .nav-bar__list--item a > .juicon:before, body .scope-container .nav-bar__list--item a > .form__group.load-this:before, body .scope-container .nav-bar__list--item a > .load-block:before, body .scope-container .nav-bar__list--item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .nav-bar__list--item a > .component-remove-x:before, body .scope-container .nav-bar__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .nav-bar__list--item a > b:before, body .scope-container .nav-bar__list--item a > .select2-search-choice-close:before, body .scope-container .nav-bar__list--item a > .close-modal-x:before, body .scope-container .pagination__item a > .juicon:before, body .scope-container .pagination__item a > .form__group.load-this:before, body .scope-container .pagination__item a > .load-block:before, body .scope-container .pagination__item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .pagination__item a > .component-remove-x:before, body .scope-container .pagination__item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .pagination__item a > b:before, body .scope-container .pagination__item a > .select2-search-choice-close:before, body .scope-container .pagination__item a > .close-modal-x:before, body .scope-container .nav-bar--sf1__list--item a > .juicon:before, body .scope-container .nav-bar--sf1__list--item a > .form__group.load-this:before, body .scope-container .nav-bar--sf1__list--item a > .load-block:before, body .scope-container .nav-bar--sf1__list--item .panel__component > .close a > .component-remove-x:before, body .scope-container .panel__component > .close .nav-bar--sf1__list--item a > .component-remove-x:before, body .scope-container .nav-bar--sf1__list--item .select2-container .select2-choice .select2-arrow a > b:before, .select2-container .select2-choice .select2-arrow body .scope-container .nav-bar--sf1__list--item a > b:before, body .scope-container .nav-bar--sf1__list--item a > .select2-search-choice-close:before, body .scope-container .nav-bar--sf1__list--item a > .close-modal-x:before {
   position: relative;
   top: 2px; }
 
@@ -2020,7 +2060,7 @@ body .scope-container {
     font-family: 'juicons';
     vertical-align: middle;
     line-height: 1; }
-  body .scope-container .dropdown-menu {
+  body .scope-container .dropdown-menu, body .scope-container .dropdown-menu--top-right {
     display: none;
     position: absolute;
     top: 100%;
@@ -2037,10 +2077,10 @@ body .scope-container {
     -o-border-radius: 4px ;
     border-radius: 4px ; }
     @media (min-width: 1px) and (max-width: 768px) {
-      body .scope-container .dropdown-menu {
+      body .scope-container .dropdown-menu, body .scope-container .dropdown-menu--top-right {
         max-width: 100%; } }
     @media (min-width: 769px) {
-      body .scope-container .dropdown-menu {
+      body .scope-container .dropdown-menu, body .scope-container .dropdown-menu--top-right {
         max-width: 512px; } }
     body .scope-container .dropdown-menu__list-item {
       display: block;
@@ -2056,7 +2096,12 @@ body .scope-container {
     body .scope-container .dropdown-menu--right {
       left: auto;
       right: 0; }
-  body .scope-container .open > .dropdown-menu {
+    body .scope-container .dropdown-menu--top-right {
+      left: auto;
+      right: 0;
+      bottom: 100%;
+      top: auto; }
+  body .scope-container .open > .dropdown-menu, body .scope-container .open > .dropdown-menu--top-right {
     display: block; }
   body .scope-container .dropdown-backdrop {
     position: fixed;
@@ -2346,7 +2391,7 @@ body .scope-container {
   body .scope-container .button--muted, body .scope-container button.button--muted {
     background: rgba(0, 0, 0, 0.07);
     color: #686c70; }
-  body .scope-container .button.dropdown-menu > .juicon, body .scope-container .button.text-left > .juicon, body .scope-container .button.dropdown-menu > .required-field:after, body .scope-container .button.text-left > .required-field:after, body .scope-container .button.dropdown-menu > .button.load-this:after, body .scope-container .button.text-left > .button.load-this:after, body .scope-container .button.dropdown-menu > .form__group.load-this:before, body .scope-container .button.text-left > .form__group.load-this:before, body .scope-container .button.dropdown-menu > .load-block, body .scope-container .button.text-left > .load-block, body .scope-container .panel__component > .close .button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close .button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow .button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.text-left > b, body .scope-container .button.dropdown-menu > .select2-search-choice-close, body .scope-container .button.text-left > .select2-search-choice-close, body .scope-container .button.dropdown-menu > .close-modal-x, body .scope-container .button.text-left > .close-modal-x, body .scope-container button.button.dropdown-menu > .juicon, body .scope-container button.button.text-left > .juicon, body .scope-container button.button.dropdown-menu > .required-field:after, body .scope-container button.button.text-left > .required-field:after, body .scope-container button.button.dropdown-menu > .button.load-this:after, body .scope-container button.button.text-left > .button.load-this:after, body .scope-container button.button.dropdown-menu > .form__group.load-this:before, body .scope-container button.button.text-left > .form__group.load-this:before, body .scope-container button.button.dropdown-menu > .load-block, body .scope-container button.button.text-left > .load-block, body .scope-container .panel__component > .close button.button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close button.button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow button.button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.text-left > b, body .scope-container button.button.dropdown-menu > .select2-search-choice-close, body .scope-container button.button.text-left > .select2-search-choice-close, body .scope-container button.button.dropdown-menu > .close-modal-x, body .scope-container button.button.text-left > .close-modal-x {
+  body .scope-container .button.dropdown-menu > .juicon, body .scope-container .button.dropdown-menu--top-right > .juicon, body .scope-container .button.text-left > .juicon, body .scope-container .button.dropdown-menu > .required-field:after, body .scope-container .button.dropdown-menu--top-right > .required-field:after, body .scope-container .button.text-left > .required-field:after, body .scope-container .button.dropdown-menu > .button.load-this:after, body .scope-container .button.dropdown-menu--top-right > .button.load-this:after, body .scope-container .button.text-left > .button.load-this:after, body .scope-container .button.dropdown-menu > .form__group.load-this:before, body .scope-container .button.dropdown-menu--top-right > .form__group.load-this:before, body .scope-container .button.text-left > .form__group.load-this:before, body .scope-container .button.dropdown-menu > .load-block, body .scope-container .button.dropdown-menu--top-right > .load-block, body .scope-container .button.text-left > .load-block, body .scope-container .panel__component > .close .button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close .button.dropdown-menu--top-right > .component-remove-x, body .scope-container .panel__component > .close .button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow .button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow .button.dropdown-menu--top-right > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.dropdown-menu--top-right > b, body .scope-container .select2-container .select2-choice .select2-arrow .button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container .button.text-left > b, body .scope-container .button.dropdown-menu > .select2-search-choice-close, body .scope-container .button.dropdown-menu--top-right > .select2-search-choice-close, body .scope-container .button.text-left > .select2-search-choice-close, body .scope-container .button.dropdown-menu > .close-modal-x, body .scope-container .button.dropdown-menu--top-right > .close-modal-x, body .scope-container .button.text-left > .close-modal-x, body .scope-container button.button.dropdown-menu > .juicon, body .scope-container button.button.dropdown-menu--top-right > .juicon, body .scope-container button.button.text-left > .juicon, body .scope-container button.button.dropdown-menu > .required-field:after, body .scope-container button.button.dropdown-menu--top-right > .required-field:after, body .scope-container button.button.text-left > .required-field:after, body .scope-container button.button.dropdown-menu > .button.load-this:after, body .scope-container button.button.dropdown-menu--top-right > .button.load-this:after, body .scope-container button.button.text-left > .button.load-this:after, body .scope-container button.button.dropdown-menu > .form__group.load-this:before, body .scope-container button.button.dropdown-menu--top-right > .form__group.load-this:before, body .scope-container button.button.text-left > .form__group.load-this:before, body .scope-container button.button.dropdown-menu > .load-block, body .scope-container button.button.dropdown-menu--top-right > .load-block, body .scope-container button.button.text-left > .load-block, body .scope-container .panel__component > .close button.button.dropdown-menu > .component-remove-x, body .scope-container .panel__component > .close button.button.dropdown-menu--top-right > .component-remove-x, body .scope-container .panel__component > .close button.button.text-left > .component-remove-x, body .scope-container .select2-container .select2-choice .select2-arrow button.button.dropdown-menu > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.dropdown-menu > b, body .scope-container .select2-container .select2-choice .select2-arrow button.button.dropdown-menu--top-right > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.dropdown-menu--top-right > b, body .scope-container .select2-container .select2-choice .select2-arrow button.button.text-left > b, .select2-container .select2-choice .select2-arrow body .scope-container button.button.text-left > b, body .scope-container button.button.dropdown-menu > .select2-search-choice-close, body .scope-container button.button.dropdown-menu--top-right > .select2-search-choice-close, body .scope-container button.button.text-left > .select2-search-choice-close, body .scope-container button.button.dropdown-menu > .close-modal-x, body .scope-container button.button.dropdown-menu--top-right > .close-modal-x, body .scope-container button.button.text-left > .close-modal-x {
     padding-top: 2px; }
   body .scope-container .button.button--action, body .scope-container button.button--action {
     width: 64px;
@@ -2400,7 +2445,7 @@ body .scope-container {
     margin-top: 1px;
     border: 0px solid #dadee2; }
     @media (min-width: 1px) and (max-width: 769px) {
-      body .scope-container .datepicker.dropdown-menu {
+      body .scope-container .datepicker.dropdown-menu, body .scope-container .datepicker.dropdown-menu--top-right {
         width: 100%;
         left: 0 !important; } }
     body .scope-container .datepicker table {
@@ -2484,7 +2529,7 @@ body .scope-container {
     top: 100px;
     left: 0px;
     margin-top: 1px; }
-    body .scope-container .daterangepicker.dropdown-menu {
+    body .scope-container .daterangepicker.dropdown-menu, body .scope-container .daterangepicker.dropdown-menu--top-right {
       max-width: none;
       z-index: 3000; }
     body .scope-container .daterangepicker.opensleft:before {
@@ -2995,6 +3040,10 @@ body .scope-container {
     border-bottom-right-radius: 4px ;
     background-color: rgba(56, 64, 71, 0.8);
     padding: 16px; }
+  body .scope-container .component__icon:hover, body .scope-container .component__icon--primary:hover {
+    color: #2a94d6; }
+  body .scope-container .component__icon--primary {
+    color: #2a94d6; }
   body .scope-container .avatar-container--lg {
     width: 40px;
     height: 40px;
@@ -3280,7 +3329,7 @@ body .scope-container {
       -moz-border-bottom-right-radius: 4px ;
       -o-border-bottom-right-radius: 4px ;
       border-bottom-right-radius: 4px ; }
-    body .scope-container .nav-bar .dropdown-menu, body .scope-container .nav-bar--solo .dropdown-menu {
+    body .scope-container .nav-bar .dropdown-menu, body .scope-container .nav-bar--solo .dropdown-menu, body .scope-container .nav-bar .dropdown-menu--top-right, body .scope-container .nav-bar--solo .dropdown-menu--top-right {
       -webkit-border-top-left-radius: 0 ;
       -ms-border-top-left-radius: 0 ;
       -moz-border-top-left-radius: 0 ;
@@ -3293,7 +3342,7 @@ body .scope-container {
       border-top-right-radius: 0 ;
       margin: 0; }
       @media (min-width: 1px) and (max-width: 769px) {
-        body .scope-container .nav-bar .dropdown-menu, body .scope-container .nav-bar--solo .dropdown-menu {
+        body .scope-container .nav-bar .dropdown-menu, body .scope-container .nav-bar--solo .dropdown-menu, body .scope-container .nav-bar .dropdown-menu--top-right, body .scope-container .nav-bar--solo .dropdown-menu--top-right {
           width: 100%;
           position: relative;
           border-left: 0;
@@ -3425,7 +3474,7 @@ body .scope-container {
         body .scope-container .nav-bar__menu-toggle {
           display: block; } }
     @media (min-width: 1px) and (max-width: 769px) {
-      body .scope-container .nav-bar .content, body .scope-container .nav-bar--solo .content, body .scope-container .nav-bar .content--full, body .scope-container .nav-bar--solo .content--full, body .scope-container .nav-bar .content--small, body .scope-container .nav-bar--solo .content--small {
+      body .scope-container .nav-bar .content, body .scope-container .nav-bar--solo .content, body .scope-container .nav-bar .content--full, body .scope-container .nav-bar--solo .content--full, body .scope-container .nav-bar .content--small, body .scope-container .nav-bar--solo .content--small, body .scope-container .nav-bar .content--readable, body .scope-container .nav-bar--solo .content--readable {
         padding: 0; } }
   body .scope-container .menu--open .nav-bar__menu-toggle {
     -webkit-border-bottom-left-radius: 0 ;
@@ -4075,7 +4124,7 @@ body .scope-container {
       -moz-border-bottom-right-radius: 4px ;
       -o-border-bottom-right-radius: 4px ;
       border-bottom-right-radius: 4px ; }
-    body .scope-container .nav-bar--sf1 .dropdown-menu {
+    body .scope-container .nav-bar--sf1 .dropdown-menu, body .scope-container .nav-bar--sf1 .dropdown-menu--top-right {
       -webkit-border-top-left-radius: 0 ;
       -ms-border-top-left-radius: 0 ;
       -moz-border-top-left-radius: 0 ;
@@ -4088,7 +4137,7 @@ body .scope-container {
       border-top-right-radius: 0 ;
       margin: 0; }
       @media (min-width: 1px) and (max-width: 769px) {
-        body .scope-container .nav-bar--sf1 .dropdown-menu {
+        body .scope-container .nav-bar--sf1 .dropdown-menu, body .scope-container .nav-bar--sf1 .dropdown-menu--top-right {
           width: 100%;
           position: relative;
           border-left: 0;
@@ -4216,7 +4265,7 @@ body .scope-container {
         body .scope-container .nav-bar--sf1__menu-toggle {
           display: block; } }
     @media (min-width: 1px) and (max-width: 769px) {
-      body .scope-container .nav-bar--sf1 .content, body .scope-container .nav-bar--sf1 .content--full, body .scope-container .nav-bar--sf1 .content--small {
+      body .scope-container .nav-bar--sf1 .content, body .scope-container .nav-bar--sf1 .content--full, body .scope-container .nav-bar--sf1 .content--small, body .scope-container .nav-bar--sf1 .content--readable {
         padding: 0; } }
   body .scope-container .menu--open .nav-bar--sf1__menu-toggle {
     -webkit-border-bottom-left-radius: 0 ;
@@ -4249,9 +4298,9 @@ body .scope-container {
   body .scope-container .content__section {
     padding: 12px;
     border-bottom: 1px solid #dadee2; }
-  body .scope-container .sf1-scope .content, body .scope-container .sf1-scope .content--full, body .scope-container .sf1-scope .content--small, body .scope-container .sf1-scope .content--full {
+  body .scope-container .sf1-scope .content, body .scope-container .sf1-scope .content--full, body .scope-container .sf1-scope .content--small, body .scope-container .sf1-scope .content--readable, body .scope-container .sf1-scope .content--full {
     padding: 0 12px; }
-  body .scope-container.sf1-scope .content, body .scope-container.sf1-scope .content--full, body .scope-container.sf1-scope .content--small, body .scope-container.sf1-scope .content--full {
+  body .scope-container.sf1-scope .content, body .scope-container.sf1-scope .content--full, body .scope-container.sf1-scope .content--small, body .scope-container.sf1-scope .content--readable, body .scope-container.sf1-scope .content--full {
     padding: 0 12px; }
 
 /*

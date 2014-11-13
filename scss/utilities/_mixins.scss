@@ -254,73 +254,73 @@ $el-h: null) {
 
 // surgical space
 
-@mixin surgical-space($attr, $imp) {
-  &n      {#{$attr}:0 #{$imp}}
-  &xs     {#{$attr}:$key-number*.25+px #{$imp}}
-  &s      {#{$attr}:$key-number*.5+px #{$imp}}
-  &m      {#{$attr}:$key-number+px #{$imp}}
-  &l      {#{$attr}:$key-number*1.5+px #{$imp}}
-  &xl     {#{$attr}:$key-number*2+px #{$imp}}
-  &xxl    {#{$attr}:$key-number*5+px #{$imp}}
+@mixin surgical-space($attr, $important: null) {
+  &n      {#{$attr}:0$important}
+  &xs     {#{$attr}:$key-number*.25+px$important}
+  &s      {#{$attr}:$key-number*.5+px$important}
+  &m      {#{$attr}:$key-number+px$important}
+  &l      {#{$attr}:$key-number*1.5+px$important}
+  &xl     {#{$attr}:$key-number*2+px$important}
+  &xxl    {#{$attr}:$key-number*5+px$important}
 
-  &tn      {#{$attr}-top: 0 #{$imp}}
-  &txs     {#{$attr}-top:$key-number*.25+px #{$imp}}
-  &ts      {#{$attr}-top:$key-number*.5+px #{$imp}}
-  &tm      {#{$attr}-top:$key-number+px #{$imp}}
-  &tl      {#{$attr}-top:$key-number*1.5+px #{$imp}}
-  &txl     {#{$attr}-top:$key-number*2+px #{$imp}}
-  &txxl    {#{$attr}-top:$key-number*5+px #{$imp}}
+  &tn      {#{$attr}-top: 0$important}
+  &txs     {#{$attr}-top:$key-number*.25+px$important}
+  &ts      {#{$attr}-top:$key-number*.5+px$important}
+  &tm      {#{$attr}-top:$key-number+px$important}
+  &tl      {#{$attr}-top:$key-number*1.5+px$important}
+  &txl     {#{$attr}-top:$key-number*2+px$important}
+  &txxl    {#{$attr}-top:$key-number*5+px$important}
 
-  &rn      {#{$attr}-right: 0 #{$imp}}
-  &rxs     {#{$attr}-right:$key-number*.25+px #{$imp}}
-  &rs      {#{$attr}-right:$key-number*.5+px #{$imp}}
-  &rm      {#{$attr}-right:$key-number+px #{$imp}}
-  &rl      {#{$attr}-right:$key-number*1.5+px #{$imp}}
-  &rxl     {#{$attr}-right:$key-number*2+px #{$imp}}
-  &rxxl    {#{$attr}-right:$key-number*5+px #{$imp}}
+  &rn      {#{$attr}-right: 0$important}
+  &rxs     {#{$attr}-right:$key-number*.25+px$important}
+  &rs      {#{$attr}-right:$key-number*.5+px$important}
+  &rm      {#{$attr}-right:$key-number+px$important}
+  &rl      {#{$attr}-right:$key-number*1.5+px$important}
+  &rxl     {#{$attr}-right:$key-number*2+px$important}
+  &rxxl    {#{$attr}-right:$key-number*5+px$important}
 
-  &bn      {#{$attr}-bottom: 0 #{$imp}}
-  &bxs     {#{$attr}-bottom:$key-number*.25+px #{$imp}}
-  &bs      {#{$attr}-bottom:$key-number*.5+px #{$imp}}
-  &bm      {#{$attr}-bottom:$key-number+px #{$imp}}
-  &bl      {#{$attr}-bottom:$key-number*1.5+px #{$imp}}
-  &bxl     {#{$attr}-bottom:$key-number*2+px #{$imp}}
-  &bxxl    {#{$attr}-bottom:$key-number*5+px #{$imp}}
+  &bn      {#{$attr}-bottom: 0$important}
+  &bxs     {#{$attr}-bottom:$key-number*.25+px$important}
+  &bs      {#{$attr}-bottom:$key-number*.5+px$important}
+  &bm      {#{$attr}-bottom:$key-number+px$important}
+  &bl      {#{$attr}-bottom:$key-number*1.5+px$important}
+  &bxl     {#{$attr}-bottom:$key-number*2+px$important}
+  &bxxl    {#{$attr}-bottom:$key-number*5+px$important}
 
-  &ln      {#{$attr}-left: 0 #{$imp}}
-  &lxs     {#{$attr}-left:$key-number*.25+px #{$imp}}
-  &ls      {#{$attr}-left:$key-number*.5+px #{$imp}}
-  &lm      {#{$attr}-left:$key-number+px #{$imp}}
-  &ll      {#{$attr}-left:$key-number*1.5+px #{$imp}}
-  &lxl     {#{$attr}-left:$key-number*2+px #{$imp}}
-  &lxxl    {#{$attr}-left:$key-number*5+px #{$imp}}
+  &ln      {#{$attr}-left: 0$important}
+  &lxs     {#{$attr}-left:$key-number*.25+px$important}
+  &ls      {#{$attr}-left:$key-number*.5+px$important}
+  &lm      {#{$attr}-left:$key-number+px$important}
+  &ll      {#{$attr}-left:$key-number*1.5+px$important}
+  &lxl     {#{$attr}-left:$key-number*2+px$important}
+  &lxxl    {#{$attr}-left:$key-number*5+px$important}
 }
 
 
-@mixin add-surgical-space($attr, $imp: null) {
+@mixin add-surgical-space($attr) {
   &--sm-- {
     @media (min-width: $brkpoint-sm) {
-      @include surgical-space($attr: $attr, $imp: $imp);
+      @include surgical-space($attr: $attr, $important: !important);
     }
     &only-- {
       @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-        @include surgical-space($attr: $attr, $imp: $imp);
+        @include surgical-space($attr: $attr, $important: !important);
       }
     }
   }
   &--md-- {
     @media (min-width: $brkpoint-md) {
-      @include surgical-space($attr: $attr, $imp: $imp);
+      @include surgical-space($attr: $attr, $important: !important);
     }
     &only-- {
       @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg) {
-        @include surgical-space($attr: $attr, $imp: $imp);
+        @include surgical-space($attr: $attr, $important: !important);
       }
     }
   }
   &--lg-- {
     @media (min-width: $brkpoint-lg) {
-      @include surgical-space($attr: $attr, $imp: $imp);
+      @include surgical-space($attr: $attr, $important: !important);
     }
   }
 }
