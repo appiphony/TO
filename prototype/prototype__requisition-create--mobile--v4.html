@@ -5,49 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" href="../css/styles-scoped.css">
 </head>
-<body class="bg-2">
-<div class="scope-container sf1-scope">
-    <div id="div1" class="">
-        <nav id="newReqNav" class="nav-bar--sf1 text-center mar--sm--bn">
-            <button class="float--left button button--muted button--small mar--sm--ts">Cancel</button>
-            <button class="float--right button button--muted button--small mar--sm--ts">Save</button>
-            <span class="nav-bar--sf1__title">New Requisition</span>
+<body class="">
+<div class="scope-container">
+    <div class="content pad--md--tm pad--md--bl pad--sm--only--n">
+        <div id="div1" class="">
+        <nav id="newReqNav" class="nav-bar--sf1 mar--sm--bn show-brkpoint--sm--only">
+            <button class="float--right button button--primary mar--sm--only--rs mar--md--lxs">Save</button>
+            <button class="float--right-left button button--secondary mar--sm--only--ls">Cancel</button>
+            <h1 class="nav-bar--sf1__title has-subtitle page__heading">New Requisition</h1>
         </nav>
-        <div class="section__title mar--sm--bn">
+            <hr class="show-brkpoint--md"/>
+        <h3 class="section__title mar--sm--only--bn mar--md--bm">
             Key Information
-        </div>
-        <div id="createPos__container" class="">
-            <div class="content__section">
-                <div class="form__group mar--sm--bn">
-                    <label for="jobTitle">Job Title</label>
-                    <input type="text" class="bg-1" id="jobTitle" placeholder="Enter a Job Title"/>
-                    <small class="input-error-content">Error.</small>
-                </div>
+        </h3>
+        <div class="content__section">
+            <div class="form__group mar--sm--bn">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" class="bg-1" id="jobTitle" placeholder="Enter a Job Title"/>
+                <small class="input-error-content">Error.</small>
             </div>
         </div>
-        <div id="searchResults" class="hide">
-            <div class="content__section position">
-                <b class="block">Use "<span class="positionName createJobTitle">Sales Rep</span>"</b>
-            </div>
-            <div class="content__section position">
-                <b class="block"><span class="positionName">Sales Rep</span></b>
-            </div>
-            <div class="content__section position">
-                <b class="block"><span class="positionName">Sales Manager</span></b>
-            </div>
-            <div class="content__section position">
-                <b class="block"><span class="positionName">Sales Representative</span></b>
-            </div>
-            <div class="content__section position">
-                <b class="block"><span class="positionName">Senior Sales Manager</span></b>
-            </div>
-            <div class="content__section position">
-                <b class="block"><span class="positionName">Sales Associate</span></b>
-            </div>
-        </div>
+        <!--item search results-->
+        <ul id="searchResults" class="list-group list-group--bordered hide">
+            <li class="list-group__item positon">
+                <a>Use "<span class="positionName createJobTitle">Sales Rep</span>"</a>
+            </li>
+            <li class="list-group__item position">
+                <a><span class="positionName">Sales Rep</span></a>
+            </li>
+            <li class="list-group__item position">
+                <a><span class="positionName">Sales Representative</span></a>
+            </li>
+        </ul>
 
-        <div id="headCount__container" class="mar--sm--ts">
-            <div class="content--full">
+
+        <div id="headCount__container" class="mar--md--tm">
+            <div class="content__section">
                 <div class="form__group mar--sm--bs">
                     <label for="headCount">Head Count</label>
                     <input type="tel" class="bg-1" id="headCount" placeholder="0"/>
@@ -55,6 +48,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

@@ -38,8 +38,14 @@
                         <a>New Jersey HQ</a>
                     </li>
                 </ul>
+                <!--item container empty-->
+                <small class="pad--sm--xl text-center text-faded block">
+                    No locations have been added yet.
+                    <br/>
+                    Use the field above to search locations to add.
+                </small>
                 <!--item container-->
-                <div class="panel mar--md--tm">
+                <div class="panel mar--md--tm hide">
                     <!--item-->
                     <div class="panel__component panel__component--removable">
                         <button type="button" class="close"><span class="component-remove-x"></span><span class="sr-only">Close</span></button>
@@ -78,27 +84,34 @@
                     </div>
                 </div>
             </div>
+            <!--right column-->
             <div class="column--md--4">
                 <h4 class="section__title mar--sm--bn mar--md--ts">
                     Required Fields
                 </h4>
                 <hr class="show-brkpoint--md mar--md--ts"/>
-                <div class="content__section">
+                <!--required fields empty state-->
+                <small class="pad--sm--l text-center text-faded block">
+                    No required fields exist.
+                </small>
+                <!--required fields-->
+                <div class="content__section hide">
                     <div class="form__group">
-                        <label class=" required-field">
+                        <label>
                             EEO Job Code
                             <span data-toggle="tooltip" data-placement="bottom" title="This code is good" class="has-tooltip juicon juicon-info-circle"></span>
                         </label>
                         <input type="text" placeholder="Enter job code"/>
                         <small class="input-error-content">Error.</small>
+                        <small class="text-faded">Required by: United States</small>
                     </div>
                     <div class="form__group">
-                        <label class=" required-field">
+                        <label class="">
                             Rice Allowance
                         </label>
                         <input type="text" placeholder="Enter rice allowance"/>
-                        <small class="text-faded">Required by: Philippines</small>
                         <small class="input-error-content">Error.</small>
+                        <small class="text-faded">Required by: Philippines</small>
                     </div>
                 </div>
             </div>

@@ -126,7 +126,11 @@ $sf1-base-v: 4;
     padding: $sf1-base-h+px;
     border-bottom: 1px solid $component-border-color;
     + .list-group {
+      @include erase-radius;
       margin-top: -1px;
+      margin-bottom: -1px;
+      border-left: 0;
+      border-right: 0;
       a {
         padding: $sf1-base-h+px $sf1-base-h+px;
       }

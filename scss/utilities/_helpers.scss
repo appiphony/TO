@@ -260,6 +260,9 @@
 
 .hide {
   display: none;
+  &--i {
+    display: none!important;
+  }
   &-brkpoint {
     &--sm {
       @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {

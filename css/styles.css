@@ -431,6 +431,8 @@ body, h1, h2, h3, h4, h5, h6 {
 
 .hide, .datepicker > div {
   display: none; }
+  .hide--i {
+    display: none !important; }
   @media (min-width: 1px) and (max-width: 769px) {
     .hide-brkpoint--sm {
       display: none; } }
@@ -4364,11 +4366,19 @@ body .scope-container .brand__border-accent--top {
     padding: 12px;
     border-bottom: 1px solid #dadee2; }
     .content__section + .list-group, .content__section + .panel__sidebar__list-group {
-      margin-top: -1px; }
+      -webkit-border-radius: 0 ;
+      -ms-border-radius: 0 ;
+      -moz-border-radius: 0 ;
+      -o-border-radius: 0 ;
+      border-radius: 0 ;
+      margin-top: -1px;
+      margin-bottom: -1px;
+      border-left: 0;
+      border-right: 0; }
       .content__section + .list-group a, .content__section + .panel__sidebar__list-group a {
         padding: 12px 12px; }
-    .content__section + .panel {
-      margin-top: -1px; } }
+      .content__section + .list-group + .panel, .content__section + .panel__sidebar__list-group + .panel {
+        margin-top: -1px; } }
 
 .sf1-scope .content, .sf1-scope .content--full, .sf1-scope .content--small, .sf1-scope .content--readable, .sf1-scope .content--full {
   padding: 0 12px; }
