@@ -27,7 +27,12 @@
                     </div>
                 </div>
                 <!--item search results-->
-                <ul id="searchResults" class="list-group list-group--bordered hide">
+                <ul id="searchResults" class="list-group list-group--bordered">
+                    <!--empty state-->
+                    <li class="list-group__item text-faded text-center pad--sm--l bg-2 hide--i">
+                        <small>No results</small>
+                    </li>
+                    <!---->
                     <li class="list-group__item location">
                         <a>New York HQ</a>
                     </li>
@@ -39,13 +44,13 @@
                     </li>
                 </ul>
                 <!--item container empty-->
-                <small class="pad--sm--xl text-center text-faded block">
+                <small class="pad--sm--xl text-center text-faded block hide">
                     No locations have been added yet.
                     <br/>
                     Use the field above to search locations to add.
                 </small>
                 <!--item container-->
-                <div class="panel mar--md--tm hide">
+                <div class="panel mar--md--tm">
                     <!--item-->
                     <div class="panel__component panel__component--removable">
                         <button type="button" class="close"><span class="component-remove-x"></span><span class="sr-only">Close</span></button>
@@ -91,11 +96,11 @@
                 </h4>
                 <hr class="show-brkpoint--md mar--md--ts"/>
                 <!--required fields empty state-->
-                <small class="pad--sm--l text-center text-faded block">
+                <small class="pad--sm--l text-center text-faded block hide">
                     No required fields exist.
                 </small>
                 <!--required fields-->
-                <div class="content__section hide">
+                <div class="content__section">
                     <div class="form__group">
                         <label>
                             EEO Job Code

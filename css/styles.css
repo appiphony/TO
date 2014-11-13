@@ -2618,6 +2618,7 @@ input[type=radio] {
     -moz-transition: background-color 0.2s ease;
     -o-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
+    margin-left: 0;
     max-width: 100%; }
     .list-group__item a {
       -webkit-transition: color 0.2s ease;

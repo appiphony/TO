@@ -18,6 +18,7 @@
     @include radius();
     @extend .block;
     @include single-transition(background-color);
+    margin-left: 0;
     max-width: 100%;
     a {
       @extend .block;
