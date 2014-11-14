@@ -153,9 +153,9 @@ body .scope-container {
 // list stuff
 
 .body .scope-container {
-  .list-group__item {
+  .list-group__item, .list-group__item-multi {
     @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      background-color: transparent
+      background-color: transparent;
     }
   }
 }

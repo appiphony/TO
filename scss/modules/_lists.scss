@@ -61,16 +61,20 @@
   }
 }
 
+
+
 .list-group {
   @extend .list-style-type-none;
   overflow: hidden;
   &--bordered {
     @include border($color: $component-border-color);
     @include radius();
-    .list-group__item {
+    .list-group__item, .list-group__item--multi {
       @include erase-radius();
-      background-color: $white;
       border-bottom: 1px solid $component-border-color-alt;
+      &:last-child {
+        border-bottom: 0;
+      }
     }
   }
   &__item {
