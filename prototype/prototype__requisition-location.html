@@ -22,24 +22,27 @@
                 <div class="content__section">
                     <div class="form__group mar--sm--bn">
                         <label for="jobTitle" class="sr-only">Location</label>
-                        <input type="text" class="bg-1" id="jobTitle" placeholder="Add a location"/>
+                        <input type="text" id="jobTitle" placeholder="Search for a location" class="bg-1"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                 </div>
                 <!--item search results-->
                 <ul id="searchResults" class="list-group list-group--bordered">
                     <!--empty state-->
-                    <li class="list-group__item text-faded text-center pad--sm--l bg-2 hide--i">
+                    <li class="list-group__item--multi text-faded text-center pad--sm--l bg-2 hide--i">
                         <small>No results</small>
                     </li>
                     <!---->
-                    <li class="list-group__item location">
-                        <a>New York HQ</a>
+                    <li class="list-group__item location--multi">
+                        <a>
+                            New York HQ
+                            <small class="block">New York, NY, United States</small>
+                        </a>
                     </li>
-                    <li class="list-group__item location">
+                    <li class="list-group__item location--multi">
                         <a>New Mexico HQ</a>
                     </li>
-                    <li class="list-group__item location">
+                    <li class="list-group__item location--multi">
                         <a>New Jersey HQ</a>
                     </li>
                 </ul>
@@ -104,19 +107,18 @@
                     <div class="form__group">
                         <label>
                             EEO Job Code
-                            <span data-toggle="tooltip" data-placement="bottom" title="This code is good" class="has-tooltip juicon juicon-info-circle"></span>
+                            <span data-toggle="tooltip" data-placement="bottom" title="Required by US" class="has-tooltip juicon juicon-info-circle"></span>
                         </label>
                         <input type="text" placeholder="Enter job code"/>
                         <small class="input-error-content">Error.</small>
-                        <small class="text-faded">Required by: United States</small>
                     </div>
                     <div class="form__group">
                         <label class="">
                             Rice Allowance
+                            <span data-toggle="tooltip" data-placement="bottom" title="Required by Philippines" class="has-tooltip juicon juicon-info-circle"></span>
                         </label>
                         <input type="text" placeholder="Enter rice allowance"/>
                         <small class="input-error-content">Error.</small>
-                        <small class="text-faded">Required by: Philippines</small>
                     </div>
                 </div>
             </div>

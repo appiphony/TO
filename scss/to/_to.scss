@@ -18,6 +18,7 @@ body .scope-container {
           border-left: 0;
           border-right: 0;
           margin-bottom: -1px;
+          margin-top: -1px;
         }
       }
       @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
@@ -146,5 +147,15 @@ body .scope-container {
   }
   h6 {
     font-size: $new-base-fs*.75;
+  }
+}
+
+// list stuff
+
+.body .scope-container {
+  .list-group__item {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      background-color: transparent
+    }
   }
 }

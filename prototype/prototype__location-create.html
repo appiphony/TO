@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype : Location Create</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body>
+<div class="scope-container">
+    <div class="content pad--md--tm pad--md--bl pad--sm--only--n">
+        <nav id="reqLocNav" class="nav-bar--sf1 mar--sm--bn show-brkpoint--sm--only">
+            <button class="float--right button button--primary mar--sm--only--rs mar--md--lxs">Save</button>
+            <button class="float--right-left button button--secondary mar--sm--only--ls">Cancel</button>
+            <h1 class="nav-bar--sf1__title has-subtitle page__heading">New Location</h1>
+        </nav>
+        <hr  class="show-brkpoint--md"/>
+        <div class="row">
+            <!--left column-->
+            <div class="column--md--4 equalize-this">
+                <div class="content__section">
+                    <div class="form__group">
+                        <label for="locationName">Name</label>
+                        <input type="text" id="locationName" placeholder=""/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                    <div class="form__group">
+                        <label for="streetAddress">Street Address</label>
+                        <textarea  id="streetAddress" name="streetAddress" placeholder=""></textarea>
+                        <small class="input-error-content">Your typing is puny. Pump it up.</small>
+                    </div>
+                    <div class="form__group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder=""/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                    <div class="form__group">
+                        <label for="stateProvince">State / Province</label>
+                        <input type="text" id="stateProvince" placeholder=""/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                    <div class="form__group">
+                        <label for="country">Name</label>
+                        <input type="text" id="country" placeholder=""/>
+                        <small class="input-error-content">Error.</small>
+                    </div>
+                </div>
+            </div>
+            <!--right column-->
+            <div class="column--md--8 equalize-this">
+                <div class="content__section">
+                    <label>Map</label>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23755.800006485824!2d-87.68642855!3d41.90414655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1415920920325" width="600" height="416" frameborder="0" style="border:0;width: 100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+</body>
+</html>
