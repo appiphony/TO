@@ -3262,7 +3262,7 @@ body .scope-container {
       padding: 8px 16px; }
     body .scope-container .list-group__item:last-child, body .scope-container .list-group__item--multi:last-child {
       border-bottom: 0; }
-    body .scope-container .list-group__item:hover, body .scope-container .list-group__item--multi:hover {
+    body .scope-container .list-group__item:hover, body .scope-container .list-group__item--multi:hover, body .scope-container .hover.list-group__item, body .scope-container .hover.list-group__item--multi {
       background-color: #f5f6f7; }
     body .scope-container .active.list-group__item, body .scope-container .active.list-group__item--multi {
       background-color: #2a94d6;
