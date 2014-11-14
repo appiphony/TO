@@ -2614,7 +2614,7 @@ input[type=radio] {
     padding: 8px 16px; }
   .list-group__item:last-child, .list-group__item--multi:last-child {
     border-bottom: 0; }
-  .list-group__item:hover, .list-group__item--multi:hover, .hover.list-group__item, .hover.list-group__item--multi {
+  .list-group__item:hover, .list-group__item--multi:hover, .hover-this.list-group__item, .hover-this.list-group__item--multi {
     background-color: #f5f6f7; }
   .active.list-group__item, .active.list-group__item--multi {
     background-color: #2a94d6;
