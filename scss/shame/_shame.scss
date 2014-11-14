@@ -14,8 +14,12 @@ span {
   @include show-brkpoints(inline-block);
 }
 
+// building blocks for form builder
+
 .building-block {
+  @extend .relative;
   padding: $base-h-padding+px 0;
+  height: auto;
   &:hover {
     @include radius();
     cursor: move;
@@ -25,6 +29,17 @@ span {
     border-width: 1px;
     margin: (-1px) (-($base-h-padding+px));
     padding: ($base-h-padding+px) ($base-h-padding - 1+px);
+    height: auto;
+  }
+  &.edit-this {
+    border: 0;
+    margin: 0px -16px;
+    padding: 16px 16px;
+    .building-block__edit {
+      > .panel {
+        border-color: $color-primary;
+      }
+    }
   }
   h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -33,15 +48,46 @@ span {
     margin-top: $base-h-padding+px;
   }
   &.is-empty {
+    @include erase-radius();
     @include single-transition(color);
     @include single-transition(padding);
-
-    color: $white;
-    padding: $base-v-padding+px $base-h-padding+px;
+    border: 0;
+    border-top: 1px dashed $component-border-color-light;
+    padding: 0;
+    color: $input-icon-color;
+    margin: 24px 0;
     &:hover {
       @extend .pointer;
+      border-top: 1px dashed $color-primary;
+      border-bottom: 1px dashed $color-primary;
       padding: $base-h-padding*3+px;
-      color: $color-primary;
+      margin: 24px 0px;
+      &:after {
+        border-color: $color-primary;
+      }
+      &:before {
+        color: $color-primary;
+      }
+    }
+    &:after {
+      @include radius(50%);
+      position: absolute;
+      height: 32px;
+      width: 32px;
+      content: '';
+      left: -34px;
+      top: -19px;
+      background: $white;
+      border: 1px solid $component-border-color-alt;
+
+    }
+    @extend .juicon-plus;
+    &:before {
+      @extend .juicon;
+      top: -10.5px;
+      left: -24.5px;
+      position: absolute;
+      z-index: 1;
     }
   }
   .building-block__edit {

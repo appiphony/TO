@@ -25,6 +25,16 @@
     @extend .content;
     max-width: 640px;
   }
+  &--gutter--right {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      padding-right: 72px;
+    }
+  }
+  &--gutter--left {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      padding-left: 72px;
+    }
+  }
 }
 
 .row {
