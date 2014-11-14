@@ -16,40 +16,75 @@
         <hr  class="show-brkpoint--md"/>
         <div class="row">
             <!--left column-->
-            <div class="column--md--4 equalize-this">
+            <div class="column--md--4">
                 <div class="content__section">
                     <div class="form__group">
                         <label for="locationName">Name</label>
-                        <input type="text" id="locationName" placeholder=""/>
+                        <input type="text" id="locationName" placeholder="" value="Appiphony HQ"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                     <div class="form__group">
                         <label for="streetAddress">Street Address</label>
-                        <textarea  id="streetAddress" name="streetAddress" placeholder=""></textarea>
+                        <textarea  id="streetAddress" name="streetAddress" placeholder="">1811 W North Ave
+Suite 402</textarea>
                         <small class="input-error-content">Your typing is puny. Pump it up.</small>
                     </div>
                     <div class="form__group">
                         <label for="city">City</label>
-                        <input type="text" id="city" placeholder=""/>
+                        <input type="text" id="city" placeholder="" value="Chicago"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                     <div class="form__group">
                         <label for="stateProvince">State / Province</label>
-                        <input type="text" id="stateProvince" placeholder=""/>
+                        <input type="text" id="stateProvince" placeholder="" value="IL"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                     <div class="form__group">
-                        <label for="country">Name</label>
-                        <input type="text" id="country" placeholder=""/>
+                        <label for="country">Country</label>
+                        <input type="text" id="country" placeholder="" value="USA"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                 </div>
             </div>
             <!--right column-->
-            <div class="column--md--8 equalize-this">
+            <div class="column--md--8">
                 <div class="content__section">
                     <label>Map</label>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23755.800006485824!2d-87.68642855!3d41.90414655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1415920920325" width="600" height="416" frameborder="0" style="border:0;width: 100%"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23755.800006485824!2d-87.68642855!3d41.90414655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1415920920325" width="600" height="416" frameborder="0" style="border:0;width: 100%;"></iframe>
+                    <div class="row mar--sm--tm">
+                        <div class="column--md--6">
+                            <div class="form__group">
+                                <label for="mapCountry">Country/Region</label>
+                                <div name="mapCountry" id="mapCountry" class="input-size">
+                                    US
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column--md--6">
+                            <div class="form__group">
+                                <label for="mapStateProvince">State/Province</label>
+                                <div name="mapStateProvince" id="mapStateProvince" class="input-size">
+                                    IL
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column--md--6">
+                            <div class="form__group">
+                                <label for="mapCountyDistrict">County/District</label>
+                                <div name="mapCountyDistrict" id="mapCountyDistrict" class="input-size">
+                                    Cook County
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column--md--6">
+                            <div class="form__group">
+                                <label for="mapCity">State/Province</label>
+                                <div name="mapCity" id="mapCity" class="input-size">
+                                    Chicago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

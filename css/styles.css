@@ -4252,10 +4252,6 @@ body .scope-container .brand__border-accent--top {
   h6 {
     font-size: 9px; } }
 @media (min-width: 1px) and (max-width: 769px) {
-  .body .scope-container .list-group__item, .body .scope-container .list-group__item-multi {
-    background-color: transparent; } }
-
-@media (min-width: 1px) and (max-width: 769px) {
   .nav-bar--sf1 {
     background: #fff;
     margin-bottom: 12px;
