@@ -17,7 +17,7 @@
   &:last-child {
     border-bottom: 0;
   }
-  &:hover {
+  &:hover, &.hover {
     background-color: $component-bg-color-active;
   }
   &.active {
