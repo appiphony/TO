@@ -24,7 +24,11 @@ body .scope-container {
       @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
         padding: 0;
         margin: 0;
-        .list-group__item, .list-group__item--multi {
+      }
+    }
+    .list-group.list-group--bordered {
+      .list-group__item, .list-group__item--multi {
+        @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
           border-bottom-color: $component-border-color;
         }
       }
