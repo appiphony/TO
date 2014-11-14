@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prototype : Form Builder</title>
+    <title>Template : Form Builder</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles-scoped.css">
 
@@ -18,16 +18,23 @@
 
 <div class="building-block has-hidden-items">
     <div class="building-block__done">
-        <div class="float--right mar--sm--ls relative hidden-item">
-            <span class="editBlock juicon juicon-pencil inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-trash inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-move-vertical inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-        </div>
+        <ul class="list-style-type-none inline-block mar--sm--n text-right float--right hidden-item">
+            <li class="inline-block scoreOption relative">
+                <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                <ul class="dropdown-menu dropdown-menu--right">
+                    <li class="dropdown-menu__list-item"><div class="editBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-pencil"></span> Edit</div></li>
+                    <li class="dropdown-menu__list-item"><div class="moveBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-move-vertical"></span> Move</div></li>
+                    <li class="dropdown-menu__list-item"><div class="deleteBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-trash"></span> Delete</div></li>
+                    <hr class="mar--sm--n"/>
+                    <li class="dropdown-menu__list-item"><a href="#"><input type="checkbox"/> Share to library</a></li>
+                </ul>
+            </li>
+        </ul>
         <h1>
             Culture
         </h1>
     </div>
-    <div class="building-block__edit hide">
+    <div class="building-block__edit">
         <div class="panel">
             <div class="panel__top">
                 <div class="form__group float--left">
@@ -40,7 +47,7 @@
                         </select>
                     </div>
                 </div>
-                <button class="button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
+                <button class="doneButton button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
             </div>
             <div class="panel__body">
                 <div class="form__group mar--sm--bn">
@@ -59,11 +66,18 @@
 
 <div class="building-block has-hidden-items">
     <div class="building-block__done">
-        <div class="float--right mar--sm--ls relative hidden-item">
-            <span class="editBlock juicon juicon-pencil inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-trash inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-move-vertical inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-        </div>
+        <ul class="list-style-type-none inline-block mar--sm--n text-right float--right hidden-item">
+            <li class="inline-block scoreOption relative">
+                <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                <ul class="dropdown-menu dropdown-menu--right">
+                    <li class="dropdown-menu__list-item"><div class="editBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-pencil"></span> Edit</div></li>
+                    <li class="dropdown-menu__list-item"><div class="moveBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-move-vertical"></span> Move</div></li>
+                    <li class="dropdown-menu__list-item"><div class="deleteBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-trash"></span> Delete</div></li>
+                    <hr class="mar--sm--n"/>
+                    <li class="dropdown-menu__list-item"><a href="#"><input type="checkbox"/> Share to library</a></li>
+                </ul>
+            </li>
+        </ul>
         <p class="mar--sm--bm">
             Are you OK with a fast paced environment?
         </p>
@@ -79,7 +93,7 @@
             <small class="input-error-content">You need stuff in this thing</small>
         </div>
     </div>
-    <div class="building-block__edit hide">
+    <div class="building-block__edit">
         <div class="panel">
             <div class="panel__top">
                 <div class="form__group float--left">
@@ -96,7 +110,7 @@
                     </div>
                     <small class="input-error-content">You need stuff in this thing</small>
                 </div>
-                <button class="button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
+                <button class="doneButton button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
             </div>
             <div class="list-heading">
                 <h4 class="list-heading__title">Question text</h4>
@@ -111,24 +125,24 @@
             </div>
             <div class="panel__component">
                 <ul class="list-style-type-none inline-block input-size mar--sm--n text-right float--right">
+                    <li class="inline-block upVote voteToggle">
+                        <span class="juicon juicon-upward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block downVote voteToggle">
+                        <span class="juicon juicon-downward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block disqualify voteToggle">
+                        <span class="juicon juicon-ban pad--sm--ls component__icon text-faded"></span>
+                    </li>
                     <li class="inline-block scoreOption relative">
-                        <span class="juicon juicon-dots component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                        <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
                         <ul class="dropdown-menu--top-right">
-                            <li class="dropdown-menu__list-item"><a href="#">Don't assign a value</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-upward"></span> +1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-downward"></span> -1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-ban"></span> Disqualify</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-move-vertical"></span> Move</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-trash"></span> Delete</a></li>
                         </ul>
                     </li>
-                    <li class="inline-block deleteOption">
-                        <span class="juicon juicon-trash component__icon--primary pad--sm--ls"></span>
-                    </li>
-                    <li class="inline-block moveOption">
-                        <span class="juicon juicon-move-vertical component__icon--primary pad--sm--ls"></span>
-
-                    </li>
                 </ul>
-                <div class="" style="padding-right: 96px;">
+                <div class="" style="padding-right: 120px;">
                     <div class="form__group">
                         <input type="text" placeholder="Provide an answer"/>
                         <small class="input-error-content">Error</small>
@@ -137,24 +151,24 @@
             </div>
             <div class="panel__component">
                 <ul class="list-style-type-none inline-block input-size mar--sm--n text-right float--right">
+                    <li class="inline-block upVote voteToggle">
+                        <span class="juicon juicon-upward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block downVote voteToggle">
+                        <span class="juicon juicon-downward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block disqualify voteToggle">
+                        <span class="juicon juicon-ban pad--sm--ls component__icon text-faded"></span>
+                    </li>
                     <li class="inline-block scoreOption relative">
-                        <span class="juicon juicon-ban text-error component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                        <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
                         <ul class="dropdown-menu--top-right">
-                            <li class="dropdown-menu__list-item"><a href="#">Don't assign a value</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-upward"></span> +1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-downward"></span> -1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-ban"></span> Disqualify</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-move-vertical"></span> Move</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-trash"></span> Delete</a></li>
                         </ul>
                     </li>
-                    <li class="inline-block deleteOption">
-                        <span class="juicon juicon-trash component__icon--primary pad--sm--ls"></span>
-                    </li>
-                    <li class="inline-block moveOption">
-                        <span class="juicon juicon-move-vertical component__icon--primary pad--sm--ls"></span>
-
-                    </li>
                 </ul>
-                <div class="" style="padding-right: 96px;">
+                <div class="" style="padding-right: 120px;">
                     <div class="form__group">
                         <input type="text" placeholder="Provide an answer"/>
                         <small class="input-error-content">Error</small>
@@ -173,11 +187,18 @@
 
 <div class="building-block has-hidden-items">
     <div class="building-block__done">
-        <div class="float--right mar--sm--ls relative hidden-item">
-            <span class="editBlock juicon juicon-pencil inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-trash inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-move-vertical inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-        </div>
+        <ul class="list-style-type-none inline-block mar--sm--n text-right float--right hidden-item">
+            <li class="inline-block scoreOption relative">
+                <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                <ul class="dropdown-menu dropdown-menu--right">
+                    <li class="dropdown-menu__list-item"><div class="editBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-pencil"></span> Edit</div></li>
+                    <li class="dropdown-menu__list-item"><div class="moveBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-move-vertical"></span> Move</div></li>
+                    <li class="dropdown-menu__list-item"><div class="deleteBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-trash"></span> Delete</div></li>
+                    <hr class="mar--sm--n"/>
+                    <li class="dropdown-menu__list-item"><a href="#"><input type="checkbox"/> Share to library</a></li>
+                </ul>
+            </li>
+        </ul>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula mauris ac magna eleifend vulputate. Proin dapibus faucibus commodo. Phasellus massa neque, sagittis quis gravida sed, egestas sed augue. Vivamus blandit tortor non ex lobortis efficitur. Aenean nec molestie nulla. Quisque augue risus, scelerisque eu enim ut, efficitur imperdiet turpis. Phasellus sit amet odio nisi. Integer quis facilisis velit, sit amet tincidunt elit. Etiam ut magna turpis.
         </p>
@@ -189,7 +210,7 @@
         </p>
 
     </div>
-    <div class="building-block__edit hide">
+    <div class="building-block__edit">
         <div class="panel">
             <div class="panel__top">
                 <div class="form__group float--left">
@@ -202,7 +223,7 @@
                         </select>
                     </div>
                 </div>
-                <button class="button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
+                <button class="doneButton button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
             </div>
             <div class="panel__body">
                 <div class="form__group mar--sm--bn">
@@ -221,11 +242,18 @@
 
 <div class="building-block has-hidden-items">
     <div class="building-block__done">
-        <div class="float--right mar--sm--ls relative hidden-item">
-            <span class="editBlock juicon juicon-pencil inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-trash inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-            <span class="deleteBlock juicon juicon-move-vertical inline-block component__icon--primary pad--sm--ls pad--sm--rs"></span>
-        </div>
+        <ul class="list-style-type-none inline-block mar--sm--n text-right float--right hidden-item">
+            <li class="inline-block scoreOption relative">
+                <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                <ul class="dropdown-menu dropdown-menu--right">
+                    <li class="dropdown-menu__list-item"><div class="editBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-pencil"></span> Edit</div></li>
+                    <li class="dropdown-menu__list-item"><div class="moveBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-move-vertical"></span> Move</div></li>
+                    <li class="dropdown-menu__list-item"><div class="deleteBlock dropdown-menu__list-item__inner" href="#"><span class="juicon juicon-trash"></span> Delete</div></li>
+                    <hr class="mar--sm--n"/>
+                    <li class="dropdown-menu__list-item"><a href="#"><input type="checkbox"/> Share to library</a></li>
+                </ul>
+            </li>
+        </ul>
         <p>
             Aliquam arcu nulla, mattis molestie condimentum eu, viverra in diam. Donec massa nulla, semper a luctus a, porttitor et urna?
         </p>
@@ -241,7 +269,7 @@
             </div>
         </div>
     </div>
-    <div class="building-block__edit hide">
+    <div class="building-block__edit">
         <div class="panel">
             <div class="panel__top">
                 <div class="form__group float--left">
@@ -258,7 +286,7 @@
                     </div>
                     <small class="input-error-content">You need stuff in this thing</small>
                 </div>
-                <button class="button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
+                <button class="doneButton button button--primary float--right">Done <span class="juicon juicon-check"></span></button>
             </div>
             <div class="list-heading">
                 <h4 class="list-heading__title">Question text</h4>
@@ -273,24 +301,24 @@
             </div>
             <div class="panel__component">
                 <ul class="list-style-type-none inline-block input-size mar--sm--n text-right float--right">
+                    <li class="inline-block upVote voteToggle">
+                        <span class="juicon juicon-upward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block downVote voteToggle">
+                        <span class="juicon juicon-downward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block disqualify voteToggle">
+                        <span class="juicon juicon-ban pad--sm--ls component__icon text-faded"></span>
+                    </li>
                     <li class="inline-block scoreOption relative">
-                        <span class="juicon juicon-dots component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                        <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
                         <ul class="dropdown-menu--top-right">
-                            <li class="dropdown-menu__list-item"><a href="#">Don't assign a value</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-upward"></span> +1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-downward"></span> -1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-ban"></span> Disqualify</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-move-vertical"></span> Move</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-trash"></span> Delete</a></li>
                         </ul>
                     </li>
-                    <li class="inline-block deleteOption">
-                        <span class="juicon juicon-trash component__icon--primary pad--sm--ls"></span>
-                    </li>
-                    <li class="inline-block moveOption">
-                        <span class="juicon juicon-move-vertical component__icon--primary pad--sm--ls"></span>
-
-                    </li>
                 </ul>
-                <div class="" style="padding-right: 96px;">
+                <div class="" style="padding-right: 120px;">
                     <div class="form__group">
                         <input type="text" placeholder="Provide an answer"/>
                         <small class="input-error-content">Error</small>
@@ -299,24 +327,24 @@
             </div>
             <div class="panel__component">
                 <ul class="list-style-type-none inline-block input-size mar--sm--n text-right float--right">
+                    <li class="inline-block upVote voteToggle">
+                        <span class="juicon juicon-upward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block downVote voteToggle">
+                        <span class="juicon juicon-downward pad--sm--ls component__icon text-faded"></span>
+                    </li>
+                    <li class="inline-block disqualify voteToggle">
+                        <span class="juicon juicon-ban pad--sm--ls component__icon text-faded"></span>
+                    </li>
                     <li class="inline-block scoreOption relative">
-                        <span class="juicon juicon-ban text-error component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
+                        <span class="juicon juicon-gear component__icon--primary pad--sm--ls" data-toggle="dropdown"></span>
                         <ul class="dropdown-menu--top-right">
-                            <li class="dropdown-menu__list-item"><a href="#">Don't assign a value</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-upward"></span> +1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-downward"></span> -1</a></li>
-                            <li class="dropdown-menu__list-item"><a href="#"><span class="juicon juicon-ban"></span> Disqualify</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-move-vertical"></span> Move</a></li>
+                            <li class="dropdown-menu__list-item"><a class="moveAnswer" href="#"><span class="juicon juicon-trash"></span> Delete</a></li>
                         </ul>
                     </li>
-                    <li class="inline-block deleteOption">
-                        <span class="juicon juicon-trash component__icon--primary pad--sm--ls"></span>
-                    </li>
-                    <li class="inline-block moveOption">
-                        <span class="juicon juicon-move-vertical component__icon--primary pad--sm--ls"></span>
-
-                    </li>
                 </ul>
-                <div class="" style="padding-right: 96px;">
+                <div class="" style="padding-right: 120px;">
                     <div class="form__group">
                         <input type="text" placeholder="Provide an answer"/>
                         <small class="input-error-content">Error</small>
@@ -340,6 +368,20 @@
 <script src="../js/jui.js"></script>
 
 <script>
+
+    $(".editBlock, .doneButton").click(function(e){
+        $(e.target).closest('.building-block').toggleClass("edit-this");
+    });
+
+    $(".voteToggle").click(function(e){
+        $(this).toggleClass("active");
+        $(this).closest('ul').find('.active').not($(this)).removeClass('active');
+    });
+
+
+
+
+
 
 
 

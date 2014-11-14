@@ -44,6 +44,17 @@ span {
       color: $color-primary;
     }
   }
+  .building-block__edit {
+    display: none;
+  }
+  &.edit-this {
+    .building-block__done {
+      display: none;
+    }
+    .building-block__edit {
+      display: block;
+    }
+  }
   //  p:last-child {
   //    margin-bottom: $base-h-padding+px;
   //  }

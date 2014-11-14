@@ -22,30 +22,30 @@
                 <div class="content__section">
                     <div class="form__group mar--sm--bn">
                         <label for="jobTitle" class="sr-only">Location</label>
-                        <input type="text" id="jobTitle" placeholder="Search for a location" class="bg-1"/>
+                        <input type="text" id="locationName" placeholder="Search for a location" class="bg-1"/>
                         <small class="input-error-content">Error.</small>
                     </div>
                 </div>
                 <!--item search results-->
-                <ul id="searchResults" class="list-group list-group--bordered">
+                <ul id="searchResults" class="list-group list-group--bordered hide">
                     <!--empty state-->
                     <li class="list-group__item text-faded text-center pad--sm--l bg-2 hide--i">
                         <small>No results</small>
                     </li>
                     <!---->
-                    <li class="list-group__item location--multi">
+                    <li class="list-group__item--multi location">
                         <a>
                             New York HQ
                             <small class="block">New York, NY, United States</small>
                         </a>
                     </li>
-                    <li class="list-group__item location--multi">
+                    <li class="list-group__item--multi location">
                         <a>
                             New York HQ
                             <small class="block">New York, NY, United States</small>
                         </a>
                     </li>
-                    <li class="list-group__item location--multi">
+                    <li class="list-group__item--multi location">
                         <a>
                             New York HQ
                             <small class="block">New York, NY, United States</small>
@@ -133,5 +133,24 @@
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="../js/jui.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+// hiding & showing content
+
+        $('#locationName').on('input', function(){
+            if($(this).val().length >= 3){
+                $('#searchResults').removeClass('hide');
+            } else {
+                $('#searchResults').addClass('hide');
+            }
+        })
+        $('.location').on('click', function(){
+            $('#searchResults').addClass('hide');
+        })
+    });
+</script>
+
 </body>
 </html>

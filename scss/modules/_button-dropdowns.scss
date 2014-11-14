@@ -33,14 +33,14 @@
     display: block;
     padding: 0;
     margin: 0;
-    a {
+    a, .dropdown-menu__list-item__inner {
       padding: $base-v-padding+px $base-h-padding+px;
       text-decoration: none;
       color: $body-font-color;
       display: block;@extend .dots;
     }
     &:hover {
-      a {
+      a, .dropdown-menu__list-item__inner {
         background-color: $component-bg-color-active;
       }
     }

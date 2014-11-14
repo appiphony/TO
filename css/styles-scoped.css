@@ -345,7 +345,7 @@ body .scope-container body, body .scope-container h1, body .scope-container h2, 
 body .scope-container *, *, body .scope-container .alert .close, body .scope-container .select__wrap select, body .scope-container .select2-container select, .select2-container .select2-choice {
   outline: none; }
 
-.dots, body .scope-container .dropdown-menu__list-item a, body .scope-container .card__heading, body .scope-container .card__subheading, body .scope-container .tile__title, body .scope-container .has-img-container--lg, body .scope-container .list-group__item a, body .scope-container .list-group__item--multi a, body .scope-container .list-group__item, body .scope-container .page__heading, body .scope-container .panel__subheading, body .scope-container .page__subheading {
+.dots, body .scope-container .dropdown-menu__list-item a, body .scope-container .dropdown-menu__list-item .dropdown-menu__list-item__inner, body .scope-container .card__heading, body .scope-container .card__subheading, body .scope-container .tile__title, body .scope-container .has-img-container--lg, body .scope-container .list-group__item a, body .scope-container .list-group__item--multi a, body .scope-container .list-group__item, body .scope-container .page__heading, body .scope-container .panel__subheading, body .scope-container .page__subheading {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -1479,6 +1479,12 @@ body .scope-container .building-block {
     body .scope-container .building-block.is-empty:hover {
       padding: 48px;
       color: #2a94d6; }
+  body .scope-container .building-block .building-block__edit {
+    display: none; }
+  body .scope-container .building-block.edit-this .building-block__done {
+    display: none; }
+  body .scope-container .building-block.edit-this .building-block__edit {
+    display: block; }
 
 .bodyDiv .noSidebarCell .scope-container {
   -webkit-border-bottom-left-radius: 4px ;
@@ -2087,12 +2093,12 @@ body .scope-container {
       display: block;
       padding: 0;
       margin: 0; }
-      body .scope-container .dropdown-menu__list-item a {
+      body .scope-container .dropdown-menu__list-item a, body .scope-container .dropdown-menu__list-item .dropdown-menu__list-item__inner {
         padding: 8px 16px;
         text-decoration: none;
         color: #686c70;
         display: block; }
-      body .scope-container .dropdown-menu__list-item:hover a {
+      body .scope-container .dropdown-menu__list-item:hover a, body .scope-container .dropdown-menu__list-item:hover .dropdown-menu__list-item__inner {
         background-color: #f5f6f7; }
     body .scope-container .dropdown-menu--right {
       left: auto;
@@ -4788,7 +4794,9 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 @media (min-width: 1px) and (max-width: 769px) {
   body .scope-container .pad--sm--only--n > .row, body .scope-container .pad--sm--only--n > .row > [class^="column--"] {
     padding: 0;
-    margin: 0; } }
+    margin: 0; }
+    body .scope-container .pad--sm--only--n > .row .list-group__item, body .scope-container .pad--sm--only--n > .row .list-group__item--multi, body .scope-container .pad--sm--only--n > .row > [class^="column--"] .list-group__item, body .scope-container .pad--sm--only--n > .row > [class^="column--"] .list-group__item--multi {
+      border-bottom-color: #dadee2; } }
 
 body .scope-container .brand__border-accent--top {
   border-top-width: 5px; }
@@ -4877,6 +4885,15 @@ body .scope-container .brand__border-accent--top {
 
   h6 {
     font-size: 9px; } }
+.upVote.active .component__icon, .upVote.active body .scope-container .component__icon--primary, body .scope-container .upVote.active .component__icon--primary, .upVote.active:hover .component__icon, .upVote.active:hover body .scope-container .component__icon--primary, body .scope-container .upVote.active:hover .component__icon--primary {
+  color: #43b66a !important; }
+
+.downVote.active .component__icon, .downVote.active body .scope-container .component__icon--primary, body .scope-container .downVote.active .component__icon--primary, .downVote.active:hover .component__icon, .downVote.active:hover body .scope-container .component__icon--primary, body .scope-container .downVote.active:hover .component__icon--primary {
+  color: #e6b739 !important; }
+
+.disqualify.active .component__icon, .disqualify.active body .scope-container .component__icon--primary, body .scope-container .disqualify.active .component__icon--primary, .disqualify.active:hover .component__icon, .disqualify.active:hover body .scope-container .component__icon--primary, body .scope-container .disqualify.active:hover .component__icon--primary {
+  color: #c06057 !important; }
+
 .modal-open {
   overflow: hidden; }
 
