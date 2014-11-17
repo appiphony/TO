@@ -23,6 +23,12 @@
   vertical-align: text-top;
 }
 
+.juicon-dislike:before {
+  content: "\e64c";
+}
+.juicon-circle:before {
+  content: "\e64d";
+}
 .juicon-ban:before {
   content: "\e64b";
 }

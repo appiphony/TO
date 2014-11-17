@@ -20,10 +20,15 @@ span {
   @extend .relative;
   padding: $base-h-padding+px 0;
   height: auto;
+  &.has-hidden-items {
+    .hidden-item {
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        display: block;
+      }
+    }
+  }
   &:hover {
     @include radius();
-    cursor: move;
-    cursor: -webkit-grab;
     border-color: $color-primary;
     border-style: dashed;
     border-width: 1px;
@@ -35,10 +40,25 @@ span {
     border: 0;
     margin: 0px -16px;
     padding: 16px 16px;
+    opacity: 1!important;
+    cursor: auto!important;
     .building-block__edit {
       > .panel {
-        border-color: $color-primary;
+        border-color: $color-primary
       }
+    }
+  }
+  &.edit-active {
+    margin: (0px);
+    padding: $base-h-padding+px 0;
+    opacity: .4;
+    border: 0;
+    cursor: not-allowed;
+    .hidden-item {
+      display: none!important;
+    }
+    &:hover {
+      border: 0;
     }
   }
   h1, h2, h3, h4, h5, h6, p {
@@ -49,8 +69,8 @@ span {
   }
   &.is-empty {
     @include erase-radius();
-    @include single-transition(color);
-    @include single-transition(padding);
+    @include single-transition(border-color);
+    //@include single-transition(padding);
     border: 0;
     border-top: 1px dashed $component-border-color-light;
     padding: 0;
@@ -59,8 +79,9 @@ span {
     &:hover {
       @extend .pointer;
       border-top: 1px dashed $color-primary;
-      border-bottom: 1px dashed $color-primary;
-      padding: $base-h-padding*3+px;
+      //border-bottom: 1px dashed $color-primary;
+      //padding: $base-h-padding*3+px;
+      padding: 0;
       margin: 24px 0px;
       &:after {
         border-color: $color-primary;
@@ -75,7 +96,12 @@ span {
       height: 32px;
       width: 32px;
       content: '';
-      left: -34px;
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        right: -34px;
+      }
+      @media (min-width: $brkpoint-md) {
+        left: -34px;
+      }
       top: -19px;
       background: $white;
       border: 1px solid $component-border-color-alt;
@@ -85,9 +111,17 @@ span {
     &:before {
       @extend .juicon;
       top: -10.5px;
-      left: -24.5px;
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        right: -24.5px;
+      }
+      @media (min-width: $brkpoint-md) {
+        left: -24.5px;
+      }
       position: absolute;
       z-index: 1;
+    }
+    &.edit-this {
+      border-top: 0!important;
     }
   }
   .building-block__edit {
@@ -100,6 +134,54 @@ span {
     .building-block__edit {
       display: block;
     }
+  }
+  &.move-active {
+    margin: (0px);
+    padding: $base-h-padding+px 0;
+    opacity: .4;
+    border: 0;
+    cursor: not-allowed;
+    .hidden-item {
+      display: none!important;
+    }
+    &:hover {
+      border: 0;
+    }
+  }
+  &.move-here {
+    @include radius();
+    border: 1px dashed $color-error!important;
+    padding: $base-h-padding+px;
+    margin: 24px 0!important;
+    color: $color-error;
+    opacity: 1!important;
+    cursor: pointer!important;
+    &:after {
+      display: none;
+    }
+    &:before {
+      color: $color-error!important;
+      content: "\e61e"!important;
+      @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+        @include rotate(180);
+      }
+    }
+    &:hover {
+      padding: $base-h-padding+px;
+      border: 1px solid $color-error!important;
+    }
+  }
+  &.move-this, &.move-this:hover {
+    opacity: 1!important;
+    @include radius();
+    cursor: auto;
+    border-color: $color-primary;
+    border-style: solid;
+    border-width: 1px;
+    margin: (-1px) (-($base-h-padding+px));
+    padding: ($base-h-padding+px) ($base-h-padding - 1+px);
+    height: auto;
+    box-shadow: 4px 4px 0px $component-border-color-light;
   }
   //  p:last-child {
   //    margin-bottom: $base-h-padding+px;

@@ -180,3 +180,11 @@ body .scope-container {
     }
   }
 }
+
+.shareQuestion {
+  &.active, &.active:hover {
+    .component__icon {
+      color: $color-success !important;
+    }
+  }
+}

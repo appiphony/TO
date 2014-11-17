@@ -96,3 +96,27 @@
     }
   }
 }
+
+.snack-bar {
+  &__container {
+    position: fixed;
+    right: 16px;
+    top: 0;
+    z-index: 99999;
+    opacity: 1;
+    @include translate3D();
+    @include double-transition(transform, opacity);
+    &.hide {
+      display: block;
+      opacity: 0;
+      @include translate3D(1000px);
+    }
+  }
+  @include radius();
+  color: $white;
+  background: $black;
+  padding: $base-h-padding+px;
+  margin-top: $base-h-padding+px;
+
+}
+

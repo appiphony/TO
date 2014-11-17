@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'ProximaNovaSoft';
   src: url("./fonts/proximanovasoft-regular-webfont.ttf") format("truetype");
@@ -36,6 +37,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: text-top; }
+
+.juicon-dislike:before {
+  content: "\e64c"; }
+
+.juicon-circle:before {
+  content: "\e64d"; }
 
 .juicon-ban:before {
   content: "\e64b"; }
@@ -337,7 +344,7 @@ body .scope-container body, body .scope-container h1, body .scope-container h2, 
   line-height: 1.5; }
 
 .text-faded {
-  color: #8d9aa5; }
+  color: #9faab5; }
 
 .fsl {
   font-size: 32px; }
@@ -461,16 +468,28 @@ body .scope-container .panel__box {
 .text-error, body .scope-container .required-field:after {
   color: #c06057; }
 
+.text-success {
+  color: #43b66a; }
+
+.text-warning {
+  color: #e6b739; }
+
 .text-strike {
   text-decoration: line-through; }
 
 @-webkit-keyframes spin-it {
   from {
-    -webkit-transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(360deg); } }
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
 .spin-it, body .scope-container .button.load-this:after, body .scope-container .form__group.load-this:before, body .scope-container .select2-container.load-this .select2-choice .select2-arrow b, body .scope-container .load-block {
   -webkit-animation: spin-it 1s linear infinite; }
+
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .has-hidden-items .hidden-item {
   display: none; }
@@ -1449,14 +1468,15 @@ body .scope-container span.show-brkpoint--md--only {
 body .scope-container .building-block {
   padding: 16px 0;
   height: auto; }
+  @media (min-width: 1px) and (max-width: 769px) {
+    body .scope-container .building-block.has-hidden-items .hidden-item {
+      display: block; } }
   body .scope-container .building-block:hover {
     -webkit-border-radius: 4px ;
     -ms-border-radius: 4px ;
     -moz-border-radius: 4px ;
     -o-border-radius: 4px ;
     border-radius: 4px ;
-    cursor: move;
-    cursor: -webkit-grab;
     border-color: #2a94d6;
     border-style: dashed;
     border-width: 1px;
@@ -1466,9 +1486,21 @@ body .scope-container .building-block {
   body .scope-container .building-block.edit-this {
     border: 0;
     margin: 0px -16px;
-    padding: 16px 16px; }
+    padding: 16px 16px;
+    opacity: 1 !important;
+    cursor: auto !important; }
     body .scope-container .building-block.edit-this .building-block__edit > .panel {
       border-color: #2a94d6; }
+  body .scope-container .building-block.edit-active {
+    margin: 0px;
+    padding: 16px 0;
+    opacity: .4;
+    border: 0;
+    cursor: not-allowed; }
+    body .scope-container .building-block.edit-active .hidden-item {
+      display: none !important; }
+    body .scope-container .building-block.edit-active:hover {
+      border: 0; }
   body .scope-container .building-block h1, body .scope-container .building-block h2, body .scope-container .building-block h3, body .scope-container .building-block h4, body .scope-container .building-block h5, body .scope-container .building-block h6, body .scope-container .building-block p {
     margin: 0; }
   body .scope-container .building-block p ~ p {
@@ -1479,14 +1511,10 @@ body .scope-container .building-block {
     -moz-border-radius: 0 ;
     -o-border-radius: 0 ;
     border-radius: 0 ;
-    -webkit-transition: color 0.2s ease;
-    -moz-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
-    transition: color 0.2s ease;
-    -webkit-transition: padding 0.2s ease;
-    -moz-transition: padding 0.2s ease;
-    -o-transition: padding 0.2s ease;
-    transition: padding 0.2s ease;
+    -webkit-transition: border-color 0.2s ease;
+    -moz-transition: border-color 0.2s ease;
+    -o-transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease;
     border: 0;
     border-top: 1px dashed #f0f1f2;
     padding: 0;
@@ -1494,8 +1522,7 @@ body .scope-container .building-block {
     margin: 24px 0; }
     body .scope-container .building-block.is-empty:hover {
       border-top: 1px dashed #2a94d6;
-      border-bottom: 1px dashed #2a94d6;
-      padding: 48px;
+      padding: 0;
       margin: 24px 0px; }
       body .scope-container .building-block.is-empty:hover:after {
         border-color: #2a94d6; }
@@ -1511,21 +1538,85 @@ body .scope-container .building-block {
       height: 32px;
       width: 32px;
       content: '';
-      left: -34px;
       top: -19px;
       background: #fff;
       border: 1px solid #e8eaeb; }
+      @media (min-width: 1px) and (max-width: 769px) {
+        body .scope-container .building-block.is-empty:after {
+          right: -34px; } }
+      @media (min-width: 769px) {
+        body .scope-container .building-block.is-empty:after {
+          left: -34px; } }
     body .scope-container .building-block.is-empty:before {
       top: -10.5px;
-      left: -24.5px;
       position: absolute;
       z-index: 1; }
+      @media (min-width: 1px) and (max-width: 769px) {
+        body .scope-container .building-block.is-empty:before {
+          right: -24.5px; } }
+      @media (min-width: 769px) {
+        body .scope-container .building-block.is-empty:before {
+          left: -24.5px; } }
+    body .scope-container .building-block.is-empty.edit-this {
+      border-top: 0 !important; }
   body .scope-container .building-block .building-block__edit {
     display: none; }
   body .scope-container .building-block.edit-this .building-block__done {
     display: none; }
   body .scope-container .building-block.edit-this .building-block__edit {
     display: block; }
+  body .scope-container .building-block.move-active {
+    margin: 0px;
+    padding: 16px 0;
+    opacity: .4;
+    border: 0;
+    cursor: not-allowed; }
+    body .scope-container .building-block.move-active .hidden-item {
+      display: none !important; }
+    body .scope-container .building-block.move-active:hover {
+      border: 0; }
+  body .scope-container .building-block.move-here {
+    -webkit-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    border-radius: 4px ;
+    border: 1px dashed #c06057 !important;
+    padding: 16px;
+    margin: 24px 0 !important;
+    color: #c06057;
+    opacity: 1 !important;
+    cursor: pointer !important; }
+    body .scope-container .building-block.move-here:after {
+      display: none; }
+    body .scope-container .building-block.move-here:before {
+      color: #c06057 !important;
+      content: "" !important; }
+      @media (min-width: 1px) and (max-width: 769px) {
+        body .scope-container .building-block.move-here:before {
+          transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          /* IE 9 */
+          -webkit-transform: rotate(180deg);
+          /* Opera, Chrome, and Safari */ } }
+    body .scope-container .building-block.move-here:hover {
+      padding: 16px;
+      border: 1px solid #c06057 !important; }
+  body .scope-container .building-block.move-this, body .scope-container .building-block.move-this:hover {
+    opacity: 1 !important;
+    -webkit-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    border-radius: 4px ;
+    cursor: auto;
+    border-color: #2a94d6;
+    border-style: solid;
+    border-width: 1px;
+    margin: -1px -16px;
+    padding: 16px 15px;
+    height: auto;
+    box-shadow: 4px 4px 0px #f0f1f2; }
 
 .bodyDiv .noSidebarCell .scope-container {
   -webkit-border-bottom-left-radius: 4px ;
@@ -1877,10 +1968,10 @@ body .scope-container .content, body .scope-container .content--full, body .scop
     max-width: 640px; }
   @media (min-width: 1px) and (max-width: 769px) {
     body .scope-container .content--gutter--right {
-      padding-right: 72px; } }
+      padding-right: 48px; } }
   @media (min-width: 1px) and (max-width: 769px) {
     body .scope-container .content--gutter--left {
-      padding-left: 72px; } }
+      padding-left: 48px; } }
 body .scope-container .row {
   margin-left: -16px;
   margin-right: -16px; }
@@ -2110,6 +2201,39 @@ body .scope-container {
       -o-transition: opacity 0.2s ease;
       transition: opacity 0.2s ease;
       opacity: 1; }
+  body .scope-container .snack-bar {
+    -webkit-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    border-radius: 4px ;
+    color: #fff;
+    background: #384047;
+    padding: 16px;
+    margin-top: 16px; }
+    body .scope-container .snack-bar__container {
+      position: fixed;
+      right: 16px;
+      top: 0;
+      z-index: 99999;
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      -webkit-transition: transform 0.2s, opacity 0.2s ease;
+      -moz-transition: transform 0.2s, opacity 0.2s ease;
+      -o-transition: transform 0.2s, opacity 0.2s ease;
+      transition: transform 0.2s, opacity 0.2s ease; }
+      body .scope-container .snack-bar__container.hide, body .scope-container .datepicker > div.snack-bar__container {
+        display: block;
+        opacity: 0;
+        -webkit-transform: translate3d(1000px, 0, 0);
+        -moz-transform: translate3d(1000px, 0, 0);
+        -ms-transform: translate3d(1000px, 0, 0);
+        -o-transform: translate3d(1000px, 0, 0);
+        transform: translate3d(1000px, 0, 0); }
   body .scope-container .caret:after {
     font-family: 'juicons';
     vertical-align: middle;
@@ -4941,6 +5065,9 @@ body .scope-container .brand__border-accent--top {
 
 .disqualify.active .component__icon, .disqualify.active body .scope-container .component__icon--primary, body .scope-container .disqualify.active .component__icon--primary, .disqualify.active:hover .component__icon, .disqualify.active:hover body .scope-container .component__icon--primary, body .scope-container .disqualify.active:hover .component__icon--primary {
   color: #c06057 !important; }
+
+.shareQuestion.active .component__icon, .shareQuestion.active body .scope-container .component__icon--primary, body .scope-container .shareQuestion.active .component__icon--primary, .shareQuestion.active:hover .component__icon, .shareQuestion.active:hover body .scope-container .component__icon--primary, body .scope-container .shareQuestion.active:hover .component__icon--primary {
+  color: #43b66a !important; }
 
 .modal-open {
   overflow: hidden; }
