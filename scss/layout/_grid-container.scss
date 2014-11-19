@@ -25,16 +25,6 @@
     @extend .content;
     max-width: 640px;
   }
-  &--gutter--right {
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      padding-right: 48px;
-    }
-  }
-  &--gutter--left {
-    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
-      padding-left: 48px;
-    }
-  }
 }
 
 .row {
@@ -45,5 +35,57 @@
   }
   @media (min-width: 769px) {
     min-height: 1px;
+  }
+}
+
+
+%part-base {
+
+}
+
+.part {
+  &__right {
+    &--fixed {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: $base-h-padding+px;
+    }
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      text-align: center;
+      margin-bottom: $base-h-padding+px;
+      > img {
+        display: inline-block;
+      }
+    }
+    @media (min-width: $brkpoint-md) {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: $base-h-padding+px;
+    }
+  }
+  &__left {
+    &--fixed {
+      display: table-cell;
+      vertical-align: top;
+      padding-right: $base-h-padding+px;
+    }
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      text-align: center;
+      margin-bottom: $base-h-padding+px;
+      > img {
+        display: inline-block;
+      }
+    }
+    @media (min-width: $brkpoint-md) {
+      display: table-cell;
+      vertical-align: top;
+      padding-right: $base-h-padding+px;
+    }
+  }
+  &__body {
+    @media (min-width: $brkpoint-md) {
+      display: table-cell;
+      vertical-align: top;
+    }
   }
 }

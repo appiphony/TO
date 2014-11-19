@@ -287,7 +287,7 @@
 .juicon-x:before, body .scope-container .alert-close-x:after, body .scope-container .panel__component > .close .component-remove-x:before, .select2-search-choice-close:before, .close-modal-x:before {
   content: "\e652"; }
 
-.clearfix:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .content--readable:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .list-group__item--multi:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .content__section:after, .modal__footer:after {
+.clearfix:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .content--readable:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .card__top:after, body .scope-container .card__bottom:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .list-group__item--multi:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .content__section:after, .modal__footer:after {
   content: "";
   display: table;
   clear: both; }
@@ -378,7 +378,7 @@ body .scope-container body, body .scope-container h1, body .scope-container h2, 
 body .scope-container *, *, body .scope-container .alert .close, body .scope-container .select__wrap select, body .scope-container .select2-container select, .select2-container .select2-choice {
   outline: none; }
 
-.dots, body .scope-container .dropdown-menu__list-item a, body .scope-container .dropdown-menu__list-item .dropdown-menu__list-item__inner, body .scope-container .card__heading, body .scope-container .card__subheading, body .scope-container .tile__title, body .scope-container .has-img-container--lg, body .scope-container .list-group__item a, body .scope-container .list-group__item--multi a, body .scope-container .list-group__item, body .scope-container .page__heading, body .scope-container .panel__subheading, body .scope-container .page__subheading {
+.dots, body .scope-container .dropdown-menu__list-item a, body .scope-container .dropdown-menu__list-item .dropdown-menu__list-item__inner, body .scope-container .tile__title, body .scope-container .has-img-container--lg, body .scope-container .list-group__item a, body .scope-container .list-group__item--multi a, body .scope-container .list-group__item, body .scope-container .page__heading, body .scope-container .panel__subheading, body .scope-container .page__subheading {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
@@ -529,6 +529,11 @@ body .scope-container .panel__box {
 @media (min-width: 769px) {
   .has-border-right {
     border-right: 1px solid #f0f1f2; } }
+
+.table--fixed {
+  table-layout: fixed;
+  width: 100%;
+  display: table; }
 
 .top-cap {
   -webkit-border-top-left-radius: 4px !important;
@@ -1499,6 +1504,12 @@ body .scope-container span.show-brkpoint--md--only {
   @media (min-width: 769px) and (max-width: 1100px) {
     body .scope-container span.show-brkpoint--md--only {
       display: inline-block; } }
+body .scope-container .has-radius {
+  -webkit-border-radius: 4px ;
+  -ms-border-radius: 4px ;
+  -moz-border-radius: 4px ;
+  -o-border-radius: 4px ;
+  border-radius: 4px ; }
 body .scope-container .building-block {
   padding: 16px 0;
   height: auto; }
@@ -2000,18 +2011,46 @@ body .scope-container .content, body .scope-container .content--full, body .scop
     max-width: 324px; }
   body .scope-container .content--readable {
     max-width: 640px; }
-  @media (min-width: 1px) and (max-width: 769px) {
-    body .scope-container .content--gutter--right {
-      padding-right: 48px; } }
-  @media (min-width: 1px) and (max-width: 769px) {
-    body .scope-container .content--gutter--left {
-      padding-left: 48px; } }
 body .scope-container .row {
   margin-left: -16px;
   margin-right: -16px; }
   @media (min-width: 769px) {
     body .scope-container .row {
       min-height: 1px; } }
+body .scope-container .part__right--fixed {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 16px; }
+@media (min-width: 1px) and (max-width: 769px) {
+  body .scope-container .part__right {
+    text-align: center;
+    margin-bottom: 16px; }
+    body .scope-container .part__right > img {
+      display: inline-block; } }
+@media (min-width: 769px) {
+  body .scope-container .part__right {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 16px; } }
+body .scope-container .part__left--fixed {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 16px; }
+@media (min-width: 1px) and (max-width: 769px) {
+  body .scope-container .part__left {
+    text-align: center;
+    margin-bottom: 16px; }
+    body .scope-container .part__left > img {
+      display: inline-block; } }
+@media (min-width: 769px) {
+  body .scope-container .part__left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 16px; } }
+@media (min-width: 769px) {
+  body .scope-container .part__body {
+    display: table-cell;
+    vertical-align: top; } }
 
 body .scope-container .button, body .scope-container button.button {
   -webkit-transition: border-color, color, background-color 0.2s ease;
@@ -2622,8 +2661,96 @@ body .scope-container {
     border-radius: 4px ;
     background-color: #fff;
     border: 1px solid #f0f1f2;
-    padding: 16px;
     margin-bottom: 16px; }
+  body .scope-container .card > img {
+    max-width: 100%; }
+  body .scope-container .card__feature, body .scope-container .card__feature--top, body .scope-container .card__feature--bottom, body .scope-container .card__feature--left, body .scope-container .card__feature--right {
+    background-size: cover;
+    background-position: center center; }
+    body .scope-container .card__feature--top {
+      height: 200px;
+      -webkit-border-top-left-radius: 4px ;
+      -ms-border-top-left-radius: 4px ;
+      -moz-border-top-left-radius: 4px ;
+      -o-border-top-left-radius: 4px ;
+      border-top-left-radius: 4px ;
+      -webkit-border-top-right-radius: 4px ;
+      -ms-border-top-right-radius: 4px ;
+      -moz-border-top-right-radius: 4px ;
+      -o-border-top-right-radius: 4px ;
+      border-top-right-radius: 4px ; }
+    body .scope-container .card__feature--bottom {
+      height: 200px;
+      -webkit-border-bottom-left-radius: 4px ;
+      -ms-border-bottom-left-radius: 4px ;
+      -moz-border-bottom-left-radius: 4px ;
+      -o-border-bottom-left-radius: 4px ;
+      border-bottom-left-radius: 4px ;
+      -webkit-border-bottom-right-radius: 4px ;
+      -ms-border-bottom-right-radius: 4px ;
+      -moz-border-bottom-right-radius: 4px ;
+      -o-border-bottom-right-radius: 4px ;
+      border-bottom-right-radius: 4px ; }
+    @media (min-width: 1px) and (max-width: 769px) {
+      body .scope-container .card__feature--left {
+        height: 200px;
+        -webkit-border-top-left-radius: 4px ;
+        -ms-border-top-left-radius: 4px ;
+        -moz-border-top-left-radius: 4px ;
+        -o-border-top-left-radius: 4px ;
+        border-top-left-radius: 4px ;
+        -webkit-border-top-right-radius: 4px ;
+        -ms-border-top-right-radius: 4px ;
+        -moz-border-top-right-radius: 4px ;
+        -o-border-top-right-radius: 4px ;
+        border-top-right-radius: 4px ; } }
+    @media (min-width: 769px) {
+      body .scope-container .card__feature--left {
+        -webkit-border-top-left-radius: 4px ;
+        -ms-border-top-left-radius: 4px ;
+        -moz-border-top-left-radius: 4px ;
+        -o-border-top-left-radius: 4px ;
+        border-top-left-radius: 4px ;
+        -webkit-border-bottom-left-radius: 4px ;
+        -ms-border-bottom-left-radius: 4px ;
+        -moz-border-bottom-left-radius: 4px ;
+        -o-border-bottom-left-radius: 4px ;
+        border-bottom-left-radius: 4px ;
+        height: 66px;
+        width: 66px; } }
+    @media (min-width: 1px) and (max-width: 769px) {
+      body .scope-container .card__feature--right {
+        height: 200px;
+        -webkit-border-top-left-radius: 4px ;
+        -ms-border-top-left-radius: 4px ;
+        -moz-border-top-left-radius: 4px ;
+        -o-border-top-left-radius: 4px ;
+        border-top-left-radius: 4px ;
+        -webkit-border-top-right-radius: 4px ;
+        -ms-border-top-right-radius: 4px ;
+        -moz-border-top-right-radius: 4px ;
+        -o-border-top-right-radius: 4px ;
+        border-top-right-radius: 4px ; } }
+    @media (min-width: 769px) {
+      body .scope-container .card__feature--right {
+        -webkit-border-top-right-radius: 4px ;
+        -ms-border-top-right-radius: 4px ;
+        -moz-border-top-right-radius: 4px ;
+        -o-border-top-right-radius: 4px ;
+        border-top-right-radius: 4px ;
+        -webkit-border-bottom-right-radius: 4px ;
+        -ms-border-bottom-right-radius: 4px ;
+        -moz-border-bottom-right-radius: 4px ;
+        -o-border-bottom-right-radius: 4px ;
+        border-bottom-right-radius: 4px ;
+        height: 66px;
+        width: 66px; } }
+  body .scope-container .card__top, body .scope-container .card__bottom {
+    padding: 16px; }
+  body .scope-container .card__body {
+    padding: 16px; }
+    body .scope-container .card__body .card__top {
+      padding: 0; }
   body .scope-container .card__heading {
     line-height: 1;
     margin: 0; }
@@ -2646,6 +2773,42 @@ body .scope-container {
     padding-left: 56px; }
   body .scope-container .card > *:last-child {
     margin-bottom: 0; }
+  body .scope-container .part__left--fixed.card__feature--left {
+    -webkit-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -o-border-radius: 0 ;
+    border-radius: 0 ;
+    -webkit-border-top-left-radius: 4px ;
+    -ms-border-top-left-radius: 4px ;
+    -moz-border-top-left-radius: 4px ;
+    -o-border-top-left-radius: 4px ;
+    border-top-left-radius: 4px ;
+    -webkit-border-bottom-left-radius: 4px ;
+    -ms-border-bottom-left-radius: 4px ;
+    -moz-border-bottom-left-radius: 4px ;
+    -o-border-bottom-left-radius: 4px ;
+    border-bottom-left-radius: 4px ;
+    height: 66px;
+    width: 66px; }
+  body .scope-container .part__left--fixed.card__feature--right {
+    -webkit-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -o-border-radius: 0 ;
+    border-radius: 0 ;
+    -webkit-border-top-right-radius: 4px ;
+    -ms-border-top-right-radius: 4px ;
+    -moz-border-top-right-radius: 4px ;
+    -o-border-top-right-radius: 4px ;
+    border-top-right-radius: 4px ;
+    -webkit-border-bottom-right-radius: 4px ;
+    -ms-border-bottom-right-radius: 4px ;
+    -moz-border-bottom-right-radius: 4px ;
+    -o-border-bottom-right-radius: 4px ;
+    border-bottom-right-radius: 4px ;
+    height: 66px;
+    width: 66px; }
   body .scope-container .card-set__timestamp {
     padding: 4px 0;
     font-size: 14px;
@@ -3359,6 +3522,8 @@ body .scope-container {
     font-size: 125%;
     line-height: 1.25; }
   body .scope-container .label {
+    min-width: 24px;
+    text-align: center;
     -webkit-border-radius: 4px ;
     -ms-border-radius: 4px ;
     -moz-border-radius: 4px ;

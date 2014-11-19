@@ -385,5 +385,11 @@
   }
 }
 
+// make table
 
+.table--fixed {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+}
 

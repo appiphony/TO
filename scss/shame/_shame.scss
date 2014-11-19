@@ -14,6 +14,12 @@ span {
   @include show-brkpoints(inline-block);
 }
 
+// radius {
+
+.has-radius {
+  @include radius();
+}
+
 // building blocks for form builder
 
 .building-block {
@@ -187,3 +193,4 @@ span {
   //    margin-bottom: $base-h-padding+px;
   //  }
 }
+
