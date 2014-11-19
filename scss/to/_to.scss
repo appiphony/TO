@@ -33,6 +33,9 @@ body .scope-container {
         }
       }
     }
+    nav + .panel, .panel + .panel {
+      margin-top: -1px;
+    }
   }
 }
 

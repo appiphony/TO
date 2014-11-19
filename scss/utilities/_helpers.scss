@@ -46,6 +46,10 @@
   transform: translateY(-50%);
 }
 
+.vertical-align {
+  @extend %vertical-align;
+}
+
 // For pseudo-elements
 
 %pseudos {
@@ -101,7 +105,7 @@
 // Text
 
 %underline {
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 
 .text-center {
@@ -306,23 +310,23 @@
 // text color
 
 .text-primary {
-  color: $color-primary;
+  color: $color-primary!important;
 }
 
 .fill-primary {
-  fill: $color-primary;
+  fill: $color-primary!important;
 }
 
 .text-error {
-  color: $color-error;
+  color: $color-error!important;
 }
 
 .text-success {
-  color: $color-success;
+  color: $color-success!important;
 }
 
 .text-warning {
-  color: $color-warning;
+  color: $color-warning!important;
 }
 
 // text decoration
@@ -366,6 +370,20 @@
   }
 }
 
+
+// borders
+
+.has-border-left {
+  @media (min-width: $brkpoint-md) {
+    border-left: 1px solid $component-border-color-light;
+  }
+}
+
+.has-border-right {
+  @media (min-width: $brkpoint-md) {
+    border-right: 1px solid $component-border-color-light;
+  }
+}
 
 
 
