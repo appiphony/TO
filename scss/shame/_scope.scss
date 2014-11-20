@@ -68,6 +68,12 @@ body .scope-container {
   .cke_wysiwyg_frame, .cke_wysiwyg_div {
     @include radius-bottom();
   }
+
+  //hiding things we don't want
+
+  .cke_button__indent, .cke_button__outdent, .cke_toolbar:nth-child(4) {
+    display: none!important;
+  }
 }
 
 body .scope-container {
