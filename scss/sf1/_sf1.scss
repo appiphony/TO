@@ -62,11 +62,11 @@ $sf1-base-v: 4;
       text-align: center;
       line-height: $nav-bar--sf1-height;
       font-size: $h3-font-size;
+      display: block;
+      line-height: 16px;
+      padding-top: 8px;
       &.has-subtitle {
-        display: block;
-        line-height: 16px;
         font-size: $h4-font-size;
-        padding-top: 8px;
       }
     }
   }

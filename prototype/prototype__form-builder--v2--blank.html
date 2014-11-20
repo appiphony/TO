@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template : Form Builder -- v2 -- Blank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+
+</head>
+<body>
+    <div class="scope-container">
+        <div class="content pad--md--tm pad--md--bl pad--sm--only--n pad--sm--tm">
+            <nav id="formBuildNav" class="nav-bar--sf1 mar--sm--bn show-brkpoint--sm--only">
+                <button class="float--right button button--primary mar--sm--only--rs mar--md--lxs">Save</button>
+                <button class="float--right-left button button--secondary mar--sm--only--ls">Cancel</button>
+                <h1 class="nav-bar--sf1__title has-subtitle page__heading">Form Builder</h1>
+            </nav>
+        </div>
+        <div class="content--readable pad--sm--tm pad--sm--only--lxl content--gutter--right" style="padding-bottom: 128px;">
+            <div class="building-block is-empty has-hidden-items createBlock">
+                <span class="hide moveText text-center block">Click to move item here</span>
+                <!--might wanna insert this on the fly instead of having it in here always-->
+                <div class="building-block__edit">
+                    <div class="panel">
+                        <div class="panel__top">
+                            <div class="form__group float--left">
+                                <label class="sr-only">Question Type</label>
+                                <div class="select__wrap">
+                                    <div class="input__icon juicon juicon-down"></div>
+                                    <select>
+                                        <option selected>Multiple answer (Checkbox)</option>
+                                        <option>Single answer (Pick-list)</option>
+                                        <option>Single-line answer (Text field)</option>
+                                        <option>Mult-line answer (Textarea)</option>
+                                        <option>Date answer (Calendar)</option>
+                                        <option>Heading</option>
+                                        <option>Rich text block</option>
+                                    </select>
+                                </div>
+                                <small class="input-error-content">You need stuff in this thing</small>
+                            </div>
+                            <button class="doneButton button button--primary float--right mar--sm--only--ts">Done <span class="juicon juicon-check"></span></button>
+                            <button class="doneButton button button--secondary float--right mar--md--rxs mar--sm--only--ts">Cancel</button>
+                        </div>
+                        <div class="list-heading">
+                            <h4 class="list-heading__title">Question text</h4>
+                        </div>
+                        <div class="panel__body">
+                            <div class="form__group mar--sm--bn">
+                                <textarea placeholder="Type your question here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="list-heading">
+                            <h4 class="list-heading__title">Answers</h4>
+                        </div>
+                        <div class="panel__component">
+                            <ul class="list-style-type-none inline-block input-size mar--sm--n text-right float--right">
+                                <li class="inline-block upVote colorToggle">
+                                    <span class="juicon juicon-like pad--sm--ls component__icon text-faded"></span>
+                                </li>
+                                <li class="inline-block downVote colorToggle">
+                                    <span class="juicon juicon-dislike pad--sm--ls component__icon text-faded"></span>
+                                </li>
+                                <li class="inline-block disqualify colorToggle">
+                                    <span class="juicon juicon-ban pad--sm--ls component__icon text-faded"></span>
+                                </li>
+                                <li class="inline-block scoreOption relative">
+                                    <span class="juicon juicon-trash component__icon text-faded pad--sm--ls" data-toggle="dropdown"></span>
+                                </li>
+                            </ul>
+                            <div class="" style="padding-right: 120px;">
+                                <div class="form__group">
+                                    <input type="text" placeholder="Provide an answer"/>
+                                    <small class="input-error-content">Error</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel__component">
+                            <button type="button" class="button button--primary button--ghost">Answer <span class="juicon juicon-plus"></span></button>
+                        </div>
+                    </div>
+                    <p class="text-center text-error mar--sm--tm">
+                        <a href="#" class="deleteBlock"><span class="juicon juicon-trash text-error"></span> <span class="text-error">Delete this</span></a>
+                    </p>
+                </div>
+            </div>
+            <p class="text-faded text-center mar--sm--txxl">
+                Use the <span class="label label--secondary label--round"><span class="juicon juicon-plus text-faded"></span></span> buttons to the <span class="show-brkpoint--md">left</span><span class="show-brkpoint--sm--only">right</span> to add questions or content.
+            </p>
+        </div>
+    </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+<script type="text/javascript" src="lib/moment/moment.js"></script>
+<script type="text/javascript" src="../lib/datepicker/js/datepicker.js"></script>
+
+
+<script>
+
+    //toggling icon colors
+
+    $(".colorToggle").click(function(e){
+        $(this).toggleClass("active");
+        $(this).closest('ul').find('.active').not($(this)).removeClass('active');
+    });
+
+    //sharing questions to library
+
+    $(".shareQuestion").click(function(e){
+        $(e.target).closest('.building-block .shareQuestion').toggleClass("active");
+        $('.shareQuestionAlert').removeClass('hide');
+        $('.shareQuestionAlert .sharedText, .shareQuestionAlert .unsharedText').toggleClass('hide');
+        setTimeout(function(){$(".shareQuestionAlert").addClass("hide");}, 4000)
+    });
+
+
+    //editing blocks
+    $(".editBlock, .doneButton").click(function(e){
+        $(e.target).closest('.building-block').toggleClass("edit-this");
+        $('.building-block').toggleClass("edit-active");
+    });
+
+    $('body').on('click', ".building-block.createBlock", function(e){
+        $(this).toggleClass("edit-this");
+        $(this).removeClass("createBlock");
+        $('.building-block').toggleClass("edit-active");
+    });
+
+    $('body').on('click', ".building-block.is-empty .doneButton", function(e){
+        $('.building-block.is-empty').addClass("createBlock");
+    });
+
+
+    // moving blocks
+
+    $('body').on('click', ".moveItem, .move-here", function(){
+        $('.building-block.is-empty').toggleClass("move-here");
+        $('.building-block.is-empty .moveText').toggleClass("hide");
+        $('.building-block').toggleClass("move-active");
+    });
+
+    $(".moveItem").click(function(e){
+        $(e.target).closest('.building-block').addClass("move-this");
+    });
+
+    $('body').on('click', '.moveItem', function(e){
+        $(e.target).closest('.building-block').next('.building-block').addClass("hide");
+        $(e.target).closest('.building-block').prev('.building-block').addClass("hide");
+        $('.building-block.is-empty').removeClass("createBlock");
+    });
+
+    $('body').on('click', '.move-here', function(e){
+        $('.building-block').removeClass("hide");
+        $('.building-block.is-empty').addClass("createBlock");
+    });
+
+    $('body').on('click', ".move-here", function(){
+        $('.building-block').removeClass("move-this");
+    });
+
+
+    // date picker
+
+    $('.datepicker').datepicker()
+            .on('changeDate', function(ev){
+                $('.datepicker').datepicker('hide');
+            });
+
+    $('button[name="daterange"]').daterangepicker(
+            {
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
+                    'Last 7 Days': [moment().subtract('days', 6), moment()],
+                    'Last 30 Days': [moment().subtract('days', 29), moment()]
+                }
+            }
+    );
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

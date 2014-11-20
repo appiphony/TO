@@ -36,7 +36,13 @@ body .scope-container {
     nav + .panel, .panel + .panel {
       margin-top: -1px;
     }
+    + .pad--sm--only--n {
+      > .panel {
+        margin-top: -1px;
+      }
+    }
   }
+
 }
 
 // brand stuff

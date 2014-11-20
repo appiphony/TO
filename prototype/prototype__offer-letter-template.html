@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prototype : Offer Letter Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles-scoped.css">
+</head>
+<body>
+<div class="scope-container">
+    <div class="content pad--md--tm pad--sm--only--n">
+        <nav id="reqLocNav" class="nav-bar--sf1 mar--sm--bn show-brkpoint--sm--only">
+            <button class="float--right button button--primary mar--sm--only--rs mar--md--lxs">Save</button>
+            <button class="float--right-left button button--secondary mar--sm--only--ls">Cancel</button>
+            <h1 class="nav-bar--sf1__title page__heading">Job Offer Template</h1>
+        </nav>
+    </div>
+    <div class="content--readable pad--md--tm pad--sm--only--n">
+        <div class="panel mar--md--tm">
+            <div class="panel__body">
+                <div class="form__group">
+                    <label for="jobName">Job Name</label>
+                    <input type="text" id="jobName" placeholder="Type a name"/>
+                    <small class="input-error-content">Error.</small>
+                </div>
+                <div class="form__group">
+                    <label for="jobDesc">Job Description</label>
+                    <textarea placeholder="Type a description" id="jobDesc"></textarea>
+                    <small class="input-error-content">Error.</small>
+                </div>
+                <label for="jobMerge">Job Merge Fields</label>
+                <div id="jobMerge" class="row">
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <label for="mergeField1" class="sr-only">Merge Field 1</label>
+                            <div class="select__wrap">
+                                <div class="input__icon juicon juicon-down"></div>
+                                <select id="mergeField1">
+                                    <option>Job 1</option>
+                                    <option>Job 2</option>
+                                    <option>Job 3</option>
+                                </select>
+                            </div>
+                            <small class="input-error-content">Error.</small>
+                        </div>
+                    </div>
+                    <div class="column--md--6">
+                        <div class="form__group">
+                            <div class="row input__group">
+                                <div class="column--md--8">
+                                    <input type="text" id="keywords" placeholder="" class=""/>
+                                </div>
+                                <div class="column--md--4">
+                                    <button type="button" class="button button--secondary">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                            <small class="input-error-content">Error.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__group mar--sm--bn">
+                    <label for="jobContent">Job Content</label>
+                    <textarea placeholder="Type some content" id="jobContent"></textarea>
+                    <small class="input-error-content">Error.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../js/jui.js"></script>
+</body>
+</html>

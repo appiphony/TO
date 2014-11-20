@@ -23,7 +23,14 @@
   }
   &--readable {
     @extend .content;
-    max-width: 640px;
+    @media (min-width: $brkpoint-md) {
+      max-width: 640px;
+    }
+  }
+  &--gutter--right {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
+      padding-right: 48px;
+    }
   }
 }
 
@@ -88,4 +95,9 @@
       vertical-align: top;
     }
   }
+}
+
+.part__left--fixed + .part__body {
+  display: table-cell;
+  vertical-align: top;
 }
