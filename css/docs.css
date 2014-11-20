@@ -1681,6 +1681,79 @@ body .scope-container .building-block {
 #AppBodyHeader .phHeader {
   margin-bottom: 0; }
 
+[class^="cke_"] {
+  box-sizing: content-box !important; }
+
+.cke_top {
+  background: #fff;
+  border-bottom: 1px solid #e8eaeb;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-top-left-radius: 4px ;
+  -ms-border-top-left-radius: 4px ;
+  -moz-border-top-left-radius: 4px ;
+  -o-border-top-left-radius: 4px ;
+  border-top-left-radius: 4px ;
+  -webkit-border-top-right-radius: 4px ;
+  -ms-border-top-right-radius: 4px ;
+  -moz-border-top-right-radius: 4px ;
+  -o-border-top-right-radius: 4px ;
+  border-top-right-radius: 4px ; }
+
+.cke_toolgroup {
+  background: #fff;
+  border-bottom: 1px solid #dadee2;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none; }
+
+.cke_inner {
+  -webkit-border-radius: 4px ;
+  -ms-border-radius: 4px ;
+  -moz-border-radius: 4px ;
+  -o-border-radius: 4px ;
+  border-radius: 4px ;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  background: #e8eaeb; }
+  .cke_inner:focus {
+    background: #fff; }
+
+.cke_button {
+  opacity: .7;
+  -webkit-transition: opacity 0.2s, background 0.2s ease;
+  -moz-transition: opacity 0.2s, background 0.2s ease;
+  -o-transition: opacity 0.2s, background 0.2s ease;
+  transition: opacity 0.2s, background 0.2s ease; }
+
+a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
+  background: #e8eaeb;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  opacity: 1; }
+
+.cke_wysiwyg_frame, .cke_wysiwyg_div {
+  -webkit-border-bottom-left-radius: 4px ;
+  -ms-border-bottom-left-radius: 4px ;
+  -moz-border-bottom-left-radius: 4px ;
+  -o-border-bottom-left-radius: 4px ;
+  border-bottom-left-radius: 4px ;
+  -webkit-border-bottom-right-radius: 4px ;
+  -ms-border-bottom-right-radius: 4px ;
+  -moz-border-bottom-right-radius: 4px ;
+  -o-border-bottom-right-radius: 4px ;
+  border-bottom-right-radius: 4px ; }
+
 body .scope-container [class^="column--"] {
   padding: 0 16px;
   position: relative; }

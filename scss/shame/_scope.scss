@@ -18,3 +18,45 @@
 #AppBodyHeader .phHeader {
   margin-bottom: 0;
 }
+
+// rich text
+
+[class^="cke_"] {
+  box-sizing: content-box!important;
+}
+
+.cke_top {
+  background: $white;
+  border-bottom: 1px solid $component-border-color-alt;
+  @include vendor-prefix(box-shadow, none);
+  @include radius-top();
+}
+.cke_toolgroup {
+  background: $white;
+  border-bottom: 1px solid $component-border-color;
+  @include vendor-prefix(box-shadow, none);
+}
+
+.cke_inner {
+  @include radius();
+  @include single-transition(background);
+  background: $input-bg-color;
+  &:focus {
+    background: $input-bg-color-active;
+  }
+}
+
+.cke_button {
+  opacity: .7;
+  @include double-transition(opacity, background);
+}
+
+a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
+  background: $component-border-color-alt;
+  @include vendor-prefix(box-shadow, none);
+  opacity: 1;
+}
+
+.cke_wysiwyg_frame, .cke_wysiwyg_div {
+  @include radius-bottom();
+}
