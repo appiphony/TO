@@ -20,43 +20,59 @@
 }
 
 // rich text
+body .scope-container {
+  [class^="cke_"] {
+    box-sizing: content-box !important;
+  }
 
-[class^="cke_"] {
-  box-sizing: content-box!important;
-}
+  .cke_top {
+    background: $white;
+    border-bottom: 1px solid $component-border-color-alt;
+    @include vendor-prefix(box-shadow, none);
+    @include radius-top();
+  }
+  .cke_toolgroup {
+    background: $white;
+    border: 1px solid $component-border-color;
+    @include vendor-prefix(box-shadow, none);
+  }
 
-.cke_top {
-  background: $white;
-  border-bottom: 1px solid $component-border-color-alt;
-  @include vendor-prefix(box-shadow, none);
-  @include radius-top();
-}
-.cke_toolgroup {
-  background: $white;
-  border-bottom: 1px solid $component-border-color;
-  @include vendor-prefix(box-shadow, none);
-}
+  .cke_inner, .cke_chrome {
+    @include radius();
+    @include single-transition(background);
+    @include vendor-prefix(box-shadow, none);
+    background: $input-bg-color;
+    &:focus {
+      background: $input-bg-color-active;
+    }
+  }
+  .cke_chrome {
+    border: 1px solid $component-border-color;
+  }
 
-.cke_inner {
-  @include radius();
-  @include single-transition(background);
-  background: $input-bg-color;
-  &:focus {
-    background: $input-bg-color-active;
+  .cke_button {
+    opacity: .7;
+    @include double-transition(opacity, background);
+  }
+  a.cke_button_on:hover, a.cke_button_on:focus, a.cke_button_on:active {
+    @include vendor-prefix(box-shadow, none);
+    background: $component-border-color-alt;
+  }
+
+  a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active, .cke_button_on {
+    background: $component-border-color-alt;
+    @include vendor-prefix(box-shadow, none);
+    opacity: 1;
+  }
+
+  .cke_wysiwyg_frame, .cke_wysiwyg_div {
+    @include radius-bottom();
   }
 }
 
-.cke_button {
-  opacity: .7;
-  @include double-transition(opacity, background);
+body .scope-container {
+  ul li {
+    margin-left: 0;
+  }
 }
 
-a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
-  background: $component-border-color-alt;
-  @include vendor-prefix(box-shadow, none);
-  opacity: 1;
-}
-
-.cke_wysiwyg_frame, .cke_wysiwyg_div {
-  @include radius-bottom();
-}

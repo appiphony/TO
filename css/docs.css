@@ -287,7 +287,7 @@
 .juicon-x:before, body .scope-container .alert-close-x:after, body .scope-container .panel__component > .close .component-remove-x:before, .select2-search-choice-close:before, .close-modal-x:before {
   content: "\e652"; }
 
-.clearfix:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .content--readable:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .card__top:after, body .scope-container .card__bottom:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .list-group__item--multi:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .content__section:after, .modal__footer:after {
+.clearfix:after, body .scope-container .building-block:after, body .scope-container .content:after, body .scope-container .content--full:after, body .scope-container .content--small:after, body .scope-container .content--readable:after, body .scope-container .row:after, body .scope-container .button-group:after, body .scope-container .button-group--collapse:after, body .scope-container .card:after, body .scope-container .card__top:after, body .scope-container .card__bottom:after, body .scope-container .range_inputs:after, body .scope-container .range_inputs_container:after, body .scope-container .range_buttons_container:after, body .scope-container .list-group__item:after, body .scope-container .list-group__item--multi:after, body .scope-container .nav-bar:after, body .scope-container .nav-bar--solo:after, body .scope-container .nav-bar__top:after, body .scope-container .nav-bar__appendage:after, body .scope-container .pagination:after, body .scope-container .pagination--alt:after, body .scope-container .panel:after, body .scope-container .panel__top:after, body .scope-container .panel__bottom:after, body .scope-container .panel__component:after, body .scope-container .panel__body:after, body .scope-container .panel__box:after, body .scope-container .panel__content:after, body .scope-container .nav-bar--sf1:after, body .scope-container .nav-bar--sf1__top:after, body .scope-container .content__section:after, .modal__footer:after {
   content: "";
   display: table;
   clear: both; }
@@ -1681,10 +1681,9 @@ body .scope-container .building-block {
 #AppBodyHeader .phHeader {
   margin-bottom: 0; }
 
-[class^="cke_"] {
+body .scope-container [class^="cke_"] {
   box-sizing: content-box !important; }
-
-.cke_top {
+body .scope-container .cke_top {
   background: #fff;
   border-bottom: 1px solid #e8eaeb;
   -webkit-box-shadow: none;
@@ -1702,17 +1701,15 @@ body .scope-container .building-block {
   -moz-border-top-right-radius: 4px ;
   -o-border-top-right-radius: 4px ;
   border-top-right-radius: 4px ; }
-
-.cke_toolgroup {
+body .scope-container .cke_toolgroup {
   background: #fff;
-  border-bottom: 1px solid #dadee2;
+  border: 1px solid #dadee2;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none; }
-
-.cke_inner {
+body .scope-container .cke_inner, body .scope-container .cke_chrome {
   -webkit-border-radius: 4px ;
   -ms-border-radius: 4px ;
   -moz-border-radius: 4px ;
@@ -1722,18 +1719,30 @@ body .scope-container .building-block {
   -moz-transition: background 0.2s ease;
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
   background: #e8eaeb; }
-  .cke_inner:focus {
+  body .scope-container .cke_inner:focus, body .scope-container .cke_chrome:focus {
     background: #fff; }
-
-.cke_button {
+body .scope-container .cke_chrome {
+  border: 1px solid #dadee2; }
+body .scope-container .cke_button {
   opacity: .7;
   -webkit-transition: opacity 0.2s, background 0.2s ease;
   -moz-transition: opacity 0.2s, background 0.2s ease;
   -o-transition: opacity 0.2s, background 0.2s ease;
   transition: opacity 0.2s, background 0.2s ease; }
-
-a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_button_disabled:hover, a.cke_button_disabled:focus, a.cke_button_disabled:active {
+body .scope-container a.cke_button_on:hover, body .scope-container a.cke_button_on:focus, body .scope-container a.cke_button_on:active {
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  background: #e8eaeb; }
+body .scope-container a.cke_button_off:hover, body .scope-container a.cke_button_off:focus, body .scope-container a.cke_button_off:active, body .scope-container a.cke_button_disabled:hover, body .scope-container a.cke_button_disabled:focus, body .scope-container a.cke_button_disabled:active, body .scope-container .cke_button_on {
   background: #e8eaeb;
   -webkit-box-shadow: none;
   -ms-box-shadow: none;
@@ -1741,8 +1750,7 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
   -o-box-shadow: none;
   box-shadow: none;
   opacity: 1; }
-
-.cke_wysiwyg_frame, .cke_wysiwyg_div {
+body .scope-container .cke_wysiwyg_frame, body .scope-container .cke_wysiwyg_div {
   -webkit-border-bottom-left-radius: 4px ;
   -ms-border-bottom-left-radius: 4px ;
   -moz-border-bottom-left-radius: 4px ;
@@ -1753,6 +1761,9 @@ a.cke_button_off:hover, a.cke_button_off:focus, a.cke_button_off:active, a.cke_b
   -moz-border-bottom-right-radius: 4px ;
   -o-border-bottom-right-radius: 4px ;
   border-bottom-right-radius: 4px ; }
+
+body .scope-container ul li {
+  margin-left: 0; }
 
 body .scope-container [class^="column--"] {
   padding: 0 16px;

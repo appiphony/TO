@@ -287,7 +287,7 @@
 .juicon-x:before, .alert-close-x:after, .close-modal-x:before, .panel__component > .close .component-remove-x:before, .select2-search-choice-close:before {
   content: "\e652"; }
 
-.clearfix:after, .content:after, .content--full:after, .content--small:after, .content--readable:after, .row:after, .button-group:after, .button-group--collapse:after, .card:after, .card__top:after, .card__bottom:after, .range_inputs:after, .range_inputs_container:after, .range_buttons_container:after, .list-group__item:after, .list-group__item--multi:after, .modal__footer:after, .nav-bar:after, .nav-bar--solo:after, .nav-bar__top:after, .nav-bar__appendage:after, .pagination:after, .pagination--alt:after, .panel:after, .panel__top:after, .panel__bottom:after, .panel__component:after, .panel__body:after, .panel__box:after, .panel__content:after, .nav-bar--sf1:after, .nav-bar--sf1__top:after, .content__section:after {
+.clearfix:after, .building-block:after, .content:after, .content--full:after, .content--small:after, .content--readable:after, .row:after, .button-group:after, .button-group--collapse:after, .card:after, .card__top:after, .card__bottom:after, .range_inputs:after, .range_inputs_container:after, .range_buttons_container:after, .list-group__item:after, .list-group__item--multi:after, .modal__footer:after, .nav-bar:after, .nav-bar--solo:after, .nav-bar__top:after, .nav-bar__appendage:after, .pagination:after, .pagination--alt:after, .panel:after, .panel__top:after, .panel__bottom:after, .panel__component:after, .panel__body:after, .panel__box:after, .panel__content:after, .nav-bar--sf1:after, .nav-bar--sf1__top:after, .content__section:after {
   content: "";
   display: table;
   clear: both; }

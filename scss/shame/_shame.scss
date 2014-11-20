@@ -24,6 +24,7 @@ span {
 
 .building-block {
   @extend .relative;
+  @extend .clearfix;
   padding: $base-h-padding+px 0;
   height: auto;
   &.has-hidden-items {
